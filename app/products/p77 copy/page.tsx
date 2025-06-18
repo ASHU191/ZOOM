@@ -5,9 +5,9 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 1,
+  id: 78,
   category: "Air Conditioner",
-  title: "B01-Series Explosion-proof Air Conditioners",
+    title: "BLB20-Series Explosion-proof Aviation Obstruction Light",
   description:
     "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
   image: "/placeholder.svg?height=400&width=400",

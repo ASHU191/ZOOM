@@ -2,14 +2,14 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronRight, Star, Shield, Truck, Award, Zap } from "lucide-react"
+import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 2,
-  category: "Circuit Breakers",
-  title: "TS01-Series Explosion-proof Circuit Breakers",
+  id: 1,
+  category: "Air Conditioner",
+  title: "B01-Series Explosion-proof Air Conditioners",
   description:
-    "The TS01-Series explosion-proof circuit breakers are designed to provide reliable circuit protection in hazardous environments with flammable gases or dust.",
+    "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
   image: "/placeholder.svg?height=400&width=400",
   gallery: [
     "/placeholder.svg?height=300&width=300",
@@ -20,24 +20,26 @@ const product = {
   features: [
     "Explosion protection - China Ex(GB)",
     "Zone 1 and Zone 2 application",
-    "GRP enclosure (Polyester resin, glass fiber reinforced)",
-    "Built-in Schneider iC65 series miniature circuit breaker",
-    "7 kinds of electrical accessories",
+    "Split type & Cabinet type structures",
+    "Cooling only & Cooling and heating type",
+    "Manual control or remote control",
   ],
   specifications: {
     explosionProtection: "China Ex(GB)",
     hazardousArea: "Zone 1 and Zone 2",
-    enclosure: "GRP (Polyester resin, glass fiber reinforced)",
-    builtIn: "Schneider iC65 series miniature circuit breaker",
-    accessories: "7 kinds of electrical accessories",
-    padlock: "Type I module can be equipped with padlock",
+    structures: "Split type & Cabinet type",
+    functions: "Cooling only type & Cooling and heating type",
+    control: "Manual control or remote control",
+    coolingTempRange: "18℃–43℃",
+    heatingTempRange: "-7℃–24℃",
+    enclosure: "Flameproof compressor, sealed electrical components",
   },
-  price: "15,500",
-  originalPrice: "18,000",
+  price: "125,000",
+  originalPrice: "145,000",
   availability: "IN STOCK",
-  sku: "TS01-CB-EX",
-  rating: 4.6,
-  reviews: 28,
+  sku: "B01-AC-EX",
+  rating: 4.9,
+  reviews: 32,
 }
 
 export default function ProductDetailPage() {
@@ -58,8 +60,8 @@ export default function ProductDetailPage() {
               Products
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href="/products?category=circuit-breakers" className="hover:text-primary-600">
-              Circuit Breakers
+            <Link href="/products?category=air-conditioner" className="hover:text-primary-600">
+              Air Conditioner
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>
@@ -112,7 +114,7 @@ export default function ProductDetailPage() {
             {/* Product Info */}
             <div>
               <div className="mb-4">
-                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
                   {product.category}
                 </span>
               </div>
@@ -153,15 +155,15 @@ export default function ProductDetailPage() {
                 </div>
                 <div className="flex items-center text-sm">
                   <Truck className="h-5 w-5 text-primary-600 mr-2" />
-                  <span>Free Shipping</span>
+                  <span>Free Installation</span>
                 </div>
                 <div className="flex items-center text-sm">
                   <Award className="h-5 w-5 text-primary-600 mr-2" />
-                  <span>Schneider Quality</span>
+                  <span>5 Year Warranty</span>
                 </div>
                 <div className="flex items-center text-sm">
-                  <Zap className="h-5 w-5 text-primary-600 mr-2" />
-                  <span>Circuit Protection</span>
+                  <Thermometer className="h-5 w-5 text-primary-600 mr-2" />
+                  <span>Climate Control</span>
                 </div>
               </div>
 
@@ -204,7 +206,7 @@ export default function ProductDetailPage() {
                   href="/contact"
                   className="w-full border border-primary-600 text-primary-600 py-3 px-6 rounded-lg hover:bg-primary-50 transition-colors font-semibold text-center block"
                 >
-                  Technical Support
+                  Contact for Installation
                 </Link>
               </div>
             </div>
@@ -257,25 +259,24 @@ export default function ProductDetailPage() {
                 <h2 className="text-xl lg:text-2xl font-bold mb-4">{product.title}</h2>
                 <div className="prose max-w-none">
                   <p className="mb-4 text-sm lg:text-base">
-                    The TS01-Series explosion-proof circuit breakers represent the pinnacle of electrical safety
-                    technology for hazardous environments. Built with premium Schneider iC65 series miniature circuit
-                    breakers housed in robust GRP enclosures, these units provide uncompromising protection against
-                    electrical faults while maintaining explosion-proof integrity.
+                    The B01-Series Explosion-proof Air Conditioners represent cutting-edge climate control technology
+                    specifically engineered for hazardous industrial environments. These advanced cooling systems
+                    combine superior performance with uncompromising safety features to provide reliable temperature
+                    control in areas where explosive gases or vapors may be present.
                   </p>
                   <p className="mb-4 text-sm lg:text-base">
-                    Designed for Zone 1 and Zone 2 applications, these circuit breakers feature glass fiber reinforced
-                    polyester resin enclosures that resist corrosion and provide long-lasting durability in harsh
-                    industrial environments. The modular design allows for easy customization with seven different types
-                    of electrical accessories.
+                    Designed with flameproof compressors and sealed electrical components, these air conditioners meet
+                    the stringent requirements of Zone 1 and Zone 2 hazardous areas. Available in both split and cabinet
+                    configurations, they offer flexible installation options to suit various industrial applications.
                   </p>
-                  <h3 className="text-lg font-bold mb-3">Safety & Protection Features</h3>
+                  <h3 className="text-lg font-bold mb-3">Advanced Climate Control</h3>
                   <ul className="list-disc pl-5 mb-6 space-y-2 text-sm lg:text-base">
-                    <li>Schneider Electric iC65 series circuit breaker technology</li>
-                    <li>GRP enclosure for superior corrosion resistance</li>
-                    <li>Explosion-proof certification for hazardous areas</li>
-                    <li>Multiple electrical accessory options</li>
-                    <li>Optional padlock capability for security</li>
-                    <li>Easy installation and maintenance</li>
+                    <li>Flameproof compressor design for ultimate safety</li>
+                    <li>Sealed electrical components prevent ignition sources</li>
+                    <li>Wide operating temperature range for versatile applications</li>
+                    <li>Energy-efficient operation reduces operational costs</li>
+                    <li>Remote control capability for convenient operation</li>
+                    <li>Robust construction for harsh industrial environments</li>
                   </ul>
                 </div>
               </div>
@@ -302,28 +303,34 @@ export default function ProductDetailPage() {
                 <h2 className="text-xl lg:text-2xl font-bold mb-6">Applications & Industries</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold mb-3">Electrical Distribution</h3>
-                    <p className="text-sm text-gray-600">Main and sub-distribution panels in hazardous areas</p>
+                    <h3 className="font-bold mb-3">Petrochemical Plants</h3>
+                    <p className="text-sm text-gray-600">
+                      Control rooms, laboratories, and administrative areas in refineries
+                    </p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold mb-3">Motor Control Centers</h3>
-                    <p className="text-sm text-gray-600">Protection for motor circuits and control systems</p>
+                    <h3 className="font-bold mb-3">Chemical Processing</h3>
+                    <p className="text-sm text-gray-600">
+                      Manufacturing facilities, quality control labs, and storage areas
+                    </p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold mb-3">Lighting Circuits</h3>
-                    <p className="text-sm text-gray-600">Protection for explosion-proof lighting systems</p>
+                    <h3 className="font-bold mb-3">Oil & Gas Facilities</h3>
+                    <p className="text-sm text-gray-600">Offshore platforms, drilling sites, and processing units</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold mb-3">Instrumentation</h3>
-                    <p className="text-sm text-gray-600">Protection for control and monitoring equipment</p>
+                    <h3 className="font-bold mb-3">Pharmaceutical</h3>
+                    <p className="text-sm text-gray-600">Clean rooms, research facilities, and production areas</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold mb-3">Process Equipment</h3>
-                    <p className="text-sm text-gray-600">Circuit protection for industrial process machinery</p>
+                    <h3 className="font-bold mb-3">Mining Operations</h3>
+                    <p className="text-sm text-gray-600">
+                      Underground facilities, processing plants, and control rooms
+                    </p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold mb-3">Emergency Systems</h3>
-                    <p className="text-sm text-gray-600">Critical circuit protection for safety systems</p>
+                    <h3 className="font-bold mb-3">Marine Applications</h3>
+                    <p className="text-sm text-gray-600">Ship engine rooms, offshore vessels, and marine terminals</p>
                   </div>
                 </div>
               </div>
@@ -340,10 +347,10 @@ export default function ProductDetailPage() {
             <div className="text-center text-gray-500 col-span-full py-8">
               <p>Related products will be displayed here</p>
               <Link
-                href="/products?category=circuit-breakers"
+                href="/products?category=air-conditioner"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Circuit Breakers
+                View All Air Conditioners
               </Link>
             </div>
           </div>
