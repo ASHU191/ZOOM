@@ -17,8 +17,8 @@ const allProducts = [
     title: "B01-Series Explosion-proof Air Conditioners",
     description:
       "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    image: "//product/p1 1.jpeg?height=200&width=250",
+    gallery: ["//product/p1 2.jpeg?height=300&width=300", "//product/p1 3.jpeg?height=300&width=300" , "//product/p1 4.jpeg?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -3309,8 +3309,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "LOW INTENSITY OBSTRUCTION LIGHT",
   description: "Suitable for aircraft warning on structures below 45 meters in height. Ideal for installation on towers used in power transmission, telecommunications, and GSM networks; industrial smokestacks in power plants, coking plants, and chemical facilities; high-rise buildings; bridges; harbor and construction machinery; and wind turbines.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p116.jpeg?height=200&width=250",
+  gallery: ["/product/p116.jpeg?height=300&width=300"],
   features: [
     "LED color: Red",
     "Vertical degree: ≥10°",
@@ -3336,8 +3336,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "DUAL LOW INTENSITY OBSTRUCTION LIGHT",
   description: "Designed for aircraft warning purposes on various structures such as power transmission towers, telecom and GSM towers, industrial smokestacks (including those at power plants, coking plants, and chemical facilities), high-rise buildings, bridges, harbor equipment, construction machinery, wind turbines, and similar installations.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p117.jpeg?height=200&width=250",
+  gallery: ["/product/p117.jpeg?height=300&width=300"],
   features: [
     "Light Source: LED",
     "LED life: ≥100,000h",
@@ -3365,8 +3365,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "AVIATION OBSTRUCTION LIGHT",
   description: "Designed for use on moving ground obstructions at airports—such as various types of service and maintenance vehicles—excluding aircraft.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p118.jpeg?height=200&width=250",
+  gallery: ["/product/p118.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "LED color: Amber / Blue (other colors can be customized)",
@@ -3395,8 +3395,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ5 SERIES",
   description: "OJ5 Series is a medium-intensity Type A/B obstruction light for marking tall structures to ensure aviation safety. It flashes white during the day and red with infrared at night. The system combines advanced LED, optics, and smart control for reliable performance. Ideal for structures 105–150m tall, including towers, chimneys, buildings, bridges, and wind turbines.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p119.jpeg?height=200&width=250",
+  gallery: ["/product/p119.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Working state: Flashing",
@@ -3420,8 +3420,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ102",
   description: "OJ102 is a medium-intensity Type B obstruction light for marking tall structures to ensure aircraft safety. It operates with red flashing or steady light at night and features advanced LED, optical, and control technology. Suitable for towers, chimneys, high buildings, bridges, construction and port machinery, wind turbines, and other outdoor structures—even in high-salinity environments.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p120.jpeg?height=200&width=250",
+  gallery: ["/product/p120.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Color: Red",
@@ -3442,8 +3442,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ100",
   description: "OJ100 is a medium-intensity obstruction light used for air traffic warning on structures such as telecom and GSM towers, industrial smokestacks (power plants, coking plants, chemical facilities), high-rise buildings, port equipment, construction machinery, and wind turbines.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p121.jpeg?height=200&width=250",
+  gallery: ["/product/p121.jpeg?height=300&width=300"],
   features: [
     "Light color: Red (white could be customized)",
     "Voltage: AC100V~AC240V / DC48V",
@@ -3462,8 +3462,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ403A",
   description: "OJ403A is a medium-intensity Type A&B aviation obstruction light featuring 20,000 cd white flashing in daytime, 2,000 cd white at night, with optional red steady/flashing mode. It uses advanced LED, optical, and control technology for high-demand applications. Suitable for towers, chimneys, buildings, bridges, large machinery, and wind turbines. Built for outdoor and hazardous environments.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p122.jpeg?height=200&width=250",
+  gallery: ["/product/p122.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Work mode: Flashing",
@@ -3484,8 +3484,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ40",
   description: "OJ40 Series Type A aviation obstruction lights, ICAO certified, provide white light by day and white or optional red at night to warn aircraft of tall structures. Featuring advanced LED, optical, and control technology, they are ideal for towers, chimneys, high buildings, large bridges, port and construction machinery, and wind turbines from 105 to 150 m in height. Suitable for high-salinity and harsh outdoor environments.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p123.jpeg?height=200&width=250",
+  gallery: ["/product/p123.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Light color: White / White + Red",
@@ -3505,8 +3505,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ101",
   description: "OJ101 is a medium-intensity obstruction light used for air traffic warning on structures such as telecom and GSM towers, industrial smokestacks (power, coking, and chemical plants), buildings, port equipment, construction machinery, and wind turbines.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p124.jpeg?height=200&width=250",
+  gallery: ["/product/p124.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Color: Red",
@@ -3526,8 +3526,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ88",
   description: "OJ88 high-intensity aviation obstruction lights are used to mark structures that pose a risk to aircraft. They incorporate advanced LED, optical, and control technologies for reliable performance in demanding conditions. Ideal for obstacles 150 meters and above, and suitable for high-salinity, corrosive environments.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p125.jpeg?height=200&width=250",
+  gallery: ["/product/p125.jpeg?height=300&width=300"],
   features: [
     "Input Voltage: AC200–240V, AC100–130V, Light head @ DC48V",
     "Rated Power: 85W @ 1 layer daytime, 150W @ 2 layers daytime, 220W @ 3 layers daytime",
@@ -3546,8 +3546,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ864",
   description: "OJ864: Medium-intensity Type B aviation obstruction lights are used to mark structures that pose a risk to aircraft, operating in red flashing or steady mode at night. Featuring advanced LED, optical, and control technology, they perform reliably in demanding conditions. Suitable for towers, chimneys, high-rise buildings, bridges, port equipment, construction machinery, and wind turbines. Recommended for obstacles between 45–105 meters or for building installations at that height range. Also suitable for high-salinity environments.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p126.jpeg?height=200&width=250",
+  gallery: ["/product/p126.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Color: Red (others can be customized)",
@@ -3567,8 +3567,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJD101",
   description: "OJD101 is a solar-powered aviation warning light designed for marking masts and tower-type obstacles such as telecommunication, GSM, radio and TV towers, tall cranes, chimneys, high-rise buildings, sports stadiums, lighting pylons, high-voltage towers, and other structures that may pose a hazard to air traffic.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p127.jpeg?height=200&width=250",
+  gallery: ["/product/p127.jpeg?height=300&width=300"],
   features: [
     "LED source: LED",
     "Color: Red",
@@ -3588,8 +3588,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ60",
   description: "OJ60 Applicable to towers (power transmission, communication, microwave), chimneys (power plants, coking plants, chemical facilities), high-rise buildings, bridges, port equipment, large construction machinery, and wind turbines—where aircraft warning is required.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p128.jpeg?height=200&width=250",
+  gallery: ["/product/p128.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Light color: Red",
@@ -3609,8 +3609,8 @@ const allProducts = [
   category: "AVIATION OBSTRUCTION LIGHT",
   title: "OJ810A",
   description: "OJ810A Obstruction light suitable for various crane types in harbors and metallurgical sites, as well as telecom towers, GSM towers, smokestacks, buildings, and other potential air traffic hazards. Operates with a steady or flashing red safety light.",
-  image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+  image: "/product/p129.jpeg?height=200&width=250",
+  gallery: ["/product/p129.jpeg?height=300&width=300"],
   features: [
     "Light source: LED",
     "Light color: Red",
@@ -3887,7 +3887,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
                         alt={`${product.title} ${index + 1}`}
                         width={80}
                         height={80}
-                        className="w-full h-16 object-cover"
+                        className="w-full h-16 object-contain"
                       />
                     </div>
                   ))}
@@ -4064,7 +4064,7 @@ export default function ProductsPage() {
                       alt={product.title}
                       width={250}
                       height={200}
-                      className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-40 object-contain group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute top-2 left-2 bg-secondary-500 text-white px-2 py-1 rounded text-xs font-semibold">
                       -15%

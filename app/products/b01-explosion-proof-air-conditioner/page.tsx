@@ -10,13 +10,8 @@ const product = {
   title: "B01-Series Explosion-proof Air Conditioners",
   description:
     "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-  image: "/placeholder.svg?height=400&width=400",
-  gallery: [
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-  ],
+   image: "/product/p1 1.jpeg?height=200&width=250",
+    gallery: ["/product/p1 1.jpeg?height=200&width=250", "/product/p1 2.jpeg?height=300&width=300", "/product/p1 3.jpeg?height=300&width=300" , "/product/p1 4.jpeg?height=300&width=300"],
   features: [
     "Explosion protection - China Ex(GB)",
     "Zone 1 and Zone 2 application",
@@ -81,7 +76,7 @@ export default function ProductDetailPage() {
                     src={product.gallery[selectedImage] || product.image}
                     alt={product.title}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                   <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
                     -15%

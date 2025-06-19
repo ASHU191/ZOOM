@@ -14,8 +14,8 @@ export const featuredProducts = [
     title: "B01-Series Explosion-proof Air Conditioners",
     description:
       "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+     image: "/product/p1 1.jpeg?height=200&width=250",
+    gallery: ["/product/p1 2.jpeg?height=300&width=300", "/product/p1 3.jpeg?height=300&width=300" , "/product/p1 4.jpeg?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
