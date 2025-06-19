@@ -8,52 +8,45 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const slides = [
   {
     id: 1,
-    title: "World Environment Day.",
-    subtitle: "Every Day!",
-    description: "Journey to Zero-Carbon Living",
-    image: "/placeholder.svg?height=1080&width=1920",
+    title: "Reliable Power in Remote",
+    subtitle: "Regions",
+    description: "Delivering dependable energy to even the most off-grid locations.",
+    image: "hero/1.jpg?height=1080&width=1920",
   },
   {
     id: 2,
-    title: "Smart Energy",
-    subtitle: "Solutions",
-    description: "Powering Tomorrow's World Today",
-    image: "/placeholder.svg?height=1080&width=1920",
+    title: "Empowering Clean ",
+    subtitle: "Mobility",
+    description: "Supporting the global transition to electric vehicles with smart charging solutions.",
+    image: "hero/2.jpg?height=1080&width=1920",
   },
   {
     id: 3,
-    title: "Renewable Energy",
-    subtitle: "Revolution",
-    description: "Leading the Clean Energy Transition",
-    image: "/placeholder.svg?height=1080&width=1920",
+    title: "Modular Energy ",
+    subtitle: "Infrastructure",
+    description: "Scalable solutions tailored for industries, cities, and crisis recovery.",
+    image: "hero/3.jpg?height=1080&width=1920",
   },
   {
     id: 4,
-    title: "Solar Innovation",
-    subtitle: "Excellence",
-    description: "Advanced Technology for Maximum Efficiency",
-    image: "/placeholder.svg?height=1080&width=1920",
+    title: "Greener Urban ",
+    subtitle: "Living",
+    description: "Building sustainable cities through integrated EV infrastructure.",
+    image: "hero/4.jpg?height=1080&width=1920",
   },
   {
     id: 5,
-    title: "Energy Storage",
+    title: "Energy-Efficient Climate ",
     subtitle: "Solutions",
-    description: "Power When You Need It Most",
-    image: "/placeholder.svg?height=1080&width=1920",
+    description: "Innovative HVAC systems reducing environmental impact across continents.",
+    image: "hero/5.jpg?height=1080&width=1920",
   },
   {
     id: 6,
-    title: "Sustainable Future",
-    subtitle: "Today",
-    description: "Building a Cleaner Tomorrow",
-    image: "/placeholder.svg?height=1080&width=1920",
-  },
-  {
-    id: 7,
-    title: "Global Energy",
-    subtitle: "Partnership",
-    description: "Connecting Communities Worldwide",
-    image: "/placeholder.svg?height=1080&width=1920",
+    title: "Industrial-Grade Backup ",
+    subtitle: "Power",
+    description: "Keeping critical infrastructure running with high-performance generators.",
+    image: "hero/6.jpg?height=1080&width=1920",
   },
 ]
 
@@ -132,12 +125,12 @@ export default function Hero() {
           <div className="w-12 h-1 bg-emerald-500 mb-4"></div>
           <p className="text-lg md:text-xl lg:text-2xl mb-6 font-light">{slides[currentSlide].description}</p>
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
-            <Link
+            {/* <Link
               href="/solutions"
               className="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full transition-colors text-sm font-semibold"
             >
               Discover Solutions
-            </Link>
+            </Link> */}
             <Link
               href="/products"
               className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-gray-900 px-5 py-2 rounded-full transition-colors text-sm font-semibold"

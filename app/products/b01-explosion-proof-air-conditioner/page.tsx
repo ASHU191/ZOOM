@@ -342,15 +342,15 @@ export default function ProductDetailPage() {
       {/* Related Products */}
       <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2>
+          {/* <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center text-gray-500 col-span-full py-8">
-              <p>Related products will be displayed here</p>
+              {/* <p>Related products will be displayed here</p> */}
               <Link
-                href="/products?category=air-conditioner"
+                href="/products"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Air Conditioners
+                View All Products
               </Link>
             </div>
           </div>

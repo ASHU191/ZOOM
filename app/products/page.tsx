@@ -71,7 +71,7 @@ const allProducts = [
     originalPrice: "18,000",
     availability: "IN STOCK",
     sku: "TS01-CB-EX",
-    href: "/products/ts01-explosion-proof-circuit-breakers",
+    href: "/products/p2",
   },
   {
     id: 3,
@@ -100,7 +100,7 @@ const allProducts = [
     originalPrice: "22,000",
     availability: "IN STOCK",
     sku: "TS02-RCB-EX",
-    href: "/products/ts02-explosion-proof-residual-current-breakers",
+    href: "/products/p3",
   },
   {
     id: 4,
@@ -132,7 +132,7 @@ const allProducts = [
     originalPrice: "15,000",
     availability: "IN STOCK",
     sku: "TS03-AC-EX",
-    href: "/products/ts03-explosion-proof-ac-contactors",
+    href: "/products/p4",
   },
   {
     id: 5,
@@ -165,7 +165,7 @@ const allProducts = [
     originalPrice: "11,500",
     availability: "IN STOCK",
     sku: "TS04-TR-EX",
-    href: "/products/ts04-explosion-proof-thermal-relays",
+    href: "/products/p5",
   },
   {
     id: 6,
@@ -194,7 +194,7 @@ const allProducts = [
     originalPrice: "19,500",
     availability: "IN STOCK",
     sku: "TS05-MPS-EX",
-    href: "/products/ts05-explosion-proof-motor-protection-switches",
+    href: "/products/p6",
   },
   {
     id: 7,
@@ -222,7 +222,7 @@ const allProducts = [
     originalPrice: "9,000",
     availability: "IN STOCK",
     sku: "TS06-MR-EX",
-    href: "/products/ts06-explosion-proof-miniature-relays",
+    href: "/products/p7",
   },
   {
     id: 8,
@@ -254,7 +254,7 @@ const allProducts = [
     originalPrice: "10,500",
     availability: "IN STOCK",
     sku: "TS07-TR-EX",
-    href: "/products/ts07-explosion-proof-time-relays",
+    href: "/products/p8",
   },
   {
     id: 9,
@@ -287,7 +287,7 @@ const allProducts = [
     originalPrice: "13,500",
     availability: "IN STOCK",
     sku: "TS08-SP-EX",
-    href: "/products/ts08-explosion-proof-surge-protectors",
+    href: "/products/p9",
   },
 
   // Control Button Switch Category (25 products)
@@ -317,7 +317,7 @@ const allProducts = [
     originalPrice: "5,200",
     availability: "IN STOCK",
     sku: "AK01-SM-EX",
-    href: "/products/ak01-explosion-proof-switch-module",
+    href: "/products/p10",
   },
   {
     id: 11,
@@ -345,7 +345,7 @@ const allProducts = [
     originalPrice: "7,800",
     availability: "IN STOCK",
     sku: "AK02-FB-EX",
-    href: "/products/ak02-explosion-proof-flash-buzzer",
+    href: "/products/p11",
   },
   {
     id: 12,
@@ -377,7 +377,7 @@ const allProducts = [
     originalPrice: "9,500",
     availability: "IN STOCK",
     sku: "AK03-LS-EX",
-    href: "/products/ak03-explosion-proof-limit-switches",
+    href: "/products/p12",
   },
   {
     id: 13,
@@ -405,7 +405,7 @@ const allProducts = [
     originalPrice: "6,800",
     availability: "IN STOCK",
     sku: "AK04-ICS-EX",
-    href: "/products/ak04-explosion-proof-illumination-control-switches",
+    href: "/products/p13",
   },
   {
     id: 14,
@@ -433,7 +433,7 @@ const allProducts = [
     originalPrice: "6,000",
     availability: "IN STOCK",
     sku: "AK05-ICS-EX",
-    href: "/products/ak05-explosion-proof-illumination-control-switches",
+    href: "/products/p14",
   },
   {
     id: 15,
@@ -461,7 +461,7 @@ const allProducts = [
     originalPrice: "4,500",
     availability: "IN STOCK",
     sku: "AK06-SL-EX",
-    href: "/products/ak06-explosion-proof-signal-lamp-board-back-cable",
+    href: "/products/p15",
   },
   {
     id: 16,
@@ -489,7 +489,7 @@ const allProducts = [
     originalPrice: "4,900",
     availability: "IN STOCK",
     sku: "AK07-BS-EX",
-    href: "/products/ak07-explosion-proof-button-switch-board-back-cable",
+    href: "/products/p16",
   },
   {
     id: 17,
@@ -518,7 +518,7 @@ const allProducts = [
     originalPrice: "5,600",
     availability: "IN STOCK",
     sku: "AK08-BS-EX",
-    href: "/products/ak08-explosion-proof-button-switch-board-back-cable",
+    href: "/products/p17",
   },
   {
     id: 18,
@@ -546,7 +546,7 @@ const allProducts = [
     originalPrice: "6,100",
     availability: "IN STOCK",
     sku: "AK09-BSL-EX",
-    href: "/products/ak09-explosion-proof-button-signal-lamp-board-back-cable",
+    href: "/products/p18",
   },
   {
     id: 19,
@@ -579,7 +579,7 @@ const allProducts = [
     originalPrice: "6,800",
     availability: "IN STOCK",
     sku: "AK10-BS-EX",
-    href: "/products/ak10-explosion-proof-button-switch-board-back-cable",
+    href: "/products/p19",
   },
   {
     id: 20,
@@ -608,7 +608,7 @@ const allProducts = [
     originalPrice: "4,200",
     availability: "IN STOCK",
     sku: "AK11-SL-EX",
-    href: "/products/ak11-explosion-proof-signal-lamp-board-back",
+    href: "/products/p20",
   },
   {
     id: 21,
@@ -637,7 +637,7 @@ const allProducts = [
     originalPrice: "4,800",
     availability: "IN STOCK",
     sku: "AK12-BS-EX",
-    href: "/products/ak12-explosion-proof-button-switch-board-back",
+    href: "/products/p21",
   },
   {
     id: 22,
@@ -666,7 +666,7 @@ const allProducts = [
     originalPrice: "5,000",
     availability: "IN STOCK",
     sku: "AK13-BS-EX",
-    href: "/products/ak13-explosion-proof-button-switch-board-back",
+    href: "/products/p22",
   },
   {
     id: 23,
@@ -701,7 +701,7 @@ const allProducts = [
     originalPrice: "6,400",
     availability: "IN STOCK",
     sku: "AK14-BS-EX",
-    href: "/products/ak14-explosion-proof-button-switch-board-back",
+    href: "/products/p23",
   },
   {
     id: 24,
@@ -730,7 +730,7 @@ const allProducts = [
     originalPrice: "5,700",
     availability: "IN STOCK",
     sku: "AK15-BSL-EX",
-    href: "/products/ak15-explosion-proof-button-signal-lamp-board-back",
+    href: "/products/p24",
   },
   {
     id: 25,
@@ -758,7 +758,7 @@ const allProducts = [
     originalPrice: "3,800",
     availability: "IN STOCK",
     sku: "AK16-SM-EX",
-    href: "/products/ak16-explosion-proof-switch-module",
+    href: "/products/p25",
   },
   {
     id: 26,
@@ -786,7 +786,7 @@ const allProducts = [
     originalPrice: "3,300",
     availability: "IN STOCK",
     sku: "AK17-CS-EX",
-    href: "/products/ak17-explosion-proof-control-switches",
+    href: "/products/p26",
   },
   {
     id: 27,
@@ -814,7 +814,7 @@ const allProducts = [
     originalPrice: "2,600",
     availability: "IN STOCK",
     sku: "AK18-CS",
-    href: "/products/ak18-control-switch",
+    href: "/products/p27",
   },
   {
     id: 28,
@@ -843,7 +843,7 @@ const allProducts = [
     originalPrice: "2,900",
     availability: "IN STOCK",
     sku: "AK19-CS",
-    href: "/products/ak19-control-switch",
+    href: "/products/p28",
   },
   {
     id: 29,
@@ -872,7 +872,7 @@ const allProducts = [
     originalPrice: "7,900",
     availability: "IN STOCK",
     sku: "AK20-POT-EX",
-    href: "/products/ak20-explosion-proof-potentiometers",
+    href: "/products/p29",
   },
   {
     id: 30,
@@ -900,7 +900,7 @@ const allProducts = [
     originalPrice: "4,000",
     availability: "IN STOCK",
     sku: "AK21-SL-EX",
-    href: "/products/ak21-explosion-proof-signal-lamp",
+    href: "/products/p30",
   },
   {
     id: 31,
@@ -928,7 +928,7 @@ const allProducts = [
     originalPrice: "3,600",
     availability: "IN STOCK",
     sku: "AK22-SL-EX",
-    href: "/products/ak22-explosion-proof-signal-lamp",
+    href: "/products/p31",
   },
   {
     id: 32,
@@ -958,7 +958,7 @@ const allProducts = [
     originalPrice: "5,400",
     availability: "IN STOCK",
     sku: "AK23-SB-EX",
-    href: "/products/ak23-explosion-proof-switch-button",
+    href: "/products/p32",
   },
   {
     id: 33,
@@ -988,7 +988,7 @@ const allProducts = [
     originalPrice: "6,300",
     availability: "IN STOCK",
     sku: "AK24-CBL-EX",
-    href: "/products/ak24-explosion-proof-control-button-signal-lamp",
+    href: "/products/p33",
   },
   {
     id: 34,
@@ -1025,7 +1025,7 @@ const allProducts = [
     originalPrice: "7,200",
     availability: "IN STOCK",
     sku: "AK25-SB-EX",
-    href: "/products/ak25-explosion-proof-switch-button",
+    href: "/products/p34",
   },
 
   // Coupler Category (2 products)
@@ -1058,7 +1058,7 @@ const allProducts = [
     originalPrice: "10,000",
     availability: "IN STOCK",
     sku: "TS01-CP-EX",
-    href: "/products/ts01-explosion-proof-coupler",
+    href: "/products/p35",
   },
   {
     id: 36,
@@ -1093,7 +1093,7 @@ const allProducts = [
     originalPrice: "10,800",
     availability: "IN STOCK",
     sku: "TS02-CP-EX",
-    href: "/products/ts02-explosion-proof-coupler",
+    href: "/products/p36",
   },
 
   // Distribution Cabinets Category (1 product)
@@ -1133,7 +1133,7 @@ const allProducts = [
     originalPrice: "95,000",
     availability: "IN STOCK",
     sku: "TB-DC-EX",
-    href: "/products/tb-explosion-proof-pressurized-distribution-cabinets",
+    href: "/products/p37",
   },
   // EV Charger Category (5 products)
   {
@@ -1162,7 +1162,7 @@ const allProducts = [
     originalPrice: "52,000",
     availability: "IN STOCK",
     sku: "XPD-FC-01",
-    href: "/products/xpd-forklift-battery-charger",
+    href: "/products/p38",
   },
   {
     id: 39,
@@ -1192,7 +1192,7 @@ const allProducts = [
     originalPrice: "32,000",
     availability: "IN STOCK",
     sku: "BPD-LC-01",
-    href: "/products/bpd-lithium-battery-charger",
+    href: "/products/p39",
   },
   {
     id: 40,
@@ -1222,7 +1222,7 @@ const allProducts = [
     originalPrice: "37,000",
     availability: "IN STOCK",
     sku: "ACP-LC-01",
-    href: "/products/acp-lithium-battery-charger",
+    href: "/products/p40",
   },
   {
     id: 41,
@@ -1252,7 +1252,7 @@ const allProducts = [
     originalPrice: "40,000",
     availability: "IN STOCK",
     sku: "ACR-LC-01",
-    href: "/products/acr-lithium-battery-charger",
+    href: "/products/p41",
   },
   {
     id: 42,
@@ -1289,7 +1289,7 @@ const allProducts = [
     originalPrice: "210,000",
     availability: "IN STOCK",
     sku: "BCR-DC-01",
-    href: "/products/bcr-dc-fast-charger",
+    href: "/products/p42",
   },
 
   // Distribution Box Category (12 products)
@@ -1323,7 +1323,7 @@ const allProducts = [
     originalPrice: "29,000",
     availability: "IN STOCK",
     sku: "NEX51-DB-EX",
-    href: "/products/nex51-explosion-protected-distribution-box",
+    href: "/products/p43",
   },
   {
     id: 44,
@@ -1354,7 +1354,7 @@ const allProducts = [
     originalPrice: "37,000",
     availability: "IN STOCK",
     sku: "PAX03-EA-EX",
-    href: "/products/pax03-explosion-proof-electrical-apparatus",
+    href: "/products/p44",
   },
   {
     id: 45,
@@ -1385,7 +1385,7 @@ const allProducts = [
     originalPrice: "33,000",
     availability: "IN STOCK",
     sku: "PAX23-EA-EX",
-    href: "/products/pax23-explosion-proof-electrical-apparatus",
+    href: "/products/p45",
   },
   {
     id: 46,
@@ -1416,7 +1416,7 @@ const allProducts = [
     originalPrice: "35,000",
     availability: "IN STOCK",
     sku: "PAX27-EA-EX",
-    href: "/products/pax27-explosion-proof-electrical-apparatus",
+    href: "/products/p46",
   },
   {
     id: 47,
@@ -1447,7 +1447,7 @@ const allProducts = [
     originalPrice: "26,000",
     availability: "IN STOCK",
     sku: "PAX06-MS-EX",
-    href: "/products/pax06-explosion-proof-magnetic-starter",
+    href: "/products/p47",
   },
   {
     id: 48,
@@ -1477,7 +1477,7 @@ const allProducts = [
     originalPrice: "18,000",
     availability: "IN STOCK",
     sku: "PAX01-EN-EX",
-    href: "/products/pax01-explosion-proof-enclosures",
+    href: "/products/p48",
   },
   {
     id: 49,
@@ -1508,7 +1508,7 @@ const allProducts = [
     originalPrice: "21,000",
     availability: "IN STOCK",
     sku: "PAX30-EN-EX",
-    href: "/products/pax30-explosion-proof-enclosures",
+    href: "/products/p49",
   },
   {
     id: 50,
@@ -1542,7 +1542,7 @@ const allProducts = [
     originalPrice: "23,000",
     availability: "IN STOCK",
     sku: "NEX52-IDB-EX",
-    href: "/products/nex52-explosion-proof-illumination-distribution-box",
+    href: "/products/p50",
   },
   {
     id: 51,
@@ -1576,7 +1576,7 @@ const allProducts = [
     originalPrice: "26,000",
     availability: "IN STOCK",
     sku: "NEX53-IDB-EX",
-    href: "/products/nex53-explosion-proof-illumination-distribution-box",
+    href: "/products/p51",
   },
   {
     id: 52,
@@ -1611,7 +1611,7 @@ const allProducts = [
     originalPrice: "75,000",
     availability: "IN STOCK",
     sku: "PAX32-PCS-EX",
-    href: "/products/pax32-explosion-proof-pressurized-control-systems",
+    href: "/products/p52",
   },
   {
     id: 53,
@@ -1641,7 +1641,7 @@ const allProducts = [
     originalPrice: "40,000",
     availability: "IN STOCK",
     sku: "PAX53-EPD-EX",
-    href: "/products/pax53-explosion-proof-emergency-power-distribution-box",
+    href: "/products/p53",
   },
   {
     id: 54,
@@ -1674,7 +1674,7 @@ const allProducts = [
     originalPrice: "21,500",
     availability: "IN STOCK",
     sku: "PAX05-CB-EX",
-    href: "/products/pax05-explosion-proof-circuit-breaker",
+    href: "/products/p54",
   },
 
   // Exhaust Fan Category (4 products)
@@ -1707,7 +1707,7 @@ const allProducts = [
     originalPrice: "17,500",
     availability: "IN STOCK",
     sku: "BL01-AF-EX",
-    href: "/products/bl01-explosion-proof-axial-flow-fan",
+    href: "/products/p55",
   },
   {
     id: 56,
@@ -1738,7 +1738,7 @@ const allProducts = [
     originalPrice: "19,000",
     availability: "IN STOCK",
     sku: "BL02-EF-EX",
-    href: "/products/bl02-explosion-proof-exhaust-fan",
+    href: "/products/p56",
   },
   {
     id: 57,
@@ -1770,7 +1770,7 @@ const allProducts = [
     originalPrice: "21,000",
     availability: "IN STOCK",
     sku: "BL03-EFS-EX",
-    href: "/products/bl03-explosion-proof-exhaust-fan-square",
+    href: "/products/p57",
   },
   {
     id: 58,
@@ -1804,7 +1804,7 @@ const allProducts = [
     originalPrice: "25,500",
     availability: "IN STOCK",
     sku: "BL04-EF-ATEX",
-    href: "/products/bl04-explosion-proof-exhaust-fan",
+    href: "/products/p58",
   },
   // Lights Category (9 products)
   {
@@ -1838,7 +1838,7 @@ const allProducts = [
     originalPrice: "10,000",
     availability: "IN STOCK",
     sku: "BLB01-LED-EX",
-    href: "/products/blb01-explosion-proof-led-lightings",
+    href: "/products/p59",
   },
   {
     id: 60,
@@ -1870,7 +1870,7 @@ const allProducts = [
     originalPrice: "14,000",
     availability: "IN STOCK",
     sku: "BLB02-LED-EX",
-    href: "/products/blb02-explosion-proof-led-lightings",
+    href: "/products/p60",
   },
   {
     id: 61,
@@ -1902,7 +1902,7 @@ const allProducts = [
     originalPrice: "8,800",
     availability: "IN STOCK",
     sku: "BLB03-LED-EX",
-    href: "/products/blb03-explosion-proof-led-lightings",
+    href: "/products/p61",
   },
   {
     id: 62,
@@ -1932,7 +1932,7 @@ const allProducts = [
     originalPrice: "7,500",
     availability: "IN STOCK",
     sku: "BLB04-LED-EX",
-    href: "/products/blb04-explosion-proof-led-lightings",
+    href: "/products/p62",
   },
   {
     id: 63,
@@ -1962,7 +1962,7 @@ const allProducts = [
     originalPrice: "17,500",
     availability: "IN STOCK",
     sku: "BLB05-FL-EX",
-    href: "/products/blb05-explosion-proof-led-floodlights",
+    href: "/products/p63",
   },
   {
     id: 64,
@@ -1991,7 +1991,7 @@ const allProducts = [
     originalPrice: "15,800",
     availability: "IN STOCK",
     sku: "BLB06-FL-EX",
-    href: "/products/blb06-explosion-proof-led-floodlights",
+    href: "/products/p64",
   },
   {
     id: 65,
@@ -2021,7 +2021,7 @@ const allProducts = [
     originalPrice: "4,900",
     availability: "IN STOCK",
     sku: "BLB07-SGL-EX",
-    href: "/products/blb07-explosion-proof-sight-glass-light",
+    href: "/products/p65",
   },
   {
     id: 66,
@@ -2053,7 +2053,7 @@ const allProducts = [
     originalPrice: "6,800",
     availability: "IN STOCK",
     sku: "BLB08-CFL-EX",
-    href: "/products/blb08-explosion-proof-cleanliness-fluorescent-light",
+    href: "/products/p66",
   },
   {
     id: 67,
@@ -2086,7 +2086,7 @@ const allProducts = [
     originalPrice: "11,200",
     availability: "IN STOCK",
     sku: "BLB09-FLE-EX",
-    href: "/products/blb09-explosion-proof-fluorescent-light-emergency",
+    href: "/products/p67",
   },
   {
     id: 68,
@@ -2116,7 +2116,7 @@ const allProducts = [
     originalPrice: "8,000",
     availability: "IN STOCK",
     sku: "BLB10-LFF-EX",
-    href: "/products/blb10-explosion-proof-light-fittings-fluorescent",
+    href: "/products/p68",
   },
   {
     id: 69,
@@ -2147,7 +2147,7 @@ const allProducts = [
     originalPrice: "8,500",
     availability: "IN STOCK",
     sku: "BLB11-FL-EX",
-    href: "/products/blb11-explosion-proof-fluorescent-light",
+    href: "/products/p69",
   },
   {
     id: 70,
@@ -2179,7 +2179,7 @@ const allProducts = [
     originalPrice: "9,400",
     availability: "IN STOCK",
     sku: "BLB12-LFF-EX",
-    href: "/products/blb12-explosion-proof-light-fittings-fluorescent",
+    href: "/products/p70",
   },
   {
     id: 71,
@@ -2212,7 +2212,7 @@ const allProducts = [
     originalPrice: "4,500",
     availability: "IN STOCK",
     sku: "BLB13-LT-EX",
-    href: "/products/blb13-explosion-proof-led-lamp-tube",
+    href: "/products/p71",
   },
   {
     id: 72,
@@ -2243,7 +2243,7 @@ const allProducts = [
     originalPrice: "21,800",
     availability: "IN STOCK",
     sku: "BLB14-EL-EX",
-    href: "/products/blb14-explosion-proof-lightings",
+    href: "/products/p72",
   },
   {
     id: 73,
@@ -2275,7 +2275,7 @@ const allProducts = [
     originalPrice: "20,300",
     availability: "IN STOCK",
     sku: "BLB15-EL-EX",
-    href: "/products/blb15-explosion-proof-lightings",
+    href: "/products/p73",
   },
   {
     id: 74,
@@ -2307,7 +2307,7 @@ const allProducts = [
     originalPrice: "25,900",
     availability: "IN STOCK",
     sku: "BLB16-FL-EX",
-    href: "/products/blb16-explosion-proof-floodlights",
+    href: "/products/p74",
   },
   {
     id: 75,
@@ -2339,7 +2339,7 @@ const allProducts = [
     originalPrice: "10,400",
     availability: "IN STOCK",
     sku: "BLB17-AVCL-EX",
-    href: "/products/blb17-explosion-proof-audio-visual-caution-light",
+    href: "/products/p75",
   },
   {
     id: 76,
@@ -3625,6 +3625,151 @@ const allProducts = [
   sku: "OJ810A",
   href: "/products/p129"
 },
+{
+  id: 130,
+  category: "Hexlon LIGHTS",
+  title: "Explosion Proof Lighting Fixture",
+  description: "Wattage: 60W\nLumens: 160lms/watt\nTotal Lumens: 9600 lms, 220V/50Hz\npower factor Cosp ≥ 0.95, IP66\nEx d IICT6 Gb / Ex tD A21 Ip66, T80ºC\nⅡA, ⅡB, and ⅡC, Zone 1 and 2, Zone 21 and 22\nWarranty: 1 Year",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "HEX-LIGHT-60W",
+  href: "/products/p130"
+},
+{
+  id: 131,
+  category: "Terminal Box",
+  title: "ST01-Series Explosion-proof Terminal Boxes",
+  description: "The ST01-Series explosion-proof terminal boxes are designed for secure cable termination in hazardous areas with flammable gases or dust. Constructed with a flameproof enclosure, they ensure safe electrical connections and prevent external ignition. These terminal boxes offer high durability, corrosion resistance, and easy installation. Suitable for use in demanding industrial environments requiring certified explosion protection.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection - China Ex(GB)",
+    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
+    "This series product has 6 types for selection: A, B, C, D, E and d",
+    "Please specify when ordering if the cable inlet should be reduced"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "ST01",
+  href: "/products/p131"
+},
+{
+  id: 132,
+  category: "Terminal Box",
+  title: "ST02-Series Explosion-proof Terminal Boxes",
+  description: "The ST02-Series explosion-proof terminal boxes are built for safe and reliable cable termination in hazardous locations. With a rugged flameproof enclosure, they prevent the ignition of explosive gases or dust in the surrounding environment. These boxes offer excellent durability, corrosion resistance, and flexible wiring options. Ideal for industrial settings requiring certified explosion protection.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion Protection: Ex d IIB / IIC T6 Gb, Ex tD A21 IP66 T80°C",
+    "Certificate: ATEX / IECEx / Other relevant certifications",
+    "Rated Voltage: Up to 690V AC / 250V DC",
+    "Rated Current: Up to 63A (varies by terminal and configuration)",
+    "Ingress Protection: IP66 / IP67",
+    "Ambient Temperature Range: -40°C to +60°C",
+    "Enclosure Material: Copper-free aluminum alloy / Stainless steel / GRP (Glass Reinforced Polyester)",
+    "Surface Finish: Epoxy powder-coated / Anti-corrosive treatment",
+    "Cable Entries: Metric / NPT / G, Sizes: M20 – M63, Quantity configurable",
+    "Terminal Types: Screw or spring-loaded terminals",
+    "Mounting: Wall or pole mounting with optional accessories",
+    "Internal Configuration: Customizable terminal arrangement and quantity",
+    "Applications: Oil & gas, chemical plants, offshore platforms, refineries, hazardous dust zones",
+    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "ST02",
+  href: "/products/p132"
+},
+{
+  id: 133,
+  category: "Terminal Box",
+  title: "ST03-Series Explosion-proof Terminal Box",
+  description: "The ST03-Series explosion-proof terminal box is designed for secure and reliable cable terminations in hazardous environments. Its flameproof enclosure prevents the ignition of flammable gases or dust, ensuring safe operation. Built for durability and corrosion resistance, it supports various wiring configurations. Ideal for use in demanding industrial zones requiring certified explosion protection.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
+    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
+    "Aluminum alloy enclosure",
+    "Two types of explosion protection: Ex eb, Ex ib and Ex tb IIC",
+    "There are 11 types of enclosure",
+    "Current, number of terminals, size and direction of cable entry can be customized",
+    "Stainless steel exposed fastener, anti-dropping structure, easy installation and maintenance"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "ST03",
+  href: "/products/p133"
+},
+{
+  id: 134,
+  category: "Plug and Sockets",
+  title: "BS01-Series Explosion-proof Plug and Sockets",
+  description: "The BS01-Series explosion-proof plug and sockets are built for safe and reliable power connections in hazardous environments. Designed with flameproof construction, they prevent ignition of surrounding explosive gases or dust. These connectors ensure secure operation, easy installation, and long-lasting durability. Suitable for use in industrial zones requiring high safety standards.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
+    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
+    "Flame-proof type enclosure, four types of enclosure",
+    "Eight current classes: 10A, 16A, 25A, 32A, 50A, 63A, 100A, 125A",
+    "Four pole options: 2P, 3P, 4P, 5P",
+    "Reliable interlocking: plug removal only after switch is off; power on only after plug is inserted",
+    "Elastic shutter spring sleeve ensures reliable contact, low resistance, low-temperature rise",
+    "Self-cleaning design, low insertion/extraction force",
+    "Includes timer with voltage-specific color coding to avoid mistaken insertion"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "BS01",
+  href: "/products/p134"
+},
+
+
+{
+  id: 135,
+  category: "Plug and Sockets",
+  title: "BS02-Series Explosion-proof Plug and Sockets",
+  description: "The BS02-Series explosion-proof plug and sockets are designed for secure electrical connections in hazardous areas with flammable gases or dust. Featuring robust flameproof construction, they offer high resistance to impact, corrosion, and environmental stress. These units ensure safe and reliable operation in demanding industrial settings. Ideal for power distribution in explosive atmospheres.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection - China Ex(GB)",
+    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
+    "Increased safety type enclosure, four types of enclosure",
+    "Current ratings: 16A, 32A, 63A",
+    "Pole options: 3P, 4P, 5P",
+    "Reliable interlocking function: plug removal only after switch off; power on only after plug insertion",
+    "Elastic shutter spring sleeve ensures reliable contact, low resistance, low-temperature rise",
+    "Self-cleaning design, reduces insertion and extraction force",
+    "Timing function with different voltage colors to prevent misinsertion",
+    "Padlock-equipped socket for locking when not in use"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "BS02",
+  href: "/products/p135"
+},
+
+
+
+
 
 
 
@@ -3654,6 +3799,8 @@ const categories = [
   "Distribution Box (hexlon DBs)", // Updated name
   "Exhaust Fan",
   "Lights", 
+  "Pipe Fittings", 
+  "Plug and Sockets", 
   "Isolators",
   "MV AVR",
   "Terminal Box",
@@ -3671,6 +3818,8 @@ const categoryMapping: { [key: string]: string } = {
   "distribution-box": "Distribution Box (hexlon DBs)", // Updated
   "exhaust-fan": "Exhaust Fan",
   lights: "Lights", 
+  "Plug and Sockets": "Plug and Sockets", 
+  "Pipe Fittings": "Pipe Fittings", 
   isolators: "Isolators", 
   "MV AVR": "MV AVR", 
   "Terminal Box": "Terminal Box", 
@@ -3937,12 +4086,12 @@ export default function ProductsPage() {
                         </li>
                       ))}
                     </ul>
-                    <div className="flex items-center justify-between mb-3">
+                    {/* <div className="flex items-center justify-between mb-3">
                       <div>
                         <span className="text-gray-400 line-through text-sm">₹{product.originalPrice}</span>
                         <span className="text-base font-bold text-primary-600 ml-2">₹{product.price}</span>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="flex space-x-2">
                       <button
                         onClick={(e) => openModal(product, e)}

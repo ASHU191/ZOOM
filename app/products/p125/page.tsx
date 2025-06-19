@@ -5,39 +5,23 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 1,
-  category: "Air Conditioner",
-  title: "B01-Series Explosion-proof Air Conditioners",
-  description:
-    "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-  image: "/placeholder.svg?height=400&width=400",
-  gallery: [
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-  ],
+   id: 125,
+  category: "AVIATION OBSTRUCTION LIGHT",
+  title: "OJ88",
+  description: "OJ88 high-intensity aviation obstruction lights are used to mark structures that pose a risk to aircraft. They incorporate advanced LED, optical, and control technologies for reliable performance in demanding conditions. Ideal for obstacles 150 meters and above, and suitable for high-salinity, corrosive environments.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
   features: [
-    "Explosion protection - China Ex(GB)",
-    "Zone 1 and Zone 2 application",
-    "Split type & Cabinet type structures",
-    "Cooling only & Cooling and heating type",
-    "Manual control or remote control",
+    "Input Voltage: AC200–240V, AC100–130V, Light head @ DC48V",
+    "Rated Power: 85W @ 1 layer daytime, 150W @ 2 layers daytime, 220W @ 3 layers daytime",
+    "Frequency: 50–60Hz (AC power box)",
+    "IP Rate: IP66"
   ],
-  specifications: {
-    explosionProtection: "China Ex(GB)",
-    hazardousArea: "Zone 1 and Zone 2",
-    structures: "Split type & Cabinet type",
-    functions: "Cooling only type & Cooling and heating type",
-    control: "Manual control or remote control",
-    coolingTempRange: "18℃–43℃",
-    heatingTempRange: "-7℃–24℃",
-    enclosure: "Flameproof compressor, sealed electrical components",
-  },
-  price: "125,000",
-  originalPrice: "145,000",
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
   availability: "IN STOCK",
-  sku: "B01-AC-EX",
+  sku: "OJ88",
   rating: 4.9,
   reviews: 32,
 }
@@ -342,15 +326,15 @@ export default function ProductDetailPage() {
       {/* Related Products */}
       <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2>
+          {/* <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center text-gray-500 col-span-full py-8">
-              <p>Related products will be displayed here</p>
+              {/* <p>Related products will be displayed here</p> */}
               <Link
-                href="/products?category=air-conditioner"
+                href="/products"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Air Conditioners
+                View All Products
               </Link>
             </div>
           </div>

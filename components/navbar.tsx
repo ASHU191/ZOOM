@@ -16,7 +16,7 @@ const navItems = [
   {
     title: "About FHS Zoom",
     href: "/about",
-    hasMegaMenu: true,
+    hasMegaMenu: false,
   },
   {
     title: "Products",
@@ -24,7 +24,7 @@ const navItems = [
     hasMegaMenu: true,
   },
   {
-    title: "Certificate",
+    title: "Certifications",
     href: "/certificate",
     hasMegaMenu: false,
   },
@@ -170,7 +170,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/placeholder.svg?height=32&width=100"
+                src="/hero/zoom.png?height=32&width=100"
                 alt="FHS Zoom Logo"
                 width={100}
                 height={32}

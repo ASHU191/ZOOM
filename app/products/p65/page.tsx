@@ -5,39 +5,33 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 1,
-  category: "Air Conditioner",
-  title: "B01-Series Explosion-proof Air Conditioners",
-  description:
-    "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-  image: "/placeholder.svg?height=400&width=400",
-  gallery: [
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-  ],
-  features: [
-    "Explosion protection - China Ex(GB)",
-    "Zone 1 and Zone 2 application",
-    "Split type & Cabinet type structures",
-    "Cooling only & Cooling and heating type",
-    "Manual control or remote control",
-  ],
-  specifications: {
-    explosionProtection: "China Ex(GB)",
-    hazardousArea: "Zone 1 and Zone 2",
-    structures: "Split type & Cabinet type",
-    functions: "Cooling only type & Cooling and heating type",
-    control: "Manual control or remote control",
-    coolingTempRange: "18℃–43℃",
-    heatingTempRange: "-7℃–24℃",
-    enclosure: "Flameproof compressor, sealed electrical components",
-  },
-  price: "125,000",
-  originalPrice: "145,000",
-  availability: "IN STOCK",
-  sku: "B01-AC-EX",
+ id: 65,
+    category: "Lights",
+    title: "BLB07-Series Explosion-proof Sight Glass Light",
+    description:
+      "The BLB07-Series Explosion-proof Sight Glass Light is specifically designed for illuminating the interior of tanks, reactors, and vessels in hazardous areas. Compact and durable, it features a flameproof structure and high-efficiency LED light source for clear visibility through sight glass under extreme conditions.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300"],
+    features: [
+      "Explosion protection - China Ex (GB)",
+      "Zone 1, Zone 2, Zone 21 and Zone 22 application",
+      "LED power: 6W, 9W",
+      "Two control modes: delay switch and touch switch",
+      "Built-in control, no need for external lighting switch",
+      "Customizable delay time",
+    ],
+    specifications: {
+      explosionProtection: "China Ex (GB)",
+      hazardousArea: "Zone 1, Zone 2, Zone 21 and Zone 22",
+      lightSource: "LED: 6W, 9W",
+      controlModes: "Two control modes: delay switch and touch switch, which both are built-in",
+      switch: "User does not need to set up another lighting switch, and can customize the time of delay",
+      applications: "It can be used in chemical reaction vessels, also for small range lighting",
+    },
+    price: "4,200",
+    originalPrice: "4,900",
+    availability: "IN STOCK",
+    sku: "BLB07-SGL-EX",
   rating: 4.9,
   reviews: 32,
 }
@@ -342,15 +336,15 @@ export default function ProductDetailPage() {
       {/* Related Products */}
       <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2>
+          {/* <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center text-gray-500 col-span-full py-8">
-              <p>Related products will be displayed here</p>
+              {/* <p>Related products will be displayed here</p> */}
               <Link
-                href="/products?category=air-conditioner"
+                href="/products"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Air Conditioners
+                View All Products
               </Link>
             </div>
           </div>

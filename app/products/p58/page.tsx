@@ -5,39 +5,37 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 1,
-  category: "Air Conditioner",
-  title: "B01-Series Explosion-proof Air Conditioners",
-  description:
-    "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-  image: "/placeholder.svg?height=400&width=400",
-  gallery: [
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-  ],
-  features: [
-    "Explosion protection - China Ex(GB)",
-    "Zone 1 and Zone 2 application",
-    "Split type & Cabinet type structures",
-    "Cooling only & Cooling and heating type",
-    "Manual control or remote control",
-  ],
-  specifications: {
-    explosionProtection: "China Ex(GB)",
-    hazardousArea: "Zone 1 and Zone 2",
-    structures: "Split type & Cabinet type",
-    functions: "Cooling only type & Cooling and heating type",
-    control: "Manual control or remote control",
-    coolingTempRange: "18℃–43℃",
-    heatingTempRange: "-7℃–24℃",
-    enclosure: "Flameproof compressor, sealed electrical components",
-  },
-  price: "125,000",
-  originalPrice: "145,000",
-  availability: "IN STOCK",
-  sku: "B01-AC-EX",
+id: 58,
+    category: "Exhaust Fan",
+    title: "BL04-Series Explosion-proof Exhaust Fan",
+    description:
+      "Explosion-proof axial fans designed for safe air and fume extraction in hazardous environments, compliant with ATEX Directive 2014/34/UE.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    features: [
+      "ATEX Directive 2014/34/UE compliant, certified under CESI n°3 ATEX 251",
+      "Suitable for Zones 1 and 2, Group II, Category 2",
+      "Ex h construction, EPL Gb, max surface temperature T4 (optional T5/T6)",
+      "Steel body with epoxy anti-corrosive coating",
+      "VO-rated conductive nylon impeller",
+      "Exd IIC T4 motor with IP55 protection, class F insulation",
+    ],
+    specifications: {
+      atexCompliance: "ATEX Directive 2014/34/UE, certified under CESI n°3 ATEX 251",
+      hazardousArea: "Zones 1 and 2, Group II, Category 2",
+      construction: "Ex h construction, EPL Gb",
+      maxSurfaceTemp: "T4 (optional T5/T6)",
+      body: "Steel body with epoxy anti-corrosive coating",
+      impeller: "VO-rated conductive nylon impeller",
+      motor: "Exd IIC T4 motor with IP55 protection, class F insulation",
+      airflow: "Reversible airflow",
+      maxAirTemp: "40°C",
+      standards: "EN 80079-36/37, EN 14986",
+    },
+    price: "22,000",
+    originalPrice: "25,500",
+    availability: "IN STOCK",
+    sku: "BL04-EF-ATEX",
   rating: 4.9,
   reviews: 32,
 }
@@ -342,15 +340,15 @@ export default function ProductDetailPage() {
       {/* Related Products */}
       <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2>
+          {/* <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center text-gray-500 col-span-full py-8">
-              <p>Related products will be displayed here</p>
+              {/* <p>Related products will be displayed here</p> */}
               <Link
-                href="/products?category=air-conditioner"
+                href="/products"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Air Conditioners
+                View All Products
               </Link>
             </div>
           </div>

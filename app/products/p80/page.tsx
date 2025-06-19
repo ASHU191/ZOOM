@@ -5,39 +5,31 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 1,
-  category: "Air Conditioner",
-  title: "B01-Series Explosion-proof Air Conditioners",
+  id: 80,
+  category: "Lights",
+  title: "BLB22-Series Explosion-proof Emergency Exit Lights",
   description:
-    "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-  image: "/placeholder.svg?height=400&width=400",
-  gallery: [
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-  ],
+    "The BLB22-Series Explosion-proof Emergency Exit Lights are designed to ensure clear and reliable exit guidance in hazardous environments with explosive gases or dust. Featuring a robust flameproof enclosure and high-brightness LED indicators, they automatically activate during power failures to support safe evacuation. Suitable for Zone 1 and Zone 2 areas, the BLB22-Series is ideal for use in oil refineries, chemical plants, and industrial safety-critical facilities.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
   features: [
-    "Explosion protection - China Ex(GB)",
-    "Zone 1 and Zone 2 application",
-    "Split type & Cabinet type structures",
-    "Cooling only & Cooling and heating type",
-    "Manual control or remote control",
+    "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
+    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
+    "Continuous light, with built-in maintenance-free battery pack, automatically charging, and automatically switch to battery power supply when power source cut off or in emergency situation.",
+    "LED light source, low power consumption, long service life."
   ],
   specifications: {
-    explosionProtection: "China Ex(GB)",
-    hazardousArea: "Zone 1 and Zone 2",
-    structures: "Split type & Cabinet type",
-    functions: "Cooling only type & Cooling and heating type",
-    control: "Manual control or remote control",
-    coolingTempRange: "18℃–43℃",
-    heatingTempRange: "-7℃–24℃",
-    enclosure: "Flameproof compressor, sealed electrical components",
+    explosionProtection: "IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
+    hazardousArea: "Zone 1 and Zone 2, Zone 21 and Zone 22",
+    lightType: "Continuous light",
+    battery: "Built-in maintenance-free battery pack, automatically charges and switches in emergencies",
+    lightSource: "LED",
+    consumption: "Low power consumption, long service life"
   },
-  price: "125,000",
-  originalPrice: "145,000",
+  price: "N/A",
+  originalPrice: "N/A",
   availability: "IN STOCK",
-  sku: "B01-AC-EX",
+  sku: "BLB22-EEL-EX",
   rating: 4.9,
   reviews: 32,
 }
@@ -342,15 +334,15 @@ export default function ProductDetailPage() {
       {/* Related Products */}
       <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2>
+          {/* <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center text-gray-500 col-span-full py-8">
-              <p>Related products will be displayed here</p>
+              {/* <p>Related products will be displayed here</p> */}
               <Link
-                href="/products?category=air-conditioner"
+                href="/products"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Air Conditioners
+                View All Products
               </Link>
             </div>
           </div>

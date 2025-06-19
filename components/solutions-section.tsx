@@ -4,28 +4,28 @@ import Link from "next/link"
 
 const solutions = [
   {
-    title: "Residential Solutions",
-    description: "Complete solar energy systems designed for homes, bringing clean energy to every household.",
-    image: "/placeholder.svg?height=150&width=250",
-    href: "/solutions/residential",
+    title: "EXPLOSION PROOF",
+    description: "Explosion- Proof products that give you total control in the most hazardous environments. Built to eliminate ignition risks while delivering uninterrupted performance.",
+    image: "/category/2.jpg?height=150&width=250",
+    href: "",
   },
   {
-    title: "Commercial & Industrial",
-    description: "Scalable solar solutions for businesses to reduce energy costs and carbon footprint.",
-    image: "/placeholder.svg?height=150&width=250",
-    href: "/solutions/commercial-industrial",
+    title: "EV Charger",
+    description: "Revolutionizing EV charging with explosion proof safety. Certified for use in flammable and individual zones. Clean power even in the harshest environments.",
+    image: "/category/3.jpg?height=150&width=250",
+    href: "",
   },
   {
-    title: "Energy Storage",
-    description: "Advanced battery storage systems for energy independence and grid stability.",
-    image: "/placeholder.svg?height=150&width=250",
-    href: "/solutions/energy-storage",
+    title: "MV AVR",
+    description: "Stabilizes medium-voltage systems in volatile enviornments. Minimizes surges and products sensitive equipment. Essential for continuous and safe operations.  ",
+    image: "/category/4.jpg?height=150&width=250",
+    href: "",
   },
   {
-    title: "Utility Scale",
-    description: "Large-scale solar power plants and grid-connected renewable energy systems.",
-    image: "/placeholder.svg?height=150&width=250",
-    href: "/solutions/utility-pv",
+    title: "Aviation Lights",
+    description: "High visibility lights for aircraft and helipads. Engineered to resist weather and explosive gases. Critical illumination for aviation zones and refineries.",
+    image: "/category/1.jpeg?height=150&width=250",
+    href: "",
   },
 ]
 
@@ -34,7 +34,7 @@ export default function SolutionsSection() {
     <section className="py-10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold mb-3">POWER SOLUTIONS</h2>
+           <h2 className="text-3xl font-bold mb-3">CATEGORIES</h2>
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Comprehensive renewable energy solutions tailored for residential, commercial, and utility applications
           </p>
@@ -66,14 +66,14 @@ export default function SolutionsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-8">
+        {/* <div className="text-center mt-8">
           <Link
             href="/solutions"
             className="inline-flex items-center bg-emerald-600 text-white px-5 py-2 rounded-full hover:bg-emerald-700 transition-colors text-sm"
           >
             Explore All Solutions
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -11,10 +11,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-6">About FHS Zoom</h1>
-              <p className="text-lg lg:text-xl mb-6 lg:mb-8">
-                Leading the future of renewable energy with innovative solar solutions for a sustainable tomorrow.
+              <p className="text-md lg:text-md mb-6 lg:mb-8 text-justify">
+                We are FHS Zoom a proudly Canadian brand and manufacturer dedicated to creating safer,
+                 smarter, and more resilient industrial environments. As both a brand and a production
+                  powerhouse, we specialize in designing and manufacturing explosion-proof and high-performance
+                   electrical systems. Our solutions are trusted across critical sectors including oil & gas, power
+                    generation, marine, mining, and manufacturing all built to meet and exceed international standards.
               </p>
-              <div className="flex flex-wrap gap-4">
+              {/* <div className="flex flex-wrap gap-4">
                 <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
                   <div className="text-2xl lg:text-3xl font-bold">2M+</div>
                   <div className="text-sm text-white/80">Inverters Installed</div>
@@ -27,11 +31,11 @@ export default function AboutPage() {
                   <div className="text-2xl lg:text-3xl font-bold">13</div>
                   <div className="text-sm text-white/80">Years Experience</div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="hidden lg:block">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/about/1 (1).jpeg?height=400&width=600"
                 alt="FHS Zoom Company"
                 width={600}
                 height={400}
@@ -48,7 +52,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/about/2 (1).jpeg?height=400&width=500"
                 alt="Our Story"
                 width={500}
                 height={400}
@@ -56,29 +60,27 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-gray-900">Our Story</h2>
-              <p className="text-gray-600 mb-4 text-sm lg:text-base">
-                Founded in 2010, FHS Zoom has been at the forefront of the renewable energy revolution. What started as
-                a vision to make clean energy accessible to everyone has grown into a global mission that spans over 100
-                countries.
+              <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-gray-900">Our Core Expertise:</h2>
+              <p className="text-gray-600 mb-4 text-sm lg:text-base text-justify">
+               At FHS Zoom, we engineer a comprehensive range of industrial-grade products from flameproof HVAC units and heavy-duty distribution panels to EV chargers and SCADA-ready control systems. Every product is purpose-built to perform flawlessly in the most demanding and hazardous environments. Certified and zone-rated, our systems offer superior energy efficiency, modular design, and seamless integration to help industries operate with confidence and compliance.
               </p>
-              <p className="text-gray-600 mb-6 text-sm lg:text-base">
+              {/* <p className="text-gray-600 mb-6 text-sm lg:text-base">
                 Our commitment to innovation, quality, and sustainability has made us a trusted partner for homeowners,
                 businesses, and utilities worldwide. We believe that the future of energy is clean, smart, and
                 accessible to all.
-              </p>
+              </p> */}
               <div className="space-y-3">
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-emerald-600 mr-3" />
-                  <span className="text-sm lg:text-base">Industry-leading efficiency and reliability</span>
+                  <span className="text-sm lg:text-base">Engineered for Demanding Environments</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-emerald-600 mr-3" />
-                  <span className="text-sm lg:text-base">Comprehensive warranty and support</span>
+                  <span className="text-sm lg:text-base">Safety. Certified. Guaranteed.</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-emerald-600 mr-3" />
-                  <span className="text-sm lg:text-base">Sustainable manufacturing practices</span>
+                  <span className="text-sm lg:text-base">Global Reach, Local Expertise</span>
                 </div>
               </div>
             </div>
@@ -90,9 +92,9 @@ export default function AboutPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-2xl lg:text-3xl font-bold mb-4">Our Values</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold mb-4">The FHS Zoom Edge</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              The principles that guide everything we do and drive our commitment to a sustainable future.
+                What makes us different?
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -100,36 +102,35 @@ export default function AboutPage() {
               <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-6 w-6 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Customer First</h3>
+              {/* <h3 className="text-lg font-semibold mb-2">Customer First</h3> */}
               <p className="text-gray-600 text-sm">
-                We put our customers at the center of everything we do, ensuring their success is our success.
-              </p>
+                  A full-spectrum product line for hazardous zones              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="h-6 w-6 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Sustainability</h3>
+              {/* <h3 className="text-lg font-semibold mb-2">Sustainability</h3> */}
               <p className="text-gray-600 text-sm">
-                Environmental responsibility is at the core of our business and product development.
+               Aesthetic industrial design blended with rugged engineering
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-6 w-6 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Innovation</h3>
+              {/* <h3 className="text-lg font-semibold mb-2">Innovation</h3> */}
               <p className="text-gray-600 text-sm">
-                Continuous innovation drives us to develop cutting-edge solutions for tomorrow's challenges.
+                Customization for any voltage, region, or specification
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-6 w-6 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Integrity</h3>
+              {/* <h3 className="text-lg font-semibold mb-2">Integrity</h3> */}
               <p className="text-gray-600 text-sm">
-                We conduct business with honesty, transparency, and respect for all stakeholders.
+                Unmatched reliability, with a focus on user experience and integration
               </p>
             </div>
           </div>
@@ -137,7 +138,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-2xl lg:text-3xl font-bold mb-4">Our Journey</h2>
@@ -147,7 +148,6 @@ export default function AboutPage() {
           </div>
           <div className="max-w-4xl mx-auto">
             <div className="relative">
-              {/* Timeline line */}
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-emerald-200"></div>
 
               <div className="space-y-8">
@@ -193,10 +193,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="py-16 bg-emerald-600 text-white">
+      {/* <section className="py-16 bg-emerald-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">Ready to Join Our Mission?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
@@ -217,7 +217,7 @@ export default function AboutPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

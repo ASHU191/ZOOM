@@ -5,39 +5,34 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 1,
-  category: "Air Conditioner",
-  title: "B01-Series Explosion-proof Air Conditioners",
-  description:
-    "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-  image: "/placeholder.svg?height=400&width=400",
-  gallery: [
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-  ],
-  features: [
-    "Explosion protection - China Ex(GB)",
-    "Zone 1 and Zone 2 application",
-    "Split type & Cabinet type structures",
-    "Cooling only & Cooling and heating type",
-    "Manual control or remote control",
-  ],
-  specifications: {
-    explosionProtection: "China Ex(GB)",
-    hazardousArea: "Zone 1 and Zone 2",
-    structures: "Split type & Cabinet type",
-    functions: "Cooling only type & Cooling and heating type",
-    control: "Manual control or remote control",
-    coolingTempRange: "18℃–43℃",
-    heatingTempRange: "-7℃–24℃",
-    enclosure: "Flameproof compressor, sealed electrical components",
-  },
-  price: "125,000",
-  originalPrice: "145,000",
-  availability: "IN STOCK",
-  sku: "B01-AC-EX",
+  id: 44,
+    category: "Distribution Box",
+    title: "PAX03-Series Explosion-proof Electrical Apparatus",
+    description:
+      "The PAX03-Series is engineered for safe and reliable power distribution in hazardous environments with robust flameproof and increased safety design.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300"],
+    features: [
+      "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
+      "Zone 1, Zone 2, Zone 21 and Zone 22 application",
+      "Flameproof and increased safety chambers combination",
+      "Flexible modular configuration",
+      "Various circuit protection and control components",
+      "Wide range of industrial applications",
+    ],
+    specifications: {
+      explosionProtection: "IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
+      hazardousArea: "Zone 1, Zone 2, Zone 21 and Zone 22",
+      installationMethod: "Z – Floor-mounted (stand type), (Blank) – Wall-mounted",
+      outletDirection: "D – Top outlet, X – Bottom outlet",
+      inletDirection: "D – Top inlet, X – Bottom inlet",
+      mainSwitch: "K – Equipped with main switch, (Blank) – Without main switch",
+      customization: "Modular configuration for various applications",
+    },
+    price: "32,000",
+    originalPrice: "37,000",
+    availability: "IN STOCK",
+    sku: "PAX03-EA-EX",
   rating: 4.9,
   reviews: 32,
 }
@@ -342,15 +337,15 @@ export default function ProductDetailPage() {
       {/* Related Products */}
       <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2>
+          {/* <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center text-gray-500 col-span-full py-8">
-              <p>Related products will be displayed here</p>
+              {/* <p>Related products will be displayed here</p> */}
               <Link
-                href="/products?category=air-conditioner"
+                href="/products"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Air Conditioners
+                View All Products
               </Link>
             </div>
           </div>

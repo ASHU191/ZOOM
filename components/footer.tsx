@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           <div className="sm:col-span-2 lg:col-span-1">
             <Image
-              src="/placeholder.svg?height=40&width=120"
+              src="/hero/zoom.png?height=40&width=120"
               alt="FHS Zoom Logo"
               width={120}
               height={40}

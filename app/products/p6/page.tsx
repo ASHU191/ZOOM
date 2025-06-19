@@ -5,39 +5,32 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 
 const product = {
-  id: 1,
-  category: "Air Conditioner",
-  title: "B01-Series Explosion-proof Air Conditioners",
-  description:
-    "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-  image: "/placeholder.svg?height=400&width=400",
-  gallery: [
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-    "/placeholder.svg?height=300&width=300",
-  ],
-  features: [
-    "Explosion protection - China Ex(GB)",
-    "Zone 1 and Zone 2 application",
-    "Split type & Cabinet type structures",
-    "Cooling only & Cooling and heating type",
-    "Manual control or remote control",
-  ],
-  specifications: {
-    explosionProtection: "China Ex(GB)",
-    hazardousArea: "Zone 1 and Zone 2",
-    structures: "Split type & Cabinet type",
-    functions: "Cooling only type & Cooling and heating type",
-    control: "Manual control or remote control",
-    coolingTempRange: "18℃–43℃",
-    heatingTempRange: "-7℃–24℃",
-    enclosure: "Flameproof compressor, sealed electrical components",
-  },
-  price: "125,000",
-  originalPrice: "145,000",
-  availability: "IN STOCK",
-  sku: "B01-AC-EX",
+  id: 6,
+    category: "Circuit Breakers",
+    title: "TS05-Series Explosion-proof Motor Protection Switches",
+    description:
+      "The TS05-Series explosion-proof motor protection switches are designed for safe starting, stopping, and protection of motors in hazardous areas.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300"],
+    features: [
+      "Explosion protection - China Ex(GB)",
+      "Zone 1 and Zone 2 application",
+      "GRP enclosure (Polyester resin, glass fiber reinforced)",
+      "Built-in Eaton motor protection switch",
+      "Over-current trip, short-circuit trip and phase loss reaction",
+    ],
+    specifications: {
+      explosionProtection: "China Ex(GB)",
+      hazardousArea: "Zone 1 and Zone 2",
+      enclosure: "GRP (Polyester resin, glass fiber reinforced)",
+      builtIn: "Eaton motor protection switch",
+      protection: "Over-current trip, short-circuit trip and phase loss reaction",
+      terminals: "Main terminal contact, auxiliary contact, operation handle and current tripping adjusting shaft",
+    },
+    price: "16,500",
+    originalPrice: "19,500",
+    availability: "IN STOCK",
+    sku: "TS05-MPS-EX",
   rating: 4.9,
   reviews: 32,
 }
@@ -342,15 +335,15 @@ export default function ProductDetailPage() {
       {/* Related Products */}
       <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2>
+          {/* <h2 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">Related Products</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center text-gray-500 col-span-full py-8">
-              <p>Related products will be displayed here</p>
+              {/* <p>Related products will be displayed here</p> */}
               <Link
-                href="/products?category=air-conditioner"
+                href="/products"
                 className="inline-block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
               >
-                View All Air Conditioners
+                View All Products
               </Link>
             </div>
           </div>

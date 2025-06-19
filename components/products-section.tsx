@@ -10,133 +10,394 @@ export const featuredProducts = [
   // Residential Inverters (5 products)
   {
     id: 1,
-    title: "GW3000-NS Residential Inverter",
-    description: "High-efficiency single-phase inverter for home solar systems",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300"],
-    features: ["97.6% Efficiency", "WiFi Monitoring", "10-Year Warranty"],
-    specifications: {
-      power: "3kW",
-      efficiency: "97.6%",
-      warranty: "10 Years",
-      monitoring: "WiFi Built-in",
-      protection: "IP65",
-    },
-    price: "45,999",
-    originalPrice: "52,999",
-    availability: "IN STOCK",
-    sku: "GW3000-NS",
-    href: "/products/gw3000-ns",
-  },
-  {
-    id: 2,
-    title: "GW5000-NS Residential Inverter",
-    description: "5kW single-phase inverter with advanced monitoring",
+    category: "Air Conditioner",
+    title: "B01-Series Explosion-proof Air Conditioners",
+    description:
+      "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
     image: "/placeholder.svg?height=200&width=250",
     gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
-    features: ["97.8% Efficiency", "Smart Monitoring", "10-Year Warranty"],
-    specifications: {
-      power: "5kW",
-      efficiency: "97.8%",
-      warranty: "10 Years",
-      monitoring: "WiFi Built-in",
-      protection: "IP65",
-    },
-    price: "65,999",
-    originalPrice: "75,999",
-    availability: "IN STOCK",
-    sku: "GW5000-NS",
-    href: "/products/gw5000-ns",
-  },
-  {
-    id: 3,
-    title: "GW6000-NS Residential Inverter",
-    description: "6kW single-phase inverter with premium features",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: [
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=300&width=300",
+    features: [
+      "Explosion protection - China Ex(GB)",
+      "Zone 1 and Zone 2 application",
+      "Split type & Cabinet type structures",
+      "Cooling only & Cooling and heating type",
+      "Manual control or remote control",
     ],
-    features: ["97.8% Efficiency", "Premium Monitoring", "10-Year Warranty"],
     specifications: {
-      power: "6kW",
-      efficiency: "97.8%",
-      warranty: "10 Years",
-      monitoring: "WiFi Built-in",
-      protection: "IP65",
+      explosionProtection: "China Ex(GB)",
+      hazardousArea: "Zone 1 and Zone 2",
+      structures: "Split type & Cabinet type",
+      functions: "Cooling only type & Cooling and heating type",
+      control: "Manual control or remote control",
+      coolingTempRange: "18℃–43℃",
+      heatingTempRange: "-7℃–24℃",
+      enclosure: "Flameproof compressor, sealed electrical components",
     },
-    price: "75,999",
-    originalPrice: "85,999",
+    price: "125,000",
+    originalPrice: "145,000",
     availability: "IN STOCK",
-    sku: "GW6000-NS",
-    href: "/products/gw6000-ns",
+    sku: "B01-AC-EX",
+    href: "/products/b01-explosion-proof-air-conditioner",
   },
   {
-    id: 4,
-    title: "GW8000-NS Residential Inverter",
-    description: "8kW single-phase inverter for larger homes",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: [
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=300&width=300",
-    ],
-    features: ["98.0% Efficiency", "Advanced Monitoring", "10-Year Warranty"],
-    specifications: {
-      power: "8kW",
-      efficiency: "98.0%",
-      warranty: "10 Years",
-      monitoring: "WiFi Built-in",
-      protection: "IP65",
-    },
-    price: "95,999",
-    originalPrice: "1,05,999",
-    availability: "IN STOCK",
-    sku: "GW8000-NS",
-    href: "/products/gw8000-ns",
-  },
-  {
-    id: 5,
-    title: "GW10K-NS Residential Inverter",
-    description: "10kW single-phase inverter for large homes",
+    id: 35,
+    category: "Coupler",
+    title: "TS01-Series Explosion-proof Coupler",
+    description:
+      "The TS01-Series explosion-proof coupler is engineered for safe and reliable connection of electrical equipment in hazardous areas.",
     image: "/placeholder.svg?height=200&width=250",
     gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
-    features: ["98.2% Efficiency", "Premium Monitoring", "10-Year Warranty"],
+    features: [
+      "Explosion protection - China Ex(GB)",
+      "Zone 1, Zone 2, Zone 21 and Zone 22 application",
+      "Flame-proof type and dust explosion-proof type structure",
+      "Three kinds of pole number: 2P, 3P, 4P",
+      "Thread locking mode with anti-vibration functions",
+      "Self-cleaning plug sleeve with elastic shutter spring",
+    ],
     specifications: {
-      power: "10kW",
-      efficiency: "98.2%",
-      warranty: "10 Years",
-      monitoring: "WiFi Built-in",
-      protection: "IP65",
+      explosionProtection: "China Ex(GB)",
+      hazardousArea: "Zone 1, Zone 2, Zone 21 and Zone 22",
+      structure: "Flame-proof type and dust explosion-proof type",
+      poleNumbers: "2P, 3P, 4P",
+      lockingMode: "Thread locking mode",
+      features: "Anti-vibration, anti-loosening and anti-mis plugging functions",
+      wiring: "Cable wiring for plug",
     },
-    price: "1,15,999",
-    originalPrice: "1,25,999",
+    price: "8,500",
+    originalPrice: "10,000",
     availability: "IN STOCK",
-    sku: "GW10K-NS",
-    href: "/products/gw10k-ns",
+    sku: "TS01-CP-EX",
+    href: "/products/p35",
+  },
+   {
+    id: 45,
+    category: "Distribution Box",
+    title: "PAX23-Series Explosion-proof Electrical Apparatus",
+    description:
+      "The PAX23-Series is designed for safe power control and distribution in hazardous gas and dust environments with modular design.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    features: [
+      "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
+      "Zone 1, Zone 2, Zone 21 and Zone 22 application",
+      "Explosion protection types: Ex db IIB, Ex db IIB + H₂, Ex tb IIIC",
+      "Multiple enclosure materials: Steel Plate, 304/316 Stainless Steel",
+      "Various function types: Distribution Box, Circuit Breaker, Magnetic Starter",
+      "Easy customization for diverse industrial applications",
+    ],
+    specifications: {
+      explosionProtection: "IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
+      hazardousArea: "Zone 1, Zone 2, Zone 21 and Zone 22",
+      protectionTypes: "Ex db IIB, Ex db IIB + H₂, Ex tb IIIC",
+      enclosureMaterial: "Q – Steel Plate, 4 – 304 Stainless Steel, 6 – 316 Stainless Steel",
+      functionTypes:
+        "P – Distribution Box, B – Circuit Breaker, Q – Magnetic Starter, C – Control Circuit, J – Terminal Box",
+      customization: "Modular structure allows easy customization",
+    },
+    price: "28,500",
+    originalPrice: "33,000",
+    availability: "IN STOCK",
+    sku: "PAX23-EA-EX",
+    href: "/products/p45",
   },
   {
-    id: 6,
-    title: "GW25K-MT Commercial Inverter",
-    description: "25kW three-phase inverter for commercial installations",
+    id: 55,
+    category: "Exhaust Fan",
+    title: "BL01-Series Explosion-proof Axial Flow Fan",
+    description:
+      "The BL01-Series is designed to provide efficient ventilation and air circulation in hazardous areas where flammable gases or vapors may be present.",
     image: "/placeholder.svg?height=200&width=250",
     gallery: ["/placeholder.svg?height=300&width=300"],
-    features: ["98.4% Efficiency", "Remote Monitoring", "5-Year Warranty"],
+    features: [
+      "Explosion protection - China Ex(GB)",
+      "Zone 1 and Zone 2 application",
+      "Explosion-proof motor with corrosion-resistant materials",
+      "Composed of explosion-proof motor, fan blade, fan stack",
+      "Can be used for ventilation, exhaust, and pipeline pressure improvement",
+      "Cable wiring connection",
+    ],
     specifications: {
-      power: "25kW",
-      efficiency: "98.4%",
-      warranty: "5 Years",
-      monitoring: "4G/WiFi/Ethernet",
-      protection: "IP65",
+      explosionProtection: "China Ex(GB)",
+      hazardousArea: "Zone 1 and Zone 2",
+      components: "Explosion-proof motor, fan blade, fan stack, etc.",
+      applications: "Ventilation, exhaust, and pipeline pressure improvement",
+      installation: "Can install along interval of exhaust pipe",
+      wiring: "Cable wiring",
+      construction: "Explosion-proof motor and corrosion-resistant materials",
     },
-    price: "2,15,999",
-    originalPrice: "2,45,999",
+    price: "15,000",
+    originalPrice: "17,500",
     availability: "IN STOCK",
-    sku: "GW25K-MT",
-    href: "/products/gw25k-mt",
+    sku: "BL01-AF-EX",
+    href: "/products/p55",
   },
+   {
+    id: 65,
+    category: "Lights",
+    title: "BLB07-Series Explosion-proof Sight Glass Light",
+    description:
+      "The BLB07-Series Explosion-proof Sight Glass Light is specifically designed for illuminating the interior of tanks, reactors, and vessels in hazardous areas. Compact and durable, it features a flameproof structure and high-efficiency LED light source for clear visibility through sight glass under extreme conditions.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300"],
+    features: [
+      "Explosion protection - China Ex (GB)",
+      "Zone 1, Zone 2, Zone 21 and Zone 22 application",
+      "LED power: 6W, 9W",
+      "Two control modes: delay switch and touch switch",
+      "Built-in control, no need for external lighting switch",
+      "Customizable delay time",
+    ],
+    specifications: {
+      explosionProtection: "China Ex (GB)",
+      hazardousArea: "Zone 1, Zone 2, Zone 21 and Zone 22",
+      lightSource: "LED: 6W, 9W",
+      controlModes: "Two control modes: delay switch and touch switch, which both are built-in",
+      switch: "User does not need to set up another lighting switch, and can customize the time of delay",
+      applications: "It can be used in chemical reaction vessels, also for small range lighting",
+    },
+    price: "4,200",
+    originalPrice: "4,900",
+    availability: "IN STOCK",
+    sku: "BLB07-SGL-EX",
+    href: "/products/p65",
+  },
+  {
+  id: 90,
+  category: "Isolators",
+  title: "CKT01- Series Explosion-proof Safety Switch",
+  description:
+    "The CKT01-Series explosion-proof safety switch is designed for hazardous environments where flammable gases, vapors, or dust may be present. It offers reliable circuit breaking with a durable flameproof enclosure to prevent ignition of surrounding atmosphere. The switch ensures high operational safety and compliance with international explosion protection standards. Ideal for industrial applications requiring robust and secure disconnection.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection",
+    "- IEC Ex (IEC)",
+    "- ATEX (CENELEC, EN)",
+    "- China Ex (GB)",
+    "Application in hazardous area",
+    "- Zone 1 and Zone 2",
+    "- Zone 21 and Zone 22",
+    "Black operating handle for standard, Red/Yellow operating handle for Emergency stop.",
+    "The joint of the enclosure and the cover has a labyrinth sealing structure, sealed with imported polyurethane foam or silicon rubber, has good performance of water-proof and dust-proof.",
+    "Equipped with an interlocking mechanism, in the locked state, the switch cannot be operated."
+  ],
+  specifications: {
+    series: "CKT01",
+    type: "Explosion-proof Safety Switch",
+    application: "Hazardous Areas",
+    zones: "Zone 1, Zone 2, Zone 21, Zone 22"
+  },
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "CKT01-SWITCH",
+  href: "/products/p90"
+},
+{
+  id: 134,
+  category: "Plug and Sockets",
+  title: "BS01-Series Explosion-proof Plug and Sockets",
+  description: "The BS01-Series explosion-proof plug and sockets are built for safe and reliable power connections in hazardous environments. Designed with flameproof construction, they prevent ignition of surrounding explosive gases or dust. These connectors ensure secure operation, easy installation, and long-lasting durability. Suitable for use in industrial zones requiring high safety standards.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
+    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
+    "Flame-proof type enclosure, four types of enclosure",
+    "Eight current classes: 10A, 16A, 25A, 32A, 50A, 63A, 100A, 125A",
+    "Four pole options: 2P, 3P, 4P, 5P",
+    "Reliable interlocking: plug removal only after switch is off; power on only after plug is inserted",
+    "Elastic shutter spring sleeve ensures reliable contact, low resistance, low-temperature rise",
+    "Self-cleaning design, low insertion/extraction force",
+    "Includes timer with voltage-specific color coding to avoid mistaken insertion"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "BS01",
+  href: "/products/p134"
+},
+
+{
+  id: 112,
+  category: "Terminal Box",
+  title: "ST06-Series Explosion-proof Terminal Box",
+  description: "The ST06-Series explosion-proof terminal box is built for safe and efficient cable terminations in hazardous locations. Its robust flameproof design prevents ignition of flammable gases or dust, ensuring secure operation. The enclosure offers high durability and corrosion resistance, making it suitable for harsh industrial environments. Ideal for use where certified explosion protection is essential.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
+    "Application in hazardous area - Zone 0, Zone 1 and Zone 2, Zone 21 and Zone 22",
+    "4 types explosion protection (Ex eb, Ex ia, Ex ib, Ex tb IIC)",
+    "PA66 enclosure",
+    "2 types of enclosure customizable for current, terminal, size and direction of entry",
+    "Type A: open crimping type terminal",
+    "Type B (Standard): international brand terminal",
+    "Stainless steel exposed fastener, anti dropping structure, easy installation and maintenance"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "ST06",
+  href: "/products/p112"
+},
+{
+  id: 94,
+  category: "Pipe Fittings",
+  title: "ZK01-Series Explosion-proof Conduits (Flexible) (Stainless Steel, PVC Coated)",
+  description: "The ZK01-Series explosion-proof flexible conduits are constructed using high-grade stainless steel and coated with durable PVC for added protection. Ideal for routing wiring in hazardous environments, they provide excellent flexibility and corrosion resistance. These conduits are certified for use in explosive atmospheres, making them suitable for Zone 1 and Zone 2 hazardous areas.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
+    "Application in hazardous areas: Zone 1, Zone 2, Zone 21, Zone 22",
+    "Flame-proof (Type ‘d’), Increased safety (Type ‘e’)",
+    "Flexible stainless steel with PVC coating",
+    "Corrosion resistant, suitable for outdoor and chemical environments"
+  ],
+  specifications: {
+    Material: "Stainless Steel with PVC Coating",
+    TemperatureRange: "-40°C to +105°C",
+    ProtectionClass: "IP66/IP67",
+    Standard: "IEC 60079-0/1/7"
+  },
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "ZK01",
+  href: "/products/p94"
+},
+{
+    id: 29,
+    category: "Control Button Switch",
+    title: "AK20-Series Explosion-proof Potentiometers",
+    description:
+      "The AK20-Series explosion-proof potentiometers are designed for precise signal adjustment in hazardous environments with explosive gases or dust.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    features: [
+      "Explosion protection - China Ex(GB)",
+      "Zone 1, Zone 2, Zone 21 and Zone 22 application",
+      "Explosion-proof form gas group: d IIB, d IIC",
+      "Built-in wire-wound potentiometer from international famous brands",
+      "Two types: single turn and multi-turn",
+    ],
+    specifications: {
+      explosionProtection: "China Ex(GB)",
+      hazardousArea: "Zone 1, Zone 2, Zone 21 and Zone 22",
+      gasGroup: "d IIB, d IIC",
+      potentiometer: "Built-in wire-wound potentiometer, international famous brands",
+      types: "Single turn and multi-turn",
+      structure: "Screw thread integrated structure, easy installation and maintenance",
+    },
+    price: "6,800",
+    originalPrice: "7,900",
+    availability: "IN STOCK",
+    sku: "AK20-POT-EX",
+    href: "/products/p29",
+  },
+
+  {
+    id: 38,
+    category: "EV Charger",
+    title: "XPD Forklift Battery Charger",
+    description:
+      "The XPD Series forklift battery charger is a high-efficiency, fully automatic charging solution designed for lead-acid and other industrial battery types.",
+    image: "/placeholder.svg?height=200&width=250",
+    gallery: ["/placeholder.svg?height=300&width=300"],
+    features: [
+      "Nominal DC voltage: 24/36/48/72/80V",
+      "Input AC voltage: 120±20% or 220±25%",
+      "OEM/ODM Service available",
+      "Silicon-controlled rectifier (SCR) technology",
+      "Optimizes battery life and performance",
+    ],
+    specifications: {
+      nominalDCVoltage: "24/36/48/72/80V",
+      inputACVoltage: "120±20% or 220±25%",
+      oemOdmService: "Yes",
+      applications: "Forklift battery",
+      technology: "Silicon-controlled rectifier (SCR)",
+    },
+    price: "45,000",
+    originalPrice: "52,000",
+    availability: "IN STOCK",
+    sku: "XPD-FC-01",
+    href: "/products/p38",
+  },
+
+  {
+  id: 93,
+  category: "MV AVR",
+  title: "Three Phase Step Voltage Regulators",
+  description:
+    "SVR-3 type feeder automatic substation & distribution step voltage regulator is actually a three phase oil immersed auto-transformer with SVR controller and gathering sampling of voltage signal, on load tap changer controlling device to achieve gird more efficient from adjust the load character by increase and decrease the voltage.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Maximum rating: 9 MVA",
+    "7, 17 & 25 tap positions",
+    "Integrated three-phase control",
+    "Input Voltage Range: ±30%",
+    "Flexible voltage regulation range"
+  ],
+  specifications: {
+    type: "Three Phase Step Voltage Regulator",
+    transformerType: "Oil-immersed",
+    control: "SVR controller",
+    regulationRange: "±30%",
+    rating: "Up to 9 MVA"
+  },
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "SVR-3",
+  href: "/products/p93"
+},
+
+{
+  id: 125,
+  category: "AVIATION OBSTRUCTION LIGHT",
+  title: "OJ88",
+  description: "OJ88 high-intensity aviation obstruction lights are used to mark structures that pose a risk to aircraft. They incorporate advanced LED, optical, and control technologies for reliable performance in demanding conditions. Ideal for obstacles 150 meters and above, and suitable for high-salinity, corrosive environments.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/placeholder.svg?height=300&width=300"],
+  features: [
+    "Input Voltage: AC200–240V, AC100–130V, Light head @ DC48V",
+    "Rated Power: 85W @ 1 layer daytime, 150W @ 2 layers daytime, 220W @ 3 layers daytime",
+    "Frequency: 50–60Hz (AC power box)",
+    "IP Rate: IP66"
+  ],
+  specifications: {},
+  price: "N/A",
+  originalPrice: "N/A",
+  availability: "IN STOCK",
+  sku: "OJ88",
+  href: "/products/p125"
+},
+  // {
+  //   id: 6,
+  //   title: "GW25K-MT Commercial Inverter",
+  //   description: "25kW three-phase inverter for commercial installations",
+  //   image: "/placeholder.svg?height=200&width=250",
+  //   gallery: ["/placeholder.svg?height=300&width=300"],
+  //   features: ["98.4% Efficiency", "Remote Monitoring", "5-Year Warranty"],
+  //   specifications: {
+  //     power: "25kW",
+  //     efficiency: "98.4%",
+  //     warranty: "5 Years",
+  //     monitoring: "4G/WiFi/Ethernet",
+  //     protection: "IP65",
+  //   },
+  //   price: "2,15,999",
+  //   originalPrice: "2,45,999",
+  //   availability: "IN STOCK",
+  //   sku: "GW25K-MT",
+  //   href: "/products/gw25k-mt",
+  // },
 ]
 
 interface ProductModalProps {
@@ -354,21 +615,21 @@ export default function ProductsSection() {
                     <h3 className="text-base font-bold mb-2 group-hover:text-primary-600 transition-colors">
                       {product.title}
                     </h3>
-                    <p className="text-neutral-600 mb-3 text-sm">{product.description}</p>
+                    <p className="text-neutral-600 mb-3 text-sm line-clamp-2">{product.description}</p>
                     <ul className="space-y-1 mb-4">
-                      {product.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center">
-                          <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2"></span>
-                          <span className="text-xs">{feature}</span>
+                      {product.features.slice(0, 2).map((feature, idx) => (
+                        <li key={idx} className="flex items-center text-xs line-clamp-1">
+                          <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2 line-clamp-1"></span>
+                          {feature}
                         </li>
                       ))}
                     </ul>
-                    <div className="flex items-center justify-between mb-3">
+                    {/* <div className="flex items-center justify-between mb-3">
                       <div>
                         <span className="text-gray-400 line-through text-xs">{product.originalPrice}</span>
                         <span className="text-base font-bold text-primary-600 ml-2">{product.price}</span>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="flex space-x-2">
                       <button
                         onClick={(e) => openModal(product, e)}
