@@ -10,7 +10,8 @@ const product = {
   title: "Z11-Series Explosion-proof Cable Glands (Single Seal, Unarmoured)",
   description: "The Z11-Series explosion-proof cable glands (single seal, unarmoured) are designed for safe and reliable cable entry in hazardous areas. Featuring a single-seal design, they effectively prevent the ingress of explosive gases or dust. Made from durable, corrosion-resistant materials, they ensure secure installation and long-term performance. Ideal for industrial environments requiring certified explosion protection for unarmoured cables.",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p104-1.png?height=300&width=300", "/product/p104-2.png?height=300&width=300"],
+
   features: [
     "Explosion protection - China Ex(GB)",
     "Application in hazardous areas: Zone 1, Zone 2, Zone 21, Zone 22",
@@ -45,7 +46,7 @@ export default function ProductDetailPage() {
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <Link href="/products?category=air-conditioner" className="hover:text-primary-600">
-              Air Conditioner
+              Pipe Fittings
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>
@@ -242,25 +243,17 @@ export default function ProductDetailPage() {
               <div>
                 <h2 className="text-xl lg:text-2xl font-bold mb-4">{product.title}</h2>
                 <div className="prose max-w-none">
-                  <p className="mb-4 text-sm lg:text-base">
-                    The B01-Series Explosion-proof Air Conditioners represent cutting-edge climate control technology
-                    specifically engineered for hazardous industrial environments. These advanced cooling systems
-                    combine superior performance with uncompromising safety features to provide reliable temperature
-                    control in areas where explosive gases or vapors may be present.
+                  <p className="mb-4 text-sm lg:text-base">{product.description}
                   </p>
-                  <p className="mb-4 text-sm lg:text-base">
-                    Designed with flameproof compressors and sealed electrical components, these air conditioners meet
-                    the stringent requirements of Zone 1 and Zone 2 hazardous areas. Available in both split and cabinet
-                    configurations, they offer flexible installation options to suit various industrial applications.
-                  </p>
-                  <h3 className="text-lg font-bold mb-3">Advanced Climate Control</h3>
+                  <h3 className="text-lg font-bold mb-3">Features</h3>
+                  
                   <ul className="list-disc pl-5 mb-6 space-y-2 text-sm lg:text-base">
-                    <li>Flameproof compressor design for ultimate safety</li>
-                    <li>Sealed electrical components prevent ignition sources</li>
-                    <li>Wide operating temperature range for versatile applications</li>
-                    <li>Energy-efficient operation reduces operational costs</li>
-                    <li>Remote control capability for convenient operation</li>
-                    <li>Robust construction for harsh industrial environments</li>
+                   {product.features.slice(0, 7).map((feature, idx) => (
+                        <li key={idx} className="flex items-center text-xs">
+                          <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2"></span>
+                          {feature}
+                        </li>
+                      ))}
                   </ul>
                 </div>
               </div>

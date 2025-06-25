@@ -17,11 +17,8 @@ export default function AK25ProductPage() {
     description:
       "The AK25-Series explosion-proof switch button is designed for safe and reliable manual control in hazardous environments with explosive gases or dust. Its flameproof enclosure prevents ignition risks, ensuring secure operation.",
     image: "/placeholder.svg?height=400&width=400",
-    gallery: [
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=300&width=300",
-    ],
+        gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
     features: [
       "Explosion protection - IEC Ex(IEC), ATEX(CENELEC,EN), China Ex(GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",

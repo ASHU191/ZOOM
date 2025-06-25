@@ -10,7 +10,8 @@ const product = {
   title: "Explosion Proof Lighting Fixture",
   description: "Wattage: 60W\nLumens: 160lms/watt\nTotal Lumens: 9600 lms, 220V/50Hz\npower factor Cosp ≥ 0.95, IP66\nEx d IICT6 Gb / Ex tD A21 Ip66, T80ºC\nⅡA, ⅡB, and ⅡC, Zone 1 and 2, Zone 21 and 22\nWarranty: 1 Year",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p130.png?height=300&width=300",],
+
   features: [],
   specifications: {},
   price: "N/A",
@@ -40,7 +41,7 @@ export default function ProductDetailPage() {
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <Link href="/products?category=air-conditioner" className="hover:text-primary-600">
-              AVIATION OBSTRUCTION LIGHT
+              Hexlon LIGHTS
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>

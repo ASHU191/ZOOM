@@ -13,7 +13,8 @@ const product = {
   description:
     "The AK01-Series explosion-proof switch module is designed for safe and reliable control of electrical circuits in hazardous environments. Housed in a flameproof enclosure, it prevents the ignition of flammable gases or dust. This compact module offers precise switching performance, durability, and ease of integration.",
   image: "/placeholder.svg?height=400&width=600",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   features: [
     "Explosion protection - IEC Ex(IEC), ATEX(CENELEC,EN), China Ex(GB)",
     "Zone 1 and Zone 2 application",

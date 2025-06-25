@@ -46,7 +46,7 @@ export const featuredProducts = [
     description:
       "The TS01-Series explosion-proof coupler is engineered for safe and reliable connection of electrical equipment in hazardous areas.",
     image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
@@ -77,7 +77,7 @@ export const featuredProducts = [
     description:
       "The PAX23-Series is designed for safe power control and distribution in hazardous gas and dust environments with modular design.",
     image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
@@ -108,7 +108,8 @@ export const featuredProducts = [
     description:
       "The BL01-Series is designed to provide efficient ventilation and air circulation in hazardous areas where flammable gases or vapors may be present.",
     image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300"],
+        gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -139,7 +140,8 @@ export const featuredProducts = [
     description:
       "The BLB07-Series Explosion-proof Sight Glass Light is specifically designed for illuminating the interior of tanks, reactors, and vessels in hazardous areas. Compact and durable, it features a flameproof structure and high-efficiency LED light source for clear visibility through sight glass under extreme conditions.",
     image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300"],
+        gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
     features: [
       "Explosion protection - China Ex (GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
@@ -169,7 +171,8 @@ export const featuredProducts = [
   description:
     "The CKT01-Series explosion-proof safety switch is designed for hazardous environments where flammable gases, vapors, or dust may be present. It offers reliable circuit breaking with a durable flameproof enclosure to prevent ignition of surrounding atmosphere. The switch ensures high operational safety and compliance with international explosion protection standards. Ideal for industrial applications requiring robust and secure disconnection.",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   features: [
     "Explosion protection",
     "- IEC Ex (IEC)",
@@ -200,7 +203,8 @@ export const featuredProducts = [
   title: "BS01-Series Explosion-proof Plug and Sockets",
   description: "The BS01-Series explosion-proof plug and sockets are built for safe and reliable power connections in hazardous environments. Designed with flameproof construction, they prevent ignition of surrounding explosive gases or dust. These connectors ensure secure operation, easy installation, and long-lasting durability. Suitable for use in industrial zones requiring high safety standards.",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   features: [
     "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
     "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
@@ -226,7 +230,8 @@ export const featuredProducts = [
   title: "ST06-Series Explosion-proof Terminal Box",
   description: "The ST06-Series explosion-proof terminal box is built for safe and efficient cable terminations in hazardous locations. Its robust flameproof design prevents ignition of flammable gases or dust, ensuring secure operation. The enclosure offers high durability and corrosion resistance, making it suitable for harsh industrial environments. Ideal for use where certified explosion protection is essential.",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   features: [
     "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
     "Application in hazardous area - Zone 0, Zone 1 and Zone 2, Zone 21 and Zone 22",
@@ -250,7 +255,8 @@ export const featuredProducts = [
   title: "ZK01-Series Explosion-proof Conduits (Flexible) (Stainless Steel, PVC Coated)",
   description: "The ZK01-Series explosion-proof flexible conduits are constructed using high-grade stainless steel and coated with durable PVC for added protection. Ideal for routing wiring in hazardous environments, they provide excellent flexibility and corrosion resistance. These conduits are certified for use in explosive atmospheres, making them suitable for Zone 1 and Zone 2 hazardous areas.",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   features: [
     "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
     "Application in hazardous areas: Zone 1, Zone 2, Zone 21, Zone 22",
@@ -277,7 +283,7 @@ export const featuredProducts = [
     description:
       "The AK20-Series explosion-proof potentiometers are designed for precise signal adjustment in hazardous environments with explosive gases or dust.",
     image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
@@ -307,7 +313,8 @@ export const featuredProducts = [
     description:
       "The XPD Series forklift battery charger is a high-efficiency, fully automatic charging solution designed for lead-acid and other industrial battery types.",
     image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300"],
+        gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
     features: [
       "Nominal DC voltage: 24/36/48/72/80V",
       "Input AC voltage: 120±20% or 220±25%",
@@ -336,7 +343,8 @@ export const featuredProducts = [
   description:
     "SVR-3 type feeder automatic substation & distribution step voltage regulator is actually a three phase oil immersed auto-transformer with SVR controller and gathering sampling of voltage signal, on load tap changer controlling device to achieve gird more efficient from adjust the load character by increase and decrease the voltage.",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   features: [
     "Maximum rating: 9 MVA",
     "7, 17 & 25 tap positions",
@@ -364,7 +372,8 @@ export const featuredProducts = [
   title: "OJ88",
   description: "OJ88 high-intensity aviation obstruction lights are used to mark structures that pose a risk to aircraft. They incorporate advanced LED, optical, and control technologies for reliable performance in demanding conditions. Ideal for obstacles 150 meters and above, and suitable for high-salinity, corrosive environments.",
   image: "/placeholder.svg?height=200&width=250",
-  gallery: ["/placeholder.svg?height=300&width=300"],
+      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   features: [
     "Input Voltage: AC200–240V, AC100–130V, Light head @ DC48V",
     "Rated Power: 85W @ 1 layer daytime, 150W @ 2 layers daytime, 220W @ 3 layers daytime",
@@ -383,7 +392,8 @@ export const featuredProducts = [
   //   title: "GW25K-MT Commercial Inverter",
   //   description: "25kW three-phase inverter for commercial installations",
   //   image: "/placeholder.svg?height=200&width=250",
-  //   gallery: ["/placeholder.svg?height=300&width=300"],
+  //       gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+
   //   features: ["98.4% Efficiency", "Remote Monitoring", "5-Year Warranty"],
   //   specifications: {
   //     power: "25kW",
@@ -611,19 +621,23 @@ export default function ProductsSection() {
                       -15%
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-base font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                  <div className=" p-4 flex flex-col h-full">
+                    <h3 className="line-clamp-2 text-base font-bold mb-2 group-hover:text-primary-600 transition-colors">
                       {product.title}
                     </h3>
                     <p className="text-neutral-600 mb-3 text-sm line-clamp-2">{product.description}</p>
                     <ul className="space-y-1 mb-4">
                       {product.features.slice(0, 2).map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-xs line-clamp-1">
-                          <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2 line-clamp-1"></span>
+                        <li
+                          key={idx}
+                          className="flex items-center text-xs whitespace-nowrap overflow-hidden text-ellipsis"
+                        >
+                          <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2"></span>
                           {feature}
                         </li>
                       ))}
                     </ul>
+
                     {/* <div className="flex items-center justify-between mb-3">
                       <div>
                         <span className="text-gray-400 line-through text-xs">{product.originalPrice}</span>

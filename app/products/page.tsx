@@ -2137,8 +2137,8 @@ const allProducts = [
     title: "BLB11-Series Explosion-proof Fluorescent Light",
     description:
       "The BLB11-Series Explosion-proof Fluorescent Lights are designed for use in hazardous environments requiring consistent and safe illumination. Featuring a durable, flameproof housing and high-transparency diffuser, they ensure efficient light distribution while withstanding harsh industrial conditions.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p69-1.png?height=200&width=250",
+  gallery: ["/product/p69-2.png?height=300&width=300","/product/p69-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2169,8 +2169,8 @@ const allProducts = [
     title: "BLB12-Series Explosion-proof Light Fittings for Fluorescent Lamp",
     description:
       "The BLB12-Series Explosion-proof Light Fittings for Fluorescent Lamps are built to provide safe and reliable lighting in environments with explosive gas or dust. Featuring a robust flameproof design and corrosion-resistant construction, these fittings accommodate multiple fluorescent lamp types.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p70-1.png?height=200&width=250",
+  gallery: ["/product/p70-2.png?height=300&width=300","/product/p70-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2202,8 +2202,8 @@ const allProducts = [
     title: "BLB13-Series Explosion-proof LED Lamp Tube",
     description:
       "The BLB13-Series Explosion-proof LED Lamp Tube is designed to deliver energy-efficient and safe lighting in hazardous environments where flammable gases or dust are present. Encased in a durable, flameproof tube structure, it offers excellent thermal performance, long lifespan, and consistent illumination.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p71-1.png?height=200&width=250",
+    gallery: ["/product/p71-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2236,8 +2236,8 @@ const allProducts = [
     title: "BLB14-Series Explosion-proof Lightings",
     description:
       "The BLB14-Series Explosion-proof Lightings are engineered for reliable illumination in hazardous areas with the presence of explosive gases or combustible dust. Constructed with a rugged, flameproof aluminum alloy housing and advanced lighting technology, they offer high efficiency, durability, and low maintenance.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p72-1.png?height=200&width=250",
+    gallery: ["/product/p72-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2268,8 +2268,8 @@ const allProducts = [
     title: "BLB15-Series Explosion-proof Lightings",
     description:
       "The BLB15-Series Explosion-proof Lightings are designed to provide safe and efficient illumination in environments where flammable gases or dust may be present. Featuring a robust flameproof structure and high-performance LED or discharge lamp options, they ensure long-lasting operation with minimal maintenance.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p73-1.png?height=200&width=250",
+  gallery: ["/product/p73-2.png?height=300&width=300","/product/p73-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2301,8 +2301,8 @@ const allProducts = [
     title: "BLB16-Series Explosion-proof Floodlights",
     description:
       "The BLB16-Series Explosion-proof Floodlights are built for high-intensity, wide-area illumination in hazardous environments prone to explosive gases or dust. With a rugged flameproof design and high-efficiency light source, they deliver superior brightness, durability, and resistance to harsh conditions.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p74-1.png?height=200&width=250",
+    gallery: ["/product/p74-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2334,8 +2334,8 @@ const allProducts = [
     title: "BLB17-Series Explosion-proof Audio and Visual Caution Light",
     description:
       "The BLB17-Series Explosion-proof Audio and Visual Caution Light is designed to deliver clear audible and visual alerts in hazardous environments where explosive gases or dust may be present. Featuring a durable flameproof enclosure, high-intensity LED strobe, and loud sounder, it ensures effective warning signals.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p75-1.png?height=200&width=250",
+    gallery: ["/product/p75-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2367,8 +2367,8 @@ const allProducts = [
     title: "BLB18-Series Explosion-proof Caution Light",
     description:
       "The BLB18-Series Explosion-proof Caution Light is designed to provide bright, reliable visual alerts in hazardous areas with explosive gas or dust atmospheres. Housed in a robust flameproof enclosure, it features high-intensity LED illumination for enhanced visibility in critical safety zones.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p76-1.png?height=200&width=250",
+    gallery: ["/product/p76-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2399,8 +2399,8 @@ const allProducts = [
     title: "BLB19-Series Explosion-proof Aviation Obstruction Light",
     description:
       "The BLB19-Series Explosion-proof Aviation Obstruction Light is specially designed to mark tall structures in hazardous areas where explosive gases or dust may be present. Featuring a flameproof, weather-resistant enclosure and high-intensity LED beacon, it ensures visibility for aircraft navigation under all environmental conditions.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p77-1.png?height=200&width=250",
+    gallery: ["/product/p77-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2437,8 +2437,8 @@ const allProducts = [
     title: "BLB20-Series Explosion-proof Emergency Exit Lights",
     description:
       "The BLB-20 Series Explosion-proof Emergency Exit Lights are designed to provide clear and reliable evacuation guidance in hazardous environments with flammable gases or dust. Featuring a flameproof, corrosion-resistant housing and high-visibility LED signage, these lights activate automatically during power failures to ensure safe egress. Suitable for Zone 1 and Zone 2 applications, this series is ideal for chemical plants, oil refineries, and industrial facilities requiring stringent safety compliance.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p78-1.png?height=200&width=250",
+    gallery: ["/product/p78-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2466,8 +2466,8 @@ const allProducts = [
     title: "BLB21-Series Explosion-proof Emergency Exit Lights",
     description:
       "The BLB21-Series Explosion-proof Emergency Exit Lights are engineered to deliver dependable emergency egress indication in hazardous areas where explosive gases or dust may exist. Built with a flameproof, impact-resistant enclosure and energy-efficient LED display, they provide clear exit guidance during power outages or emergencies. Ideal for Zone 1 and Zone 2 environments, this series is well-suited for petrochemical plants, offshore platforms, and other high-risk industrial locations.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p79-1.png?height=200&width=250",
+  gallery: ["/product/p79-2.png?height=300&width=300","/product/p79-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2495,8 +2495,8 @@ const allProducts = [
     title: "BLB22-Series Explosion-proof Emergency Exit Lights",
     description:
       "The BLB22-Series Explosion-proof Emergency Exit Lights are designed to ensure clear and reliable exit guidance in hazardous environments with explosive gases or dust. Featuring a robust flameproof enclosure and high-brightness LED indicators, they automatically activate during power failures to support safe evacuation. Suitable for Zone 1 and Zone 2 areas, the BLB22-Series is ideal for use in oil refineries, chemical plants, and industrial safety-critical facilities.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p80-1.png?height=200&width=250",
+  gallery: ["/product/p80-2.png?height=300&width=300","/product/p80-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
@@ -2524,8 +2524,8 @@ const allProducts = [
     title: "BLB23-Series Explosion-proof Emergency Lights",
     description:
       "The BLB23- Series Explosion-proof Emergency Lights are designed to provide reliable illumination during power outages in hazardous areas where flammable gases or dust are present. Equipped with a durable flameproof housing and high-efficiency LED light source, they ensure automatic emergency lighting with long service life and low maintenance. Ideal for Zone 1 and Zone 2 environments, this series is perfect for chemical plants, oil and gas facilities, and other industrial applications requiring high safety standards.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p81-1.png?height=200&width=250",
+    gallery: ["/product/p81-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2553,8 +2553,8 @@ const allProducts = [
     title: "BLB24-Series Explosion-proof Emergency Lights",
     description:
       "The BLB24-Series Explosion-proof Emergency Lights are designed to deliver dependable lighting during power failures in hazardous environments with explosive gases or dust. Featuring a compact, flameproof structure and energy-efficient LED technology, they provide instant, automatic illumination to support safe evacuation. Suitable for Zone 1 and Zone 2 areas, this series is ideal for use in petrochemical plants, offshore platforms, and other high-risk industrial locations.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p82-1.png?height=200&width=250",
+  gallery: ["/product/p82-2.png?height=300&width=300","/product/p82-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2583,8 +2583,8 @@ const allProducts = [
     title: "BLB25-Series Explosion-proof Ballasts",
     description:
       "The BLB25-Series Explosion-proof Ballasts are engineered to safely regulate electrical current for lighting fixtures in hazardous areas with flammable gases or dust. Housed in a robust flameproof enclosure, they ensure stable performance, extended lamp life, and reliable operation under harsh industrial conditions. Suitable for Zone 1 and Zone 2 applications, the BLB25-Series is ideal for chemical plants, oil refineries, and other explosion-risk environments requiring certified electrical components.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p83-1.png?height=200&width=250",
+    gallery: ["/product/p83-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2615,8 +2615,8 @@ const allProducts = [
     title: "BLB26-Series Explosion-proof Lightings Emergency Units",
     description:
       "The BLB26-Series Explosion-proof Lightings Emergency Units are designed to provide reliable emergency illumination in hazardous environments with explosive gases or dust. Featuring a flameproof, corrosion-resistant enclosure and built-in emergency backup system, they ensure automatic lighting during power outages for enhanced safety. Suitable for Zone 1 and Zone 2 areas, the BLB26-Series is ideal for chemical plants, refineries, and other high-risk industrial facilities.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p84-1.png?height=200&width=250",
+    gallery: ["/product/p84-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2645,8 +2645,8 @@ const allProducts = [
     title: "Explosion Proof Fluorescent/LED Light",
     description:
       "Explosion Proof Fluorescent/LED Lights are designed for use in hazardous areas with flammable gases or dust. These fixtures combine high durability with energy-efficient lighting, making them ideal for industrial environments that require explosion protection and high visibility.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p85-1.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Explosion-proof fluorescent/LED lighting solution",
@@ -2671,8 +2671,8 @@ const allProducts = [
     title: "Explosion Proof Lighting Fixture MARS-II",
     description:
       "MARS-II is a lighting solution designed for hazardous or industrial applications, offering robust construction and reliable illumination. Suitable for harsh environments requiring certified lighting systems.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p86.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Durable industrial-grade lighting",
@@ -2697,8 +2697,8 @@ const allProducts = [
     title: "Mercury Flood Light",
     description:
       "Mercury Flood Lights are designed to provide high-intensity illumination in large outdoor or industrial areas. These lights are suitable for use where bright and widespread lighting is required.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p87.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "High-intensity mercury lighting",
@@ -2723,8 +2723,8 @@ const allProducts = [
     title: "Explosion Proof Lighting Fixture MARS-I",
     description:
       "MARS-I is a robust lighting fixture tailored for demanding industrial environments. Built to provide consistent illumination under tough conditions, it ensures safety and visibility where it's needed most.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p88.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Reliable lighting for industrial use",
@@ -2749,8 +2749,8 @@ const allProducts = [
     title: "Aviation Obstruction Light",
     description:
       "Aviation Obstruction Lights are designed to mark tall structures for aircraft visibility. These lights ensure compliance with aviation safety standards and are typically installed on towers, buildings, and industrial chimneys.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p89.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Marks tall structures for aviation safety",
@@ -2776,8 +2776,8 @@ const allProducts = [
     title: "CKT01- Series Explosion-proof Safety Switch",
     description:
       "The CKT01-Series explosion-proof safety switch is designed for hazardous environments where flammable gases, vapors, or dust may be present. It offers reliable circuit breaking with a durable flameproof enclosure to prevent ignition of surrounding atmosphere. The switch ensures high operational safety and compliance with international explosion protection standards. Ideal for industrial applications requiring robust and secure disconnection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p90-1.png?height=200&width=250",
+    gallery: ["/product/p90-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection",
@@ -2810,8 +2810,8 @@ const allProducts = [
     title: "CKT02- Series Explosion-proof Load Isolation Switch",
     description:
       "The CKT02-Series explosion-proof load isolation switch is engineered for safe disconnection of electrical loads in hazardous areas. It features a flameproof enclosure that prevents ignition of explosive atmospheres, ensuring operational safety. Designed for durability and reliability, it is suitable for use in demanding industrial environments. Ideal for isolating power during maintenance or emergencies.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p91-1.png?height=200&width=250",
+    gallery: ["/product/p91-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection",
@@ -2843,8 +2843,8 @@ const allProducts = [
     title: "Single Phase Step Voltage Regulators",
     description:
       "FHS Zoom, FR-8 Single Phase Step voltage Regulators are tap-changing autotransformers. They regulate distribution line voltages from 10% raise (boost) to 10% lower (buck) in 32 Steps of approximately 5/8% each. Voltage ratings are available from 2400 volts (60KV BIL) for 60 and 50 Hz systems.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p92-1.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Tested per ANSI C57.15 standard",
@@ -2878,8 +2878,8 @@ const allProducts = [
     title: "Three Phase Step Voltage Regulators",
     description:
       "SVR-3 type feeder automatic substation & distribution step voltage regulator is actually a three phase oil immersed auto-transformer with SVR controller and gathering sampling of voltage signal, on load tap changer controlling device to achieve gird more efficient from adjust the load character by increase and decrease the voltage.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p93.jpg?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Maximum rating: 9 MVA",
@@ -2909,8 +2909,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK01-Series Explosion-proof Conduits (Flexible) (Stainless Steel, PVC Coated)",
     description: "The ZK01-Series explosion-proof flexible conduits are constructed using high-grade stainless steel and coated with durable PVC for added protection. Ideal for routing wiring in hazardous environments, they provide excellent flexibility and corrosion resistance. These conduits are certified for use in explosive atmospheres, making them suitable for Zone 1 and Zone 2 hazardous areas.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p94-1.png?height=200&width=250",
+    gallery: ["/product/p94-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -2936,8 +2936,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK02-Series Explosion-proof Conduits (Flexible) (Galvanized Steel, PVC Coated)",
     description: "The ZK02-Series explosion-proof flexible conduits are manufactured from galvanized steel with a protective PVC coating. Designed for use in explosive atmospheres, they offer a safe, flexible, and corrosion-resistant solution for electrical cable routing. Suitable for use in industrial environments requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p95-1.png?height=200&width=250",
+    gallery: ["/product/p95-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -2963,8 +2963,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK03-Series Explosion-proof Conduit Connectors (Straight, Elbow, T-type)",
     description: "The ZK03-Series explosion-proof conduit connectors are designed for reliable and secure connections in hazardous areas. Available in straight, elbow, and T-type configurations, these connectors are made from high-quality metal with corrosion-resistant finishes. Ideal for safely linking flexible conduits in explosive environments.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p96-1.png?height=200&width=250",
+    gallery: ["/product/p96-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -2990,8 +2990,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK04-Series Explosion-proof Adapters (Thread Conversion)",
     description: "The ZK04-Series explosion-proof adapters are designed to facilitate thread conversions in hazardous area installations. Made from high-strength metals and certified for explosion-proof applications, these adapters ensure safe and seamless connections between different thread types. Ideal for use with conduit and cable gland assemblies.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p97-1.png?height=200&width=250",
+    gallery: ["/product/p97-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -3016,8 +3016,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK05-Series Explosion-proof Reducers (Thread Size Reduction)",
     description: "The ZK05-Series explosion-proof reducers enable the safe reduction of thread sizes for conduit and gland applications in hazardous environments. Constructed from robust, corrosion-resistant materials and certified for explosion-proof use, they ensure secure connections and prevent gas or dust ingress.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p98-1.png?height=200&width=250",
+    gallery: ["/product/p98-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -3042,8 +3042,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK06-Series Explosion-proof Sealing Washers and Gaskets",
     description: "The ZK06-Series explosion-proof sealing washers and gaskets are designed for sealing threaded joints in hazardous areas. Made from high-quality materials with excellent sealing properties, they prevent the ingress of explosive gases and dust. Suitable for use in conjunction with cable glands and conduit fittings.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p99-1.png?height=200&width=250",
+    gallery: ["/product/p99-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -3069,8 +3069,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK07-Series Explosion-proof Cable Glands (Double Seal, Unarmoured)",
     description: "The ZK07-Series explosion-proof cable glands (double seal, unarmoured) are designed for secure and flameproof entry of unarmoured cables in hazardous environments. The double-seal design offers enhanced protection against gas or dust ingress, ensuring safety and reliability. Made from corrosion-resistant materials, they provide long-lasting performance. Ideal for use in industrial settings requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p100-1.png?height=200&width=250",
+    gallery: ["/product/p100-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3092,8 +3092,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK08-Series Explosion-proof Cable Glands (Double Seal, Armoured, Unarmoured)",
     description: "The ZK08-Series explosion-proof cable glands (double seal, armoured and unarmoured) are designed for versatile and secure cable entry in hazardous areas. Suitable for both armoured and unarmoured cables, the double-seal design ensures maximum protection against explosive gases or dust ingress. Made from durable, corrosion-resistant materials, they offer reliable sealing and long-term performance. Ideal for demanding industrial environments requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p101-1.png?height=200&width=250",
+    gallery: ["/product/p101-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -3115,8 +3115,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK09-Series Explosion-proof Cable Glands (Compound Barrier, Unarmoured)",
     description: "The ZK09-Series explosion-proof cable glands (compound barrier, unarmoured) are designed for maximum sealing integrity in hazardous environments. Featuring a compound barrier seal, they prevent the passage of flammable gases through cable cores, ensuring superior explosion protection. Suitable for unarmoured cables, they offer reliable performance and resistance to harsh conditions. Ideal for high-risk industrial applications requiring certified safety.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p102-1.png?height=200&width=250",
+    gallery: ["/product/p102-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
@@ -3138,8 +3138,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK10-Series Explosion-proof Cable Glands (Compound Barrier, Armoured, Unarmoured)",
     description: "The ZK10-Series explosion-proof cable glands (compound barrier, armoured and unarmoured) are designed for high-integrity sealing in hazardous areas. Suitable for both armoured and unarmoured cables, the compound barrier prevents the transmission of flammable gases through cable cores. Built from corrosion-resistant materials, they ensure robust, long-lasting protection. Ideal for critical industrial applications requiring the highest level of explosion safety.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p103-1.png?height=200&width=250",
+    gallery: ["/product/p103-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3161,8 +3161,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "Z11-Series Explosion-proof Cable Glands (Single Seal, Unarmoured)",
     description: "The Z11-Series explosion-proof cable glands (single seal, unarmoured) are designed for safe and reliable cable entry in hazardous areas. Featuring a single-seal design, they effectively prevent the ingress of explosive gases or dust. Made from durable, corrosion-resistant materials, they ensure secure installation and long-term performance. Ideal for industrial environments requiring certified explosion protection for unarmoured cables.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p104-1.png?height=200&width=250",
+    gallery: ["/product/p104-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex(GB)",
@@ -3182,8 +3182,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "ZK12-Series Explosion-proof Stopping Plugs",
     description: "The ZK12-Series explosion-proof stopping plugs are designed to safely seal unused cable entry points in hazardous areas. Constructed with a flameproof design, they prevent the passage of explosive gases or dust, maintaining the integrity of enclosures. Made from robust, corrosion-resistant materials, they ensure long-term reliability. Ideal for industrial applications requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p105-1.png?height=200&width=250",
+    gallery: ["/product/p105-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3204,8 +3204,8 @@ const allProducts = [
     category: "Pipe Fittings",
     title: "Installation Accessories of Pipe Fitting",
     description: "Installation accessories for pipe fittings are designed to support secure, efficient, and reliable assembly of piping systems in industrial environments. These components include connectors, elbows, couplings, reducers, and support brackets, ensuring proper alignment and stability. Made from durable, corrosion-resistant materials, they withstand harsh conditions and maintain system integrity. Ideal for use in both hazardous and non-hazardous areas requiring robust installation solutions.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p106-1.png?height=200&width=250",
+    gallery: ["/product/p106-2.png?height=300&width=300"],
 
     features: [
       "Suitable for sealing spare cable entry devices in electrical equipment",
@@ -3228,8 +3228,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST04-Series Explosion-proof Terminal Box",
     description: "The ST04-Series explosion-proof terminal box is engineered for safe cable terminations in hazardous areas with explosive gases or dust. Featuring a stainless steel flameproof enclosure, it offers superior corrosion resistance and long-term durability. Designed for reliable electrical connections, it supports flexible wiring configurations. Suitable for harsh industrial environments requiring high safety standards.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p110-1.png?height=200&width=250",
+  gallery: ["/product/p110-2.png?height=300&width=300","/product/p110-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3251,8 +3251,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST05-Series Explosion Proof Junction Boxes",
     description: "The ST05-Series explosion-proof junction boxes are designed for safe and reliable electrical connections in hazardous environments. Featuring a flameproof enclosure, they prevent the ignition of flammable gases or dust. These junction boxes offer excellent durability, flexible configuration options, and high resistance to corrosion. Ideal for use in industrial applications requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p111-1.png?height=200&width=250",
+    gallery: ["/product/p111-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3274,8 +3274,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST06-Series Explosion-proof Terminal Box",
     description: "The ST06-Series explosion-proof terminal box is built for safe and efficient cable terminations in hazardous locations. Its robust flameproof design prevents ignition of flammable gases or dust, ensuring secure operation. The enclosure offers high durability and corrosion resistance, making it suitable for harsh industrial environments. Ideal for use where certified explosion protection is essential.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p112-1.png?height=200&width=250",
+    gallery: ["/product/p112-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3299,8 +3299,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST07-Series Explosion-proof Terminal Box",
     description: "The ST07-Series explosion-proof terminal box is designed for secure cable terminations in environments with explosive gases or dust. Its flameproof enclosure ensures safe operation by preventing external ignition sources. Engineered for durability and reliability, it withstands harsh industrial conditions. Ideal for applications requiring certified explosion protection and flexible wiring options.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p113-1.png?height=200&width=250",
+    gallery: ["/product/p113-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex(GB)",
@@ -3321,8 +3321,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST08-Series Explosion-proof Electrical Apparatus (For Cable Connection)",
     description: "The ST08-Series explosion-proof electrical apparatus is designed for safe cable connections in hazardous areas with explosive gases or dust. Its flameproof construction prevents ignition, ensuring reliable and secure operation. Built for durability, it supports various cable types and installation needs. Ideal for industrial environments requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p114-1.png?height=200&width=250",
+  gallery: ["/product/p114-2.png?height=300&width=300","/product/p114-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3345,8 +3345,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST09-Series Explosion-proof Terminal Box",
     description: "The ST09-Series explosion-proof terminal box is designed for safe and reliable cable terminations in hazardous locations. Its flameproof enclosure prevents the ignition of explosive gases or dust, ensuring high operational safety. Built for durability and ease of installation, it accommodates various wiring configurations. Suitable for use in demanding industrial and offshore environments.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p115-1.png?height=200&width=250",
+    gallery: ["/product/p115-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex(GB)",
@@ -3687,8 +3687,8 @@ const allProducts = [
     category: "Hexlon LIGHTS",
     title: "Explosion Proof Lighting Fixture",
     description: "Wattage: 60W\nLumens: 160lms/watt\nTotal Lumens: 9600 lms, 220V/50Hz\npower factor Cosp ≥ 0.95, IP66\nEx d IICT6 Gb / Ex tD A21 Ip66, T80ºC\nⅡA, ⅡB, and ⅡC, Zone 1 and 2, Zone 21 and 22\nWarranty: 1 Year",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p130.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [],
     specifications: {},
@@ -3703,8 +3703,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST01-Series Explosion-proof Terminal Boxes",
     description: "The ST01-Series explosion-proof terminal boxes are designed for secure cable termination in hazardous areas with flammable gases or dust. Constructed with a flameproof enclosure, they ensure safe electrical connections and prevent external ignition. These terminal boxes offer high durability, corrosion resistance, and easy installation. Suitable for use in demanding industrial environments requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p131-1.png?height=200&width=250",
+    gallery: ["/product/p131-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex(GB)",
@@ -3724,8 +3724,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST02-Series Explosion-proof Terminal Boxes",
     description: "The ST02-Series explosion-proof terminal boxes are built for safe and reliable cable termination in hazardous locations. With a rugged flameproof enclosure, they prevent the ignition of explosive gases or dust in the surrounding environment. These boxes offer excellent durability, corrosion resistance, and flexible wiring options. Ideal for industrial settings requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p132-1.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Explosion Protection: Ex d IIB / IIC T6 Gb, Ex tD A21 IP66 T80°C",
@@ -3755,8 +3755,8 @@ const allProducts = [
     category: "Terminal Box",
     title: "ST03-Series Explosion-proof Terminal Box",
     description: "The ST03-Series explosion-proof terminal box is designed for secure and reliable cable terminations in hazardous environments. Its flameproof enclosure prevents the ignition of flammable gases or dust, ensuring safe operation. Built for durability and corrosion resistance, it supports various wiring configurations. Ideal for use in demanding industrial zones requiring certified explosion protection.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p133-1.png?height=200&width=250",
+  gallery: ["/product/p133-2.png?height=300&width=300","/product/p133-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
@@ -3779,8 +3779,8 @@ const allProducts = [
     category: "Plug and Sockets",
     title: "BS01-Series Explosion-proof Plug and Sockets",
     description: "The BS01-Series explosion-proof plug and sockets are built for safe and reliable power connections in hazardous environments. Designed with flameproof construction, they prevent ignition of surrounding explosive gases or dust. These connectors ensure secure operation, easy installation, and long-lasting durability. Suitable for use in industrial zones requiring high safety standards.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p134-1.png?height=200&width=250",
+    gallery: ["/product/p134-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
@@ -3807,8 +3807,8 @@ const allProducts = [
     category: "Plug and Sockets",
     title: "BS02-Series Explosion-proof Plug and Sockets",
     description: "The BS02-Series explosion-proof plug and sockets are designed for secure electrical connections in hazardous areas with flammable gases or dust. Featuring robust flameproof construction, they offer high resistance to impact, corrosion, and environmental stress. These units ensure safe and reliable operation in demanding industrial settings. Ideal for power distribution in explosive atmospheres.",
-    image: "/product/p15-1.png?height=200&width=250",
-    gallery: ["/product/p15-2.png?height=300&width=300"],
+    image: "/product/p135-1.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex(GB)",

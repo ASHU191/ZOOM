@@ -11,7 +11,7 @@ const product = {
     description:
       "The AK05-Series explosion-proof illumination control switches are designed for safe and efficient lighting control in hazardous environments.",
     image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/placeholder.svg?height=300&width=300", "/placeholder.svg?height=300&width=300"],
+    gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
