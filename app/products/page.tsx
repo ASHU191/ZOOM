@@ -1158,7 +1158,7 @@ const allProducts = [
   },
   {
     id: 39,
-    category: "EV Charger",
+    category: "EV Charger", 
     title: "BPD Lithium Battery Charger",
     description:
       "The BPD Series lithium battery charger is a smart charging solution designed for high-efficiency energy transfer and long battery life.",

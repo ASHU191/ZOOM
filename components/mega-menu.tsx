@@ -171,15 +171,15 @@ const productCategories = [
         href: "/products?category=lights",
         products: [
           {
-            name: "Ex-proof LED Light 50W",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-led-light-50w",
+            name: "BLB01-Series Explosion-proof LED Lightings",
+            image: "/product/p59-1.png?height=80&width=80",
+            href: "/products/p59",
             // price: "8,500",
           },
           {
-            name: "Ex-proof LED Light 100W",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-led-light-100w",
+            name: "BLB02-Series Explosion-proof LED Lightings",
+            image: "/product/p60-1.png?height=80&width=80",
+            href: "/products/p60",
             // price: "15,000",
           },
         ],
@@ -189,15 +189,17 @@ const productCategories = [
         href: "/products?category=isolators",
         products: [
           {
-            name: "Ex-proof Isolator 32A",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-isolator-32a",
+            name: "CKT01- Series Explosion-proof Safety Switch",
+            image: "/product/p90-1.png?height=80&width=80",
+           href: "/products/p90"
+
             // price: "12,000",
           },
           {
-            name: "Ex-proof Isolator 63A",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-isolator-63a",
+            name: "CKT02- Series Explosion-proof Load Isolation Switch",
+            image: "/product/p91-1.png?height=80&width=80",
+           href: "/products/p90"
+
             // price: "18,000",
           },
         ],
@@ -207,15 +209,15 @@ const productCategories = [
         href: "/products?category=plug-sockets",
         products: [
           {
-            name: "Ex-proof Plug 16A",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-plug-16a",
+            name: "BS01-Series Explosion-proof Plug and Sockets",
+            image: "/product/p134-1.png?height=80&width=80",
+    href: "/products/p134"
             // price: "5,500",
           },
           {
-            name: "Ex-proof Socket 32A",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-socket-32a",
+            name: "BS02-Series Explosion-proof Plug and Sockets",
+            image: "/product/p135-1.png?height=80&width=80",
+    href: "/products/p135"
             // price: "7,500",
           },
         ],
@@ -225,15 +227,15 @@ const productCategories = [
         href: "/products?category=terminal-box",
         products: [
           {
-            name: "Ex-proof Terminal Box Small",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-terminal-box-small",
+            name: "ST02-Series Explosion-proof Terminal Boxes",
+            image: "/product/p132-1.png?height=80&width=80",
+    href: "/products/p132"
             // price: "8,000",
           },
           {
-            name: "Ex-proof Terminal Box Large",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-terminal-box-large",
+            name: "ST04-Series Explosion-proof Terminal Box",
+            image: "/product/p110-1.png?height=80&width=80",
+    href: "/products/p132"
             // price: "15,000",
           },
         ],
@@ -243,15 +245,17 @@ const productCategories = [
         href: "/products?category=pipe-fittings",
         products: [
           {
-            name: "Ex-proof Conduit Fitting",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-conduit-fitting",
+            name: "ZK01-Series Explosion-proof Conduits",
+            image: "/product/p94-1.png?height=80&width=80",
+            href: "/products/p94"
+
             // price: "2,500",
           },
           {
-            name: "Ex-proof Cable Gland",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-cable-gland",
+            name: "ZK02-Series Explosion-proof Conduits",
+            image: "/product/p95-1.png?height=80&width=80",
+            href: "/products/p95"
+
             // price: "1,800",
           },
         ],
@@ -261,15 +265,15 @@ const productCategories = [
         href: "/products?category=control-switch",
         products: [
           {
-            name: "Ex-proof Push Button",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-push-button",
+            name: "AK01-Series Explosion-proof Switch Module",
+            image: "/product/p10-1.png?height=80&width=80",
+    href: "/products/p10",
             // price: "4,500",
           },
           {
-            name: "Ex-proof Emergency Stop",
-            image: "/placeholder.svg?height=80&width=80",
-            href: "/products/ex-proof-emergency-stop",
+            name: "AK02-Series Explosion-proof Flash Buzzer",
+            image: "/product/p11-1.png?height=80&width=80",
+    href: "/products/p11",
             // price: "6,500",
           },
         ],
@@ -437,7 +441,7 @@ export default function MegaMenu({ activeMenu, onMouseEnter, onMouseLeave, paren
                     <img
                       src={product.image || "/placeholder.svg"}
                       alt={product.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <h4 className="text-xs font-medium text-neutral-900 group-hover:text-primary-600 transition-colors leading-tight mb-1">
@@ -494,7 +498,7 @@ export default function MegaMenu({ activeMenu, onMouseEnter, onMouseLeave, paren
 
           <div className="mb-6">
             <Image
-              src="/placeholder.svg?height=120&width=300"
+              src="/product/p90-1.png?height=120&width=300"
               alt="FHS Zoom Innovation"
               width={300}
               height={120}

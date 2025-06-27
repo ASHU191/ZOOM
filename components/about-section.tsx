@@ -6,27 +6,27 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">Leading Solar Innovation</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">FHS ZOOM</h2>
             <p className="text-base lg:text-lg text-gray-600 mb-4 lg:mb-6">
-              For over a decade, FHS Zoom has been at the forefront of solar energy innovation, providing reliable and
-              efficient solutions that power homes and businesses worldwide.
+               We are FHS Zoom a proudly Canadian brand and manufacturer dedicated to creating safer,
+                 smarter, and more resilient industrial environments. 
             </p>
             <p className="text-base lg:text-lg text-gray-600 mb-6 lg:mb-8">
-              Our commitment to quality and sustainability has made us a trusted partner for installers and customers in
-              over 100 countries.
+              As both a brand and a production powerhouse, we specialize in designing and manufacturing 
+              explosion-proof and high-performance electrical systems.
             </p>
 
             <div className="grid grid-cols-3 gap-4 lg:gap-6 mb-6 lg:mb-8">
               <div className="text-center">
-                <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">2M+</div>
+                <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">200+</div>
                 <div className="text-xs lg:text-sm text-gray-600">Inverters Installed</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">100+</div>
+                <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">2+</div>
                 <div className="text-xs lg:text-sm text-gray-600">Countries Served</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">13</div>
+                <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">3</div>
                 <div className="text-xs lg:text-sm text-gray-600">Years Experience</div>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function AboutSection() {
 
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=500&width=600"
+              src="/about/1 (1).jpeg?height=500&width=600"
               alt="FHS Zoom solar installation"
               width={600}
               height={500}

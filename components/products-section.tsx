@@ -39,14 +39,15 @@ export const featuredProducts = [
     sku: "B01-AC-EX",
     href: "/products/b01-explosion-proof-air-conditioner",
   },
-  {
+   {
     id: 35,
     category: "Coupler",
     title: "TS01-Series Explosion-proof Coupler",
     description:
       "The TS01-Series explosion-proof coupler is engineered for safe and reliable connection of electrical equipment in hazardous areas.",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+    image: "/product/p35-1.png?height=200&width=250",
+    gallery: ["/product/p35-2.png?height=300&width=300"],
+
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
@@ -76,8 +77,8 @@ export const featuredProducts = [
     title: "PAX23-Series Explosion-proof Electrical Apparatus",
     description:
       "The PAX23-Series is designed for safe power control and distribution in hazardous gas and dust environments with modular design.",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+    image: "/product/p45.png?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
@@ -101,15 +102,14 @@ export const featuredProducts = [
     sku: "PAX23-EA-EX",
     href: "/products/p45",
   },
-  {
+ {
     id: 55,
     category: "Exhaust Fan",
     title: "BL01-Series Explosion-proof Axial Flow Fan",
     description:
       "The BL01-Series is designed to provide efficient ventilation and air circulation in hazardous areas where flammable gases or vapors may be present.",
-    image: "/placeholder.svg?height=200&width=250",
-        gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
-
+    image: "/product/p55-1.png?height=200&width=250",
+  gallery: ["/product/p55-2.png?height=300&width=300","/product/p55-3.png?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -133,14 +133,14 @@ export const featuredProducts = [
     sku: "BL01-AF-EX",
     href: "/products/p55",
   },
-   {
+  {
     id: 65,
     category: "Lights",
     title: "BLB07-Series Explosion-proof Sight Glass Light",
     description:
       "The BLB07-Series Explosion-proof Sight Glass Light is specifically designed for illuminating the interior of tanks, reactors, and vessels in hazardous areas. Compact and durable, it features a flameproof structure and high-efficiency LED light source for clear visibility through sight glass under extreme conditions.",
-    image: "/placeholder.svg?height=200&width=250",
-        gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+    image: "/product/p65-1.png?height=200&width=250",
+    gallery: ["/product/p65-2.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -164,126 +164,127 @@ export const featuredProducts = [
     sku: "BLB07-SGL-EX",
     href: "/products/p65",
   },
-  {
-  id: 90,
-  category: "Isolators",
-  title: "CKT01- Series Explosion-proof Safety Switch",
-  description:
-    "The CKT01-Series explosion-proof safety switch is designed for hazardous environments where flammable gases, vapors, or dust may be present. It offers reliable circuit breaking with a durable flameproof enclosure to prevent ignition of surrounding atmosphere. The switch ensures high operational safety and compliance with international explosion protection standards. Ideal for industrial applications requiring robust and secure disconnection.",
-  image: "/placeholder.svg?height=200&width=250",
-      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+   {
+    id: 90,
+    category: "Isolators",
+    title: "CKT01- Series Explosion-proof Safety Switch",
+    description:
+      "The CKT01-Series explosion-proof safety switch is designed for hazardous environments where flammable gases, vapors, or dust may be present. It offers reliable circuit breaking with a durable flameproof enclosure to prevent ignition of surrounding atmosphere. The switch ensures high operational safety and compliance with international explosion protection standards. Ideal for industrial applications requiring robust and secure disconnection.",
+    image: "/product/p90-1.png?height=200&width=250",
+    gallery: ["/product/p90-2.png?height=300&width=300"],
 
-  features: [
-    "Explosion protection",
-    "- IEC Ex (IEC)",
-    "- ATEX (CENELEC, EN)",
-    "- China Ex (GB)",
-    "Application in hazardous area",
-    "- Zone 1 and Zone 2",
-    "- Zone 21 and Zone 22",
-    "Black operating handle for standard, Red/Yellow operating handle for Emergency stop.",
-    "The joint of the enclosure and the cover has a labyrinth sealing structure, sealed with imported polyurethane foam or silicon rubber, has good performance of water-proof and dust-proof.",
-    "Equipped with an interlocking mechanism, in the locked state, the switch cannot be operated."
-  ],
-  specifications: {
-    series: "CKT01",
-    type: "Explosion-proof Safety Switch",
-    application: "Hazardous Areas",
-    zones: "Zone 1, Zone 2, Zone 21, Zone 22"
+    features: [
+      "Explosion protection",
+      "- IEC Ex (IEC)",
+      "- ATEX (CENELEC, EN)",
+      "- China Ex (GB)",
+      "Application in hazardous area",
+      "- Zone 1 and Zone 2",
+      "- Zone 21 and Zone 22",
+      "Black operating handle for standard, Red/Yellow operating handle for Emergency stop.",
+      "The joint of the enclosure and the cover has a labyrinth sealing structure, sealed with imported polyurethane foam or silicon rubber, has good performance of water-proof and dust-proof.",
+      "Equipped with an interlocking mechanism, in the locked state, the switch cannot be operated."
+    ],
+    specifications: {
+      series: "CKT01",
+      type: "Explosion-proof Safety Switch",
+      application: "Hazardous Areas",
+      zones: "Zone 1, Zone 2, Zone 21, Zone 22"
+    },
+    price: "N/A",
+    originalPrice: "N/A",
+    availability: "IN STOCK",
+    sku: "CKT01-SWITCH",
+    href: "/products/p90"
   },
-  price: "N/A",
-  originalPrice: "N/A",
-  availability: "IN STOCK",
-  sku: "CKT01-SWITCH",
-  href: "/products/p90"
-},
 {
-  id: 134,
-  category: "Plug and Sockets",
-  title: "BS01-Series Explosion-proof Plug and Sockets",
-  description: "The BS01-Series explosion-proof plug and sockets are built for safe and reliable power connections in hazardous environments. Designed with flameproof construction, they prevent ignition of surrounding explosive gases or dust. These connectors ensure secure operation, easy installation, and long-lasting durability. Suitable for use in industrial zones requiring high safety standards.",
-  image: "/placeholder.svg?height=200&width=250",
-      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+    id: 134,
+    category: "Plug and Sockets",
+    title: "BS01-Series Explosion-proof Plug and Sockets",
+    description: "The BS01-Series explosion-proof plug and sockets are built for safe and reliable power connections in hazardous environments. Designed with flameproof construction, they prevent ignition of surrounding explosive gases or dust. These connectors ensure secure operation, easy installation, and long-lasting durability. Suitable for use in industrial zones requiring high safety standards.",
+    image: "/product/p134-1.png?height=200&width=250",
+    gallery: ["/product/p134-2.png?height=300&width=300"],
 
-  features: [
-    "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
-    "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
-    "Flame-proof type enclosure, four types of enclosure",
-    "Eight current classes: 10A, 16A, 25A, 32A, 50A, 63A, 100A, 125A",
-    "Four pole options: 2P, 3P, 4P, 5P",
-    "Reliable interlocking: plug removal only after switch is off; power on only after plug is inserted",
-    "Elastic shutter spring sleeve ensures reliable contact, low resistance, low-temperature rise",
-    "Self-cleaning design, low insertion/extraction force",
-    "Includes timer with voltage-specific color coding to avoid mistaken insertion"
-  ],
-  specifications: {},
-  price: "N/A",
-  originalPrice: "N/A",
-  availability: "IN STOCK",
-  sku: "BS01",
-  href: "/products/p134"
-},
-
-{
-  id: 112,
-  category: "Terminal Box",
-  title: "ST06-Series Explosion-proof Terminal Box",
-  description: "The ST06-Series explosion-proof terminal box is built for safe and efficient cable terminations in hazardous locations. Its robust flameproof design prevents ignition of flammable gases or dust, ensuring secure operation. The enclosure offers high durability and corrosion resistance, making it suitable for harsh industrial environments. Ideal for use where certified explosion protection is essential.",
-  image: "/placeholder.svg?height=200&width=250",
-      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
-
-  features: [
-    "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
-    "Application in hazardous area - Zone 0, Zone 1 and Zone 2, Zone 21 and Zone 22",
-    "4 types explosion protection (Ex eb, Ex ia, Ex ib, Ex tb IIC)",
-    "PA66 enclosure",
-    "2 types of enclosure customizable for current, terminal, size and direction of entry",
-    "Type A: open crimping type terminal",
-    "Type B (Standard): international brand terminal",
-    "Stainless steel exposed fastener, anti dropping structure, easy installation and maintenance"
-  ],
-  specifications: {},
-  price: "N/A",
-  originalPrice: "N/A",
-  availability: "IN STOCK",
-  sku: "ST06",
-  href: "/products/p112"
-},
-{
-  id: 94,
-  category: "Pipe Fittings",
-  title: "ZK01-Series Explosion-proof Conduits (Flexible) (Stainless Steel, PVC Coated)",
-  description: "The ZK01-Series explosion-proof flexible conduits are constructed using high-grade stainless steel and coated with durable PVC for added protection. Ideal for routing wiring in hazardous environments, they provide excellent flexibility and corrosion resistance. These conduits are certified for use in explosive atmospheres, making them suitable for Zone 1 and Zone 2 hazardous areas.",
-  image: "/placeholder.svg?height=200&width=250",
-      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
-
-  features: [
-    "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
-    "Application in hazardous areas: Zone 1, Zone 2, Zone 21, Zone 22",
-    "Flame-proof (Type ‘d’), Increased safety (Type ‘e’)",
-    "Flexible stainless steel with PVC coating",
-    "Corrosion resistant, suitable for outdoor and chemical environments"
-  ],
-  specifications: {
-    Material: "Stainless Steel with PVC Coating",
-    TemperatureRange: "-40°C to +105°C",
-    ProtectionClass: "IP66/IP67",
-    Standard: "IEC 60079-0/1/7"
+    features: [
+      "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
+      "Application in hazardous area - Zone 1 and Zone 2, Zone 21 and Zone 22",
+      "Flame-proof type enclosure, four types of enclosure",
+      "Eight current classes: 10A, 16A, 25A, 32A, 50A, 63A, 100A, 125A",
+      "Four pole options: 2P, 3P, 4P, 5P",
+      "Reliable interlocking: plug removal only after switch is off; power on only after plug is inserted",
+      "Elastic shutter spring sleeve ensures reliable contact, low resistance, low-temperature rise",
+      "Self-cleaning design, low insertion/extraction force",
+      "Includes timer with voltage-specific color coding to avoid mistaken insertion"
+    ],
+    specifications: {},
+    price: "N/A",
+    originalPrice: "N/A",
+    availability: "IN STOCK",
+    sku: "BS01",
+    href: "/products/p134"
   },
-  price: "N/A",
-  originalPrice: "N/A",
-  availability: "IN STOCK",
-  sku: "ZK01",
-  href: "/products/p94"
-},
+
+{
+    id: 112,
+    category: "Terminal Box",
+    title: "ST06-Series Explosion-proof Terminal Box",
+    description: "The ST06-Series explosion-proof terminal box is built for safe and efficient cable terminations in hazardous locations. Its robust flameproof design prevents ignition of flammable gases or dust, ensuring secure operation. The enclosure offers high durability and corrosion resistance, making it suitable for harsh industrial environments. Ideal for use where certified explosion protection is essential.",
+    image: "/product/p112-1.png?height=200&width=250",
+    gallery: ["/product/p112-2.png?height=300&width=300"],
+
+    features: [
+      "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
+      "Application in hazardous area - Zone 0, Zone 1 and Zone 2, Zone 21 and Zone 22",
+      "4 types explosion protection (Ex eb, Ex ia, Ex ib, Ex tb IIC)",
+      "PA66 enclosure",
+      "2 types of enclosure customizable for current, terminal, size and direction of entry",
+      "Type A: open crimping type terminal",
+      "Type B (Standard): international brand terminal",
+      "Stainless steel exposed fastener, anti dropping structure, easy installation and maintenance"
+    ],
+    specifications: {},
+    price: "N/A",
+    originalPrice: "N/A",
+    availability: "IN STOCK",
+    sku: "ST06",
+    href: "/products/p112"
+  },
+{
+    id: 94,
+    category: "Pipe Fittings",
+    title: "ZK01-Series Explosion-proof Conduits (Flexible) (Stainless Steel, PVC Coated)",
+    description: "The ZK01-Series explosion-proof flexible conduits are constructed using high-grade stainless steel and coated with durable PVC for added protection. Ideal for routing wiring in hazardous environments, they provide excellent flexibility and corrosion resistance. These conduits are certified for use in explosive atmospheres, making them suitable for Zone 1 and Zone 2 hazardous areas.",
+    image: "/product/p94-1.png?height=200&width=250",
+    gallery: ["/product/p94-2.png?height=300&width=300"],
+
+    features: [
+      "Explosion protection - IECEx(IEC), ATEX (CENELEC,EN), China Ex(GB)",
+      "Application in hazardous areas: Zone 1, Zone 2, Zone 21, Zone 22",
+      "Flame-proof (Type ‘d’), Increased safety (Type ‘e’)",
+      "Flexible stainless steel with PVC coating",
+      "Corrosion resistant, suitable for outdoor and chemical environments"
+    ],
+    specifications: {
+      Material: "Stainless Steel with PVC Coating",
+      TemperatureRange: "-40°C to +105°C",
+      ProtectionClass: "IP66/IP67",
+      Standard: "IEC 60079-0/1/7"
+    },
+    price: "N/A",
+    originalPrice: "N/A",
+    availability: "IN STOCK",
+    sku: "ZK01",
+    href: "/products/p94"
+  },
 {
     id: 29,
     category: "Control Button Switch",
     title: "AK20-Series Explosion-proof Potentiometers",
     description:
       "The AK20-Series explosion-proof potentiometers are designed for precise signal adjustment in hazardous environments with explosive gases or dust.",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+    image: "/product/p29-1.png?height=200&width=250",
+    gallery: ["/product/p29-2.png?height=300&width=300"],
+
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1, Zone 2, Zone 21 and Zone 22 application",
@@ -305,15 +306,16 @@ export const featuredProducts = [
     sku: "AK20-POT-EX",
     href: "/products/p29",
   },
-
-  {
+{
     id: 38,
     category: "EV Charger",
     title: "XPD Forklift Battery Charger",
     description:
       "The XPD Series forklift battery charger is a high-efficiency, fully automatic charging solution designed for lead-acid and other industrial battery types.",
-    image: "/placeholder.svg?height=200&width=250",
-        gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
+    image: "/product/p38-1.jpg?height=200&width=250",
+    gallery: ["/product/p38-2.png?height=300&width=300",
+      "/product/p38-3.png?height=300&width=300",
+      "/product/p38-4.png?height=300&width=300"],
 
     features: [
       "Nominal DC voltage: 24/36/48/72/80V",
@@ -335,58 +337,56 @@ export const featuredProducts = [
     sku: "XPD-FC-01",
     href: "/products/p38",
   },
+ {
+    id: 93,
+    category: "MV AVR",
+    title: "Three Phase Step Voltage Regulators",
+    description:
+      "SVR-3 type feeder automatic substation & distribution step voltage regulator is actually a three phase oil immersed auto-transformer with SVR controller and gathering sampling of voltage signal, on load tap changer controlling device to achieve gird more efficient from adjust the load character by increase and decrease the voltage.",
+    image: "/product/p93.jpg?height=200&width=250",
+    // gallery: ["/product/p15-2.png?height=300&width=300"],
 
-  {
-  id: 93,
-  category: "MV AVR",
-  title: "Three Phase Step Voltage Regulators",
-  description:
-    "SVR-3 type feeder automatic substation & distribution step voltage regulator is actually a three phase oil immersed auto-transformer with SVR controller and gathering sampling of voltage signal, on load tap changer controlling device to achieve gird more efficient from adjust the load character by increase and decrease the voltage.",
-  image: "/placeholder.svg?height=200&width=250",
-      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
-
-  features: [
-    "Maximum rating: 9 MVA",
-    "7, 17 & 25 tap positions",
-    "Integrated three-phase control",
-    "Input Voltage Range: ±30%",
-    "Flexible voltage regulation range"
-  ],
-  specifications: {
-    type: "Three Phase Step Voltage Regulator",
-    transformerType: "Oil-immersed",
-    control: "SVR controller",
-    regulationRange: "±30%",
-    rating: "Up to 9 MVA"
+    features: [
+      "Maximum rating: 9 MVA",
+      "7, 17 & 25 tap positions",
+      "Integrated three-phase control",
+      "Input Voltage Range: ±30%",
+      "Flexible voltage regulation range"
+    ],
+    specifications: {
+      type: "Three Phase Step Voltage Regulator",
+      transformerType: "Oil-immersed",
+      control: "SVR controller",
+      regulationRange: "±30%",
+      rating: "Up to 9 MVA"
+    },
+    price: "N/A",
+    originalPrice: "N/A",
+    availability: "IN STOCK",
+    sku: "SVR-3",
+    href: "/products/p93"
   },
-  price: "N/A",
-  originalPrice: "N/A",
-  availability: "IN STOCK",
-  sku: "SVR-3",
-  href: "/products/p93"
-},
 
 {
-  id: 125,
-  category: "AVIATION OBSTRUCTION LIGHT",
-  title: "OJ88",
-  description: "OJ88 high-intensity aviation obstruction lights are used to mark structures that pose a risk to aircraft. They incorporate advanced LED, optical, and control technologies for reliable performance in demanding conditions. Ideal for obstacles 150 meters and above, and suitable for high-salinity, corrosive environments.",
-  image: "/placeholder.svg?height=200&width=250",
-      gallery: ["/product/p14-1.png?height=300&width=300", "/product/p14-2.png?height=300&width=300"],
-
-  features: [
-    "Input Voltage: AC200–240V, AC100–130V, Light head @ DC48V",
-    "Rated Power: 85W @ 1 layer daytime, 150W @ 2 layers daytime, 220W @ 3 layers daytime",
-    "Frequency: 50–60Hz (AC power box)",
-    "IP Rate: IP66"
-  ],
-  specifications: {},
-  price: "N/A",
-  originalPrice: "N/A",
-  availability: "IN STOCK",
-  sku: "OJ88",
-  href: "/products/p125"
-},
+    id: 125,
+    category: "AVIATION OBSTRUCTION LIGHT",
+    title: "OJ88",
+    description: "OJ88 high-intensity aviation obstruction lights are used to mark structures that pose a risk to aircraft. They incorporate advanced LED, optical, and control technologies for reliable performance in demanding conditions. Ideal for obstacles 150 meters and above, and suitable for high-salinity, corrosive environments.",
+    image: "/product/p125.jpeg?height=200&width=250",
+    gallery: ["/product/p125.jpeg?height=300&width=300"],
+    features: [
+      "Input Voltage: AC200–240V, AC100–130V, Light head @ DC48V",
+      "Rated Power: 85W @ 1 layer daytime, 150W @ 2 layers daytime, 220W @ 3 layers daytime",
+      "Frequency: 50–60Hz (AC power box)",
+      "IP Rate: IP66"
+    ],
+    specifications: {},
+    price: "N/A",
+    originalPrice: "N/A",
+    availability: "IN STOCK",
+    sku: "OJ88",
+    href: "/products/p125"
+  },
   // {
   //   id: 6,
   //   title: "GW25K-MT Commercial Inverter",
@@ -615,7 +615,7 @@ export default function ProductsSection() {
                       alt={product.title}
                       width={320}
                       height={200}
-                      className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-40 object-contain group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute top-2 left-2 bg-secondary-500 text-white px-2 py-1 rounded text-xs font-semibold">
                       -15%

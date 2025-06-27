@@ -10,7 +10,7 @@ const solutions = [
     href: "",
   },
   {
-    title: "EV Charger",
+    title: "EV Charger", 
     description: "Revolutionizing EV charging with explosion proof safety. Certified for use in flammable and individual zones. Clean power even in the harshest environments.",
     image: "/category/3.jpg?height=150&width=250",
     href: "",
@@ -20,9 +20,10 @@ const solutions = [
     description: "Stabilizes medium-voltage systems in volatile enviornments. Minimizes surges and products sensitive equipment. Essential for continuous and safe operations.  ",
     image: "/category/4.jpg?height=150&width=250",
     href: "",
+    class: "object-contain", // 👈 ye dynamic class hai
   },
   {
-    title: "Aviation Lights",
+    title: "Aviation Lights", 
     description: "High visibility lights for aircraft and helipads. Engineered to resist weather and explosive gases. Critical illumination for aviation zones and refineries.",
     image: "/category/1.jpeg?height=150&width=250",
     href: "",
@@ -41,26 +42,28 @@ export default function SolutionsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {solutions.map((solution, index) => (
+            {solutions.map((item, index) => (
             <Link
               key={index}
-              href={solution.href}
+              href={item.href}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+              style={{ boxShadow: "0px 2px 23px 8px rgba(0, 0, 0, 0.49)" }}
             >
               <div className="relative">
                 <Image
-                  src={solution.image || "/placeholder.svg"}
-                  alt={solution.title}
+                  src={item.image || "/placeholder.svg"}
+                  alt={item.title}
                   width={250}
                   height={150}
-                  className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                  className={`w-full h-32 ${item.class || 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
+                  />
               </div>
+              <hr />
               <div className="p-4">
                 <h3 className="text-base font-bold mb-2 group-hover:text-primary-600 transition-colors">
-                  {solution.title}
+                  {item.title}
                 </h3>
-                <p className="text-neutral-600 text-sm">{solution.description}</p>
+                <p className="text-neutral-600 text-sm">{item.description}</p>
               </div>
             </Link>
           ))}
