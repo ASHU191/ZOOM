@@ -1,31 +1,53 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
-    phone: "",
-    subject: "",
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        alert("Message sent successfully!")
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        })
+      } else {
+        alert("Failed to send message: " + result.message)
+      }
+    } catch (error) {
+      console.error("Form submit error:", error)
+      alert("Something went wrong. Please try again.")
+    }
   }
 
   return (
@@ -35,7 +57,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Get in touch with our team for sales inquiries, technical support, or partnership opportunities
+            Get in touch with our team for inquiries or feedback
           </p>
         </div>
       </section>
@@ -73,46 +95,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Company</label>
-                    <input
-                      type="text"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Subject *</label>
-                  <select
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="sales">Sales Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="general">General Question</option>
-                  </select>
-                </div>
-
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Message *</label>
                   <textarea
@@ -122,7 +104,7 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder="Please describe your inquiry in detail..."
+                    placeholder="Please describe your inquiry..."
                   ></textarea>
                 </div>
 
@@ -140,20 +122,10 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
               <div className="space-y-8">
                 <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-primary-600 mr-4 mt-1" />
-                  <div>
-                    <h3 className="font-semibold mb-2">Phone</h3>
-                    <p className="text-gray-600">Sales: +1-800-FHS-ZOOM</p>
-                    <p className="text-gray-600">Support: +1-800-FHS-HELP</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
                   <Mail className="h-6 w-6 text-primary-600 mr-4 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-2">Email</h3>
-                    <p className="text-gray-600">sales@fhszoom.com</p>
-                    <p className="text-gray-600">support@fhszoom.com</p>
+                    <p className="text-gray-600">info@fhszoom.com</p>
                   </div>
                 </div>
 
@@ -162,24 +134,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold mb-2">Address</h3>
                     <p className="text-gray-600">
-                      FHS Zoom Technologies Co., Ltd.
+                      1-1042 Albion Road
                       <br />
-                      No. 90 Solar Energy Boulevard
-                      <br />
-                      Tech City, Innovation District 215123
-                      <br />
-                      India
+                      Etobicoke ON M9V1A7
                     </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <Clock className="h-6 w-6 text-primary-600 mr-4 mt-1" />
-                  <div>
-                    <h3 className="font-semibold mb-2">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 12:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>
               </div>

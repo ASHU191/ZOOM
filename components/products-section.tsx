@@ -432,10 +432,10 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
           </button>
 
           {/* Top Banner */}
-          <div className="bg-primary-500 text-white py-2 px-6 flex justify-between items-center text-sm">
+          {/* <div className="bg-primary-500 text-white py-2 px-6 flex justify-between items-center text-sm">
             <span>• {product.specifications.warranty || "10 YEARS"} OFFICIAL WARRANTY</span>
             <span>• FREE SHIPPING</span>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6">
             {/* Left Side - Product Images */}
@@ -448,9 +448,9 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
                   height={400}
                   className="w-full h-80 object-cover rounded-lg"
                 />
-                <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
+                {/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
                   -15%
-                </div>
+                </div> */}
               </div>
 
               {/* Dynamic Thumbnail Images */}
@@ -486,12 +486,12 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               <h2 className="text-2xl font-bold mb-4 text-neutral-800">{product.title}</h2>
 
               {/* Warranty & Shipping Info */}
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <div className="text-primary-600 font-semibold mb-1 text-sm">
                   • {product.specifications.warranty || "10 YEARS"} OFFICIAL WARRANTY
                 </div>
                 <div className="text-primary-600 font-semibold text-sm">• FREE SHIPPING</div>
-              </div>
+              </div> */}
 
               {/* Features List */}
               <div className="mb-6">
@@ -518,13 +518,13 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               </div>
 
               {/* Price */}
-              <div className="mb-6">
+              {/* <div className="mb-6">
                 <div className="flex items-center space-x-3">
                   <span className="text-gray-400 line-through text-lg">{product.originalPrice}</span>
                   <span className="text-3xl font-bold text-primary-600">{product.price}</span>
                 </div>
                 <p className="text-accent-600 font-semibold text-sm mt-1">Only 13 left in stock - order soon.</p>
-              </div>
+              </div> */}
 
               {/* View Full Details Button */}
               <Link
@@ -578,7 +578,7 @@ export default function ProductsSection() {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-3 text-neutral-800">Featured Products</h2>
             <p className="text-base text-neutral-600 max-w-2xl mx-auto">
-              Discover our range of high-quality solar inverters and energy storage solutions
+              Discover our range of high-quality electronic solutions
             </p>
           </div>
 
@@ -617,9 +617,9 @@ export default function ProductsSection() {
                       height={200}
                       className="w-full h-40 object-contain group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute top-2 left-2 bg-secondary-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                    {/* <div className="absolute top-2 left-2 bg-secondary-500 text-white px-2 py-1 rounded text-xs font-semibold">
                       -15%
-                    </div>
+                    </div> */}
                   </div>
                   <div className=" p-4 flex flex-col h-full">
                     <h3 className="line-clamp-2 text-base font-bold mb-2 group-hover:text-primary-600 transition-colors">

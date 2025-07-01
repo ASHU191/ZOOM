@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white" style={{background:'#4c525e'}}>
       <div className="container mx-auto px-4 py-8 lg:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           <div className="sm:col-span-2 lg:col-span-1">
@@ -16,7 +16,7 @@ export default function Footer() {
               className="h-8 w-auto mb-4"
             />
             <p className="text-gray-300 text-sm lg:text-base mb-4">
-              Leading the future of renewable energy with innovative solar solutions for a sustainable tomorrow.
+              Leading the future of Electronic with Explosion Proof solutions for a sustainable tomorrow.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="hover:text-red-400 transition-colors">
@@ -36,6 +36,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
+<div className=""></div>
 
           <div>
             <h3 className="text-lg lg:text-xl font-bold mb-4">About FHS Zoom</h3>
@@ -45,7 +46,7 @@ export default function Footer() {
                   Company Profile
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/about/milestones" className="hover:text-red-400 transition-colors text-sm lg:text-base">
                   Milestones
                 </Link>
@@ -67,11 +68,10 @@ export default function Footer() {
                 <Link href="/about/csr" className="hover:text-red-400 transition-colors text-sm lg:text-base">
                   CSR
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
-
-          <div>
+          {/* <div>
             <h3 className="text-lg lg:text-xl font-bold mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
@@ -109,29 +109,14 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h3 className="text-lg lg:text-xl font-bold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/contact/sales" className="hover:text-red-400 transition-colors text-sm lg:text-base">
-                  Sales
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact/service" className="hover:text-red-400 transition-colors text-sm lg:text-base">
-                  Service
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact/media" className="hover:text-red-400 transition-colors text-sm lg:text-base">
-                  Media
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact/careers" className="hover:text-red-400 transition-colors text-sm lg:text-base">
-                  Careers
+                <Link href="/contact" className="hover:text-red-400 transition-colors text-sm lg:text-base">
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -142,13 +127,13 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p>© {new Date().getFullYear()} FHS Zoom. All Rights Reserved.</p>
             <div className="flex flex-wrap justify-center md:justify-end space-x-4 lg:space-x-6">
-              <Link href="/privacy-policy" className="hover:text-white transition-colors">
+              <Link href="" className="hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms-of-use" className="hover:text-white transition-colors">
+              <Link href="/" className="hover:text-white transition-colors">
                 Terms of Use
               </Link>
-              <Link href="/cookie-policy" className="hover:text-white transition-colors">
+              <Link href="/" className="hover:text-white transition-colors">
                 Cookie Policy
               </Link>
             </div>

@@ -47,7 +47,7 @@ export default function SolutionsSection() {
               key={index}
               href={item.href}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
-              style={{ boxShadow: "0px 2px 23px 8px rgba(0, 0, 0, 0.49)" }}
+              style={{ boxShadow: "0px 2px 23px 8px #9696967d" }}
             >
               <div className="relative">
                 <Image

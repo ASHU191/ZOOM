@@ -3919,10 +3919,10 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
           </button>
 
           {/* Top Banner */}
-          <div className="bg-primary-500 text-white py-2 px-6 flex justify-between items-center text-sm">
+          {/* <div className="bg-primary-500 text-white py-2 px-6 flex justify-between items-center text-sm">
             <span>• EXPLOSION-PROOF CERTIFIED</span>
             <span>• FREE SHIPPING</span>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6">
             {/* Left Side - Product Images */}
@@ -3935,9 +3935,9 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
                   height={400}
                   className="w-full h-80 object-cover rounded-lg"
                 />
-                <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
+                {/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
                   -15%
-                </div>
+                </div> */}
               </div>
 
               {/* Fixed Size Thumbnail Images */}
@@ -3963,10 +3963,10 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               <h2 className="text-2xl font-bold mb-4 text-neutral-800">{product.title}</h2>
 
               {/* Warranty & Shipping Info */}
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <div className="text-primary-600 font-semibold mb-1 text-sm">• EXPLOSION-PROOF CERTIFIED</div>
                 <div className="text-primary-600 font-semibold text-sm">• FREE SHIPPING</div>
-              </div>
+              </div> */}
 
               {/* Features List */}
               <div className="mb-6">
@@ -3994,10 +3994,10 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
 
               {/* Price */}
               <div className="mb-6">
-                <div className="flex items-center space-x-3">
+                {/* <div className="flex items-center space-x-3">
                   <span className="text-gray-400 line-through text-lg">₹{product.originalPrice}</span>
                   <span className="text-3xl font-bold text-primary-600">₹{product.price}</span>
-                </div>
+                </div> */}
                 <p className="text-accent-600 font-semibold text-sm mt-1">Limited stock available - order soon.</p>
               </div>
 
@@ -4018,7 +4018,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
 }
 
 export default function ProductsPage() {
-  const [selectedCategory, setSelectedCategory] = useState("All")
+const [selectedCategory, setSelectedCategory] = useState(categories[2]) // 3rd category = "Circuit Breakers"
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedProduct, setSelectedProduct] = useState<(typeof allProducts)[0] | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -4085,7 +4085,7 @@ export default function ProductsPage() {
               </div>
 
               {/* Category Filter */}
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <Filter className="h-4 w-4 text-gray-600" />
                 <select
                   value={selectedCategory}
@@ -4098,9 +4098,26 @@ export default function ProductsPage() {
                     </option>
                   ))}
                 </select>
-              </div>
-            </div>
+              </div> */}
+              {/* Category Tabs */}
+              
 
+            </div>
+<div className="flex flex-wrap gap-2 mt-4 justify-center">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setSelectedCategory(category)}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                      selectedCategory === category
+                        ? "bg-primary-600 text-white"
+                        : "bg-gray-200 text-gray-700 hover:bg-primary-100"
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
             {/* Results Info */}
             <div className="mt-4 text-center text-gray-600 text-sm">
               {selectedCategory === "All"
@@ -4129,9 +4146,9 @@ export default function ProductsPage() {
                       height={200}
                       className="w-full h-40 object-contain group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute top-2 left-2 bg-secondary-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                    {/* <div className="absolute top-2 left-2 bg-secondary-500 text-white px-2 py-1 rounded text-xs font-semibold">
                       -15%
-                    </div>
+                    </div> */}
                     <div className="absolute top-2 right-2 bg-primary-600 text-white px-2 py-1 rounded text-xs">
                       {product.category}
                     </div>
@@ -4174,7 +4191,7 @@ export default function ProductsPage() {
                 <p className="text-gray-500 text-lg">No products found matching your criteria.</p>
                 <button
                   onClick={() => {
-                    setSelectedCategory("All")
+                    setSelectedCategory("Circuit Breakers")
                     setSearchTerm("")
                   }}
                   className="mt-4 bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors"

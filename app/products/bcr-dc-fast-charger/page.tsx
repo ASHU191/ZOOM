@@ -124,7 +124,7 @@ export default function ProductDetailPage() {
               <h1 className="text-2xl lg:text-3xl font-bold mb-4">{product.title}</h1>
 
               {/* Rating */}
-              <div className="flex items-center mb-4">
+                            {/* <div className="flex items-center mb-4">
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -140,14 +140,13 @@ export default function ProductDetailPage() {
                 </span>
               </div>
 
-              {/* Price */}
               <div className="flex items-center mb-6">
                 <div className="text-gray-400 line-through text-lg mr-4">₹{product.originalPrice}</div>
                 <div className="text-3xl font-bold text-primary-600">₹{product.price}</div>
                 <div className="ml-4 bg-green-100 text-green-600 px-2 py-1 rounded text-sm font-medium">
                   Save ₹{Number.parseInt(product.originalPrice) - Number.parseInt(product.price)}
                 </div>
-              </div>
+              </div> */}
 
               {/* Trust Badges */}
               <div className="grid grid-cols-2 gap-4 mb-6">
@@ -241,7 +240,7 @@ export default function ProductDetailPage() {
               >
                 SPECIFICATIONS
               </button>
-              <button
+                           {/* <button
                 className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${
                   activeTab === "applications"
                     ? "border-b-2 border-primary-600 text-primary-600"
@@ -250,7 +249,7 @@ export default function ProductDetailPage() {
                 onClick={() => setActiveTab("applications")}
               >
                 APPLICATIONS
-              </button>
+              </button> */}
             </div>
           </div>
 

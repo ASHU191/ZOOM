@@ -16,7 +16,7 @@ export default function AboutSection() {
               explosion-proof and high-performance electrical systems.
             </p>
 
-            <div className="grid grid-cols-3 gap-4 lg:gap-6 mb-6 lg:mb-8">
+            {/* <div className="grid grid-cols-3 gap-4 lg:gap-6 mb-6 lg:mb-8">
               <div className="text-center">
                 <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">200+</div>
                 <div className="text-xs lg:text-sm text-gray-600">Inverters Installed</div>
@@ -29,7 +29,7 @@ export default function AboutSection() {
                 <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">3</div>
                 <div className="text-xs lg:text-sm text-gray-600">Years Experience</div>
               </div>
-            </div>
+            </div> */}
 
             <a
               href="/about"
@@ -42,7 +42,7 @@ export default function AboutSection() {
           <div className="relative">
             <Image
               src="/about/1 (1).jpeg?height=500&width=600"
-              alt="FHS Zoom solar installation"
+              alt="FHS Zoom installation"
               width={600}
               height={500}
               className="rounded-lg shadow-lg w-full h-auto"

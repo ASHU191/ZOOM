@@ -201,13 +201,13 @@ export default function Navbar() {
 
             {/* Right side items */}
             <div className="flex items-center space-x-2">
-              <button className="text-neutral-700 hover:text-primary-600 p-2">
+              {/* <button className="text-neutral-700 hover:text-primary-600 p-2">
                 <Search className="h-4 w-4" />
-              </button>
-              <div className="hidden sm:flex items-center cursor-pointer">
+              </button> */}
+              {/* <div className="hidden sm:flex items-center cursor-pointer">
                 <Globe className="h-4 w-4 text-neutral-700" />
                 <ChevronDown className="h-3 w-3 text-neutral-700 ml-1" />
-              </div>
+              </div> */}
               <Link
                 href="/contact"
                 className="hidden md:flex items-center bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-full transition-colors text-sm"

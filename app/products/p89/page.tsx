@@ -49,8 +49,7 @@ export default function ProductDetailPage() {
               Products
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href="/products?category=air-conditioner" className="hover:text-primary-600">
-              Lights
+            <Link href="/products" className="hover:text-primary-600">              Lights
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>
@@ -72,10 +71,9 @@ export default function ProductDetailPage() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
+{/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
                     -15%
-                  </div>
-                </div>
+                  </div> */}                </div>
               </div>
 
               {/* Thumbnail Images */}
@@ -111,7 +109,7 @@ export default function ProductDetailPage() {
               <h1 className="text-2xl lg:text-3xl font-bold mb-4">{product.title}</h1>
 
               {/* Rating */}
-              <div className="flex items-center mb-4">
+                            {/* <div className="flex items-center mb-4">
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -127,14 +125,13 @@ export default function ProductDetailPage() {
                 </span>
               </div>
 
-              {/* Price */}
               <div className="flex items-center mb-6">
                 <div className="text-gray-400 line-through text-lg mr-4">₹{product.originalPrice}</div>
                 <div className="text-3xl font-bold text-primary-600">₹{product.price}</div>
                 <div className="ml-4 bg-green-100 text-green-600 px-2 py-1 rounded text-sm font-medium">
                   Save ₹{Number.parseInt(product.originalPrice) - Number.parseInt(product.price)}
                 </div>
-              </div>
+              </div> */}
 
               {/* Trust Badges */}
               <div className="grid grid-cols-2 gap-4 mb-6">
@@ -142,7 +139,7 @@ export default function ProductDetailPage() {
                   <Shield className="h-5 w-5 text-primary-600 mr-2" />
                   <span>Explosion-Proof Certified</span>
                 </div>
-                <div className="flex items-center text-sm">
+                {/* <div className="flex items-center text-sm">
                   <Truck className="h-5 w-5 text-primary-600 mr-2" />
                   <span>Free Installation</span>
                 </div>
@@ -153,7 +150,7 @@ export default function ProductDetailPage() {
                 <div className="flex items-center text-sm">
                   <Thermometer className="h-5 w-5 text-primary-600 mr-2" />
                   <span>Climate Control</span>
-                </div>
+                </div> */}
               </div>
 
               <p className="text-gray-700 mb-6 text-sm lg:text-base">{product.description}</p>
@@ -184,7 +181,7 @@ export default function ProductDetailPage() {
               </div>
 
               {/* Action Buttons */}
-              <div className="space-y-4">
+              {/* <div className="space-y-4">
                 <Link
                   href="/contact"
                   className="w-full bg-primary-600 text-white py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors font-semibold text-center block"
@@ -197,7 +194,7 @@ export default function ProductDetailPage() {
                 >
                   Contact for Installation
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -228,7 +225,7 @@ export default function ProductDetailPage() {
               >
                 SPECIFICATIONS
               </button>
-              <button
+                           {/* <button
                 className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${
                   activeTab === "applications"
                     ? "border-b-2 border-primary-600 text-primary-600"
@@ -237,7 +234,7 @@ export default function ProductDetailPage() {
                 onClick={() => setActiveTab("applications")}
               >
                 APPLICATIONS
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -279,7 +276,7 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-            {activeTab === "applications" && (
+                        {/* {activeTab === "applications" && (
               <div>
                 <h2 className="text-xl lg:text-2xl font-bold mb-6">Applications & Industries</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -315,7 +312,7 @@ export default function ProductDetailPage() {
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </section>
