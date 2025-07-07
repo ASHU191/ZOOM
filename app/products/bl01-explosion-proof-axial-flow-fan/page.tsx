@@ -77,11 +77,11 @@ export default function ProductDetailPage() {
             <div>
               <div className="mb-4 border rounded-lg overflow-hidden">
                 <div className="relative w-full h-80 lg:h-96">
-                  <Image
+                   <Image
                     src={product.gallery[selectedImage] || product.image}
                     alt={product.title}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
 {/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
                     -15%

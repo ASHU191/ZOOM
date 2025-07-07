@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import { useRef } from "react"
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
@@ -1158,7 +1159,7 @@ const allProducts = [
   },
   {
     id: 39,
-    category: "EV Charger", 
+    category: "EV Charger",
     title: "BPD Lithium Battery Charger",
     description:
       "The BPD Series lithium battery charger is a smart charging solution designed for high-efficiency energy transfer and long battery life.",
@@ -1256,7 +1257,7 @@ const allProducts = [
     description:
       "The BCR DC fast charger is designed to deliver rapid, high-power charging for electric vehicles in public and commercial settings.",
     image: "/product/p42-1.jpg?height=200&width=250",
-     gallery: ["/product/p42-2.png?height=300&width=300","/product/p42-3.png?height=300&width=300"],
+    gallery: ["/product/p42-2.png?height=300&width=300", "/product/p42-3.png?height=300&width=300"],
 
     features: [
       "High-power output for rapid EV charging",
@@ -1686,7 +1687,7 @@ const allProducts = [
     description:
       "The BL01-Series is designed to provide efficient ventilation and air circulation in hazardous areas where flammable gases or vapors may be present.",
     image: "/product/p55-1.png?height=200&width=250",
-  gallery: ["/product/p55-2.png?height=300&width=300","/product/p55-3.png?height=300&width=300"],
+    gallery: ["/product/p55-2.png?height=300&width=300", "/product/p55-3.png?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -1717,8 +1718,8 @@ const allProducts = [
     description:
       "The BL02-Series is engineered to safely remove flammable gases, vapors, and fumes from hazardous industrial environments.",
     image: "/product/p56-1.png?height=200&width=250",
-      gallery: ["/product/p56-2.png?height=300&width=300","/product/p56-3.png?height=300&width=300"],
-     features: [
+    gallery: ["/product/p56-2.png?height=300&width=300", "/product/p56-3.png?height=300&width=300"],
+    features: [
       "Explosion protection - China Ex (GB)",
       "Zone 1 and Zone 2 application",
       "Flameproof motor with corrosion-resistant housing",
@@ -1748,7 +1749,7 @@ const allProducts = [
     description:
       "The BL03-Series is designed for safe and efficient ventilation in hazardous environments with explosive gas or dust, featuring a square-frame structure.",
     image: "/product/p57-1.png?height=200&width=250",
-     gallery: ["/product/p57-2.png?height=300&width=300","/product/p57-3.png?height=300&width=300","/product/p57-4.png?height=300&width=300"],
+    gallery: ["/product/p57-2.png?height=300&width=300", "/product/p57-3.png?height=300&width=300", "/product/p57-4.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -1781,7 +1782,7 @@ const allProducts = [
     description:
       "Explosion-proof axial fans designed for safe air and fume extraction in hazardous environments, compliant with ATEX Directive 2014/34/UE.",
     image: "/product/p58-1.png?height=200&width=250",
-  gallery: ["/product/p58-2.png?height=300&width=300","/product/p58-3.png?height=300&width=300"],
+    gallery: ["/product/p58-2.png?height=300&width=300", "/product/p58-3.png?height=300&width=300"],
 
     features: [
       "ATEX Directive 2014/34/UE compliant, certified under CESI n°3 ATEX 251",
@@ -1817,7 +1818,7 @@ const allProducts = [
     description:
       "The BLB01-Series Explosion-proof LED Lightings are engineered for high-efficiency illumination in hazardous gas and dust environments. Featuring a durable flameproof housing and energy-saving LED technology, they ensure long-lasting and safe performance. Their compact design supports easy installation across various industrial settings.",
     image: "/product/p59-1.png?height=200&width=250",
-  gallery: ["/product/p59-2.png?height=300&width=300","/product/p59-3.png?height=300&width=300"],
+    gallery: ["/product/p59-2.png?height=300&width=300", "/product/p59-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
@@ -1884,7 +1885,7 @@ const allProducts = [
     description:
       "The BLB03-Series Explosion-proof LED Lightings offer high-efficiency illumination specifically engineered for hazardous and demanding industrial environments. Built with a durable, flameproof aluminum alloy housing and advanced thermal management, they ensure optimal performance and longevity.",
     image: "/product/p61-1.png?height=200&width=250",
-  gallery: ["/product/p61-2.png?height=300&width=300","/product/p61-3.png?height=300&width=300"],
+    gallery: ["/product/p61-2.png?height=300&width=300", "/product/p61-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -1917,7 +1918,7 @@ const allProducts = [
     description:
       "The BLB04-Series Explosion-proof LED Lightings are designed for reliable illumination in hazardous areas with the presence of flammable gases or combustible dust. Featuring a compact, flameproof structure and high-efficiency LED technology, they offer energy savings and long service life.",
     image: "/product/p62-1.png?height=200&width=250",
-  gallery: ["/product/p62-2.png?height=300&width=300","/product/p62-3.png?height=300&width=300"],
+    gallery: ["/product/p62-2.png?height=300&width=300", "/product/p62-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -1948,7 +1949,7 @@ const allProducts = [
     description:
       "The BLB05-Series Explosion-proof LED Floodlights are engineered for powerful and safe area lighting in hazardous zones with explosive gas or dust. Featuring a rugged flameproof aluminum housing and high-lumen LED technology, they deliver wide beam coverage with excellent energy efficiency.",
     image: "/product/p63-1.png?height=200&width=250",
-  gallery: ["/product/p63-2.png?height=300&width=300","/product/p63-3.png?height=300&width=300"],
+    gallery: ["/product/p63-2.png?height=300&width=300", "/product/p63-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
@@ -1979,7 +1980,7 @@ const allProducts = [
     description:
       "The BLB06-Series Explosion-proof LED Floodlights are designed for high-intensity illumination in hazardous environments where flammable gases or dust may be present. Built with a robust, corrosion-resistant aluminum alloy housing and advanced LED technology, they provide exceptional brightness, long lifespan, and low maintenance.",
     image: "/product/p64-1.png?height=200&width=250",
-  gallery: ["/product/p64-2.png?height=300&width=300","/product/p64-3.png?height=300&width=300"],
+    gallery: ["/product/p64-2.png?height=300&width=300", "/product/p64-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2040,7 +2041,7 @@ const allProducts = [
     description:
       "The BLB08-Series Explosion-proof Cleanliness Fluorescent Light is designed for cleanroom environments that require both high hygiene standards and explosion protection. Constructed with a smooth, anti-corrosive housing and sealed to prevent dust accumulation, it ensures reliable and glare-free illumination.",
     image: "/product/p66-1.png?height=200&width=250",
-  gallery: ["/product/p66-2.png?height=300&width=300","/product/p66-3.png?height=300&width=300"],
+    gallery: ["/product/p66-2.png?height=300&width=300", "/product/p66-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2073,7 +2074,7 @@ const allProducts = [
     description:
       "The BLB09-Series Explosion-proof Fluorescent Light (Emergency) is engineered to provide reliable lighting and automatic emergency backup in hazardous environments. Featuring a flameproof, corrosion-resistant housing and built-in emergency battery system, it ensures continuous illumination during power failures.",
     image: "/product/p67-1.png?height=200&width=250",
-  gallery: ["/product/p67-2.png?height=300&width=300","/product/p67-3.png?height=300&width=300"],
+    gallery: ["/product/p67-2.png?height=300&width=300", "/product/p67-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
@@ -2107,7 +2108,7 @@ const allProducts = [
     description:
       "The BLB10-Series Explosion-proof Light Fittings for Fluorescent Lamps are designed for safe and efficient lighting in hazardous areas with explosive gas or dust. Built with a flameproof and anti-corrosive housing, they support various fluorescent tube configurations for uniform and stable illumination.",
     image: "/product/p68-1.png?height=200&width=250",
-  gallery: ["/product/p68-2.png?height=300&width=300","/product/p68-3.png?height=300&width=300"],
+    gallery: ["/product/p68-2.png?height=300&width=300", "/product/p68-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
@@ -2138,7 +2139,7 @@ const allProducts = [
     description:
       "The BLB11-Series Explosion-proof Fluorescent Lights are designed for use in hazardous environments requiring consistent and safe illumination. Featuring a durable, flameproof housing and high-transparency diffuser, they ensure efficient light distribution while withstanding harsh industrial conditions.",
     image: "/product/p69-1.png?height=200&width=250",
-  gallery: ["/product/p69-2.png?height=300&width=300","/product/p69-3.png?height=300&width=300"],
+    gallery: ["/product/p69-2.png?height=300&width=300", "/product/p69-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2170,7 +2171,7 @@ const allProducts = [
     description:
       "The BLB12-Series Explosion-proof Light Fittings for Fluorescent Lamps are built to provide safe and reliable lighting in environments with explosive gas or dust. Featuring a robust flameproof design and corrosion-resistant construction, these fittings accommodate multiple fluorescent lamp types.",
     image: "/product/p70-1.png?height=200&width=250",
-  gallery: ["/product/p70-2.png?height=300&width=300","/product/p70-3.png?height=300&width=300"],
+    gallery: ["/product/p70-2.png?height=300&width=300", "/product/p70-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2269,7 +2270,7 @@ const allProducts = [
     description:
       "The BLB15-Series Explosion-proof Lightings are designed to provide safe and efficient illumination in environments where flammable gases or dust may be present. Featuring a robust flameproof structure and high-performance LED or discharge lamp options, they ensure long-lasting operation with minimal maintenance.",
     image: "/product/p73-1.png?height=200&width=250",
-  gallery: ["/product/p73-2.png?height=300&width=300","/product/p73-3.png?height=300&width=300"],
+    gallery: ["/product/p73-2.png?height=300&width=300", "/product/p73-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2467,7 +2468,7 @@ const allProducts = [
     description:
       "The BLB21-Series Explosion-proof Emergency Exit Lights are engineered to deliver dependable emergency egress indication in hazardous areas where explosive gases or dust may exist. Built with a flameproof, impact-resistant enclosure and energy-efficient LED display, they provide clear exit guidance during power outages or emergencies. Ideal for Zone 1 and Zone 2 environments, this series is well-suited for petrochemical plants, offshore platforms, and other high-risk industrial locations.",
     image: "/product/p79-1.png?height=200&width=250",
-  gallery: ["/product/p79-2.png?height=300&width=300","/product/p79-3.png?height=300&width=300"],
+    gallery: ["/product/p79-2.png?height=300&width=300", "/product/p79-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -2496,7 +2497,7 @@ const allProducts = [
     description:
       "The BLB22-Series Explosion-proof Emergency Exit Lights are designed to ensure clear and reliable exit guidance in hazardous environments with explosive gases or dust. Featuring a robust flameproof enclosure and high-brightness LED indicators, they automatically activate during power failures to support safe evacuation. Suitable for Zone 1 and Zone 2 areas, the BLB22-Series is ideal for use in oil refineries, chemical plants, and industrial safety-critical facilities.",
     image: "/product/p80-1.png?height=200&width=250",
-  gallery: ["/product/p80-2.png?height=300&width=300","/product/p80-3.png?height=300&width=300"],
+    gallery: ["/product/p80-2.png?height=300&width=300", "/product/p80-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex (GB)",
@@ -2554,7 +2555,7 @@ const allProducts = [
     description:
       "The BLB24-Series Explosion-proof Emergency Lights are designed to deliver dependable lighting during power failures in hazardous environments with explosive gases or dust. Featuring a compact, flameproof structure and energy-efficient LED technology, they provide instant, automatic illumination to support safe evacuation. Suitable for Zone 1 and Zone 2 areas, this series is ideal for use in petrochemical plants, offshore platforms, and other high-risk industrial locations.",
     image: "/product/p82-1.png?height=200&width=250",
-  gallery: ["/product/p82-2.png?height=300&width=300","/product/p82-3.png?height=300&width=300"],
+    gallery: ["/product/p82-2.png?height=300&width=300", "/product/p82-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - China Ex (GB)",
@@ -3229,7 +3230,7 @@ const allProducts = [
     title: "ST04-Series Explosion-proof Terminal Box",
     description: "The ST04-Series explosion-proof terminal box is engineered for safe cable terminations in hazardous areas with explosive gases or dust. Featuring a stainless steel flameproof enclosure, it offers superior corrosion resistance and long-term durability. Designed for reliable electrical connections, it supports flexible wiring configurations. Suitable for harsh industrial environments requiring high safety standards.",
     image: "/product/p110-1.png?height=200&width=250",
-  gallery: ["/product/p110-2.png?height=300&width=300","/product/p110-3.png?height=300&width=300"],
+    gallery: ["/product/p110-2.png?height=300&width=300", "/product/p110-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3322,7 +3323,7 @@ const allProducts = [
     title: "ST08-Series Explosion-proof Electrical Apparatus (For Cable Connection)",
     description: "The ST08-Series explosion-proof electrical apparatus is designed for safe cable connections in hazardous areas with explosive gases or dust. Its flameproof construction prevents ignition, ensuring reliable and secure operation. Built for durability, it supports various cable types and installation needs. Ideal for industrial environments requiring certified explosion protection.",
     image: "/product/p114-1.png?height=200&width=250",
-  gallery: ["/product/p114-2.png?height=300&width=300","/product/p114-3.png?height=300&width=300"],
+    gallery: ["/product/p114-2.png?height=300&width=300", "/product/p114-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx(IEC), ATEX(CENELEC,EN), China Ex(GB)",
@@ -3756,7 +3757,7 @@ const allProducts = [
     title: "ST03-Series Explosion-proof Terminal Box",
     description: "The ST03-Series explosion-proof terminal box is designed for secure and reliable cable terminations in hazardous environments. Its flameproof enclosure prevents the ignition of flammable gases or dust, ensuring safe operation. Built for durability and corrosion resistance, it supports various wiring configurations. Ideal for use in demanding industrial zones requiring certified explosion protection.",
     image: "/product/p133-1.png?height=200&width=250",
-  gallery: ["/product/p133-2.png?height=300&width=300","/product/p133-3.png?height=300&width=300"],
+    gallery: ["/product/p133-2.png?height=300&width=300", "/product/p133-3.png?height=300&width=300"],
 
     features: [
       "Explosion protection - IECEx (IEC), ATEX (CENELEC, EN), China Ex(GB)",
@@ -3890,6 +3891,7 @@ const categoryMapping: { [key: string]: string } = {
   "explosion-proof": "All",
 }
 
+
 // Update Distribution Box categories
 allProducts.forEach((product) => {
   if (product.category === "Distribution Box" && product.id >= 43 && product.id <= 54) {
@@ -3903,12 +3905,40 @@ interface ProductModalProps {
   onClose: () => void
 }
 
+
 function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
+  const modalRef = useRef<HTMLDivElement>(null)
+  const [mainImage, setMainImage] = useState(product?.image || "/product/p15-1.png")
+
+  // Close on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+        onClose()
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [isOpen, onClose])
+
+  // Update image when modal opens with new product
+  useEffect(() => {
+    if (product?.image) {
+      setMainImage(product.image)
+    }
+  }, [product])
+
   if (!isOpen || !product) return null
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div ref={modalRef} className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="relative">
           {/* Close Button */}
           <button
@@ -3918,33 +3948,28 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             <X className="h-5 w-5" />
           </button>
 
-          {/* Top Banner */}
-          {/* <div className="bg-primary-500 text-white py-2 px-6 flex justify-between items-center text-sm">
-            <span>• EXPLOSION-PROOF CERTIFIED</span>
-            <span>• FREE SHIPPING</span>
-          </div> */}
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6">
             {/* Left Side - Product Images */}
             <div>
               <div className="relative mb-4">
                 <Image
-                  src={product.image || "/product/p15-1.png"}
+                  src={mainImage}
                   alt={product.title}
                   width={400}
                   height={400}
                   className="w-full h-80 object-cover rounded-lg"
                 />
-                {/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                  -15%
-                </div> */}
               </div>
 
-              {/* Fixed Size Thumbnail Images */}
+              {/* Thumbnails */}
               {product.gallery && product.gallery.length > 0 && (
                 <div className="grid grid-cols-4 gap-2">
                   {product.gallery.map((img, index) => (
-                    <div key={index} className="border rounded-lg overflow-hidden">
+                    <div
+                      key={index}
+                      onClick={() => setMainImage(img || "/product/p15-1.png")}
+                      className="border rounded-lg overflow-hidden cursor-pointer hover:shadow"
+                    >
                       <Image
                         src={img || "/product/p15-1.png"}
                         alt={`${product.title} ${index + 1}`}
@@ -3962,12 +3987,6 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             <div>
               <h2 className="text-2xl font-bold mb-4 text-neutral-800">{product.title}</h2>
 
-              {/* Warranty & Shipping Info */}
-              {/* <div className="mb-4">
-                <div className="text-primary-600 font-semibold mb-1 text-sm">• EXPLOSION-PROOF CERTIFIED</div>
-                <div className="text-primary-600 font-semibold text-sm">• FREE SHIPPING</div>
-              </div> */}
-
               {/* Features List */}
               <div className="mb-6">
                 <ul className="space-y-2">
@@ -3981,7 +4000,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               </div>
 
               {/* Availability & SKU */}
-              <div className="mb-6 space-y-2">
+              {/* <div className="mb-6 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600 text-sm">AVAILABILITY:</span>
                   <span className="text-primary-600 font-semibold text-sm">{product.availability}</span>
@@ -3990,16 +4009,12 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
                   <span className="text-gray-600 text-sm">SKU:</span>
                   <span className="text-sm font-medium">{product.sku}</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* Price */}
-              <div className="mb-6">
-                {/* <div className="flex items-center space-x-3">
-                  <span className="text-gray-400 line-through text-lg">₹{product.originalPrice}</span>
-                  <span className="text-3xl font-bold text-primary-600">₹{product.price}</span>
-                </div> */}
+              {/* <div className="mb-6">
                 <p className="text-accent-600 font-semibold text-sm mt-1">Limited stock available - order soon.</p>
-              </div>
+              </div> */}
 
               {/* View Full Details Button */}
               <Link
@@ -4017,33 +4032,50 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
   )
 }
 
+
+
+
+
 export default function ProductsPage() {
-const [selectedCategory, setSelectedCategory] = useState(categories[2]) // 3rd category = "Circuit Breakers"
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedProduct, setSelectedProduct] = useState<(typeof allProducts)[0] | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
-
   const searchParams = useSearchParams()
 
+  // Load categories from URL
   useEffect(() => {
     const categoryParam = searchParams.get("category")
-    if (categoryParam && categoryMapping[categoryParam]) {
-      setSelectedCategory(categoryMapping[categoryParam])
+    if (categoryParam) {
+      const categoriesFromURL = categoryParam
+        .split(",")
+        .map((key) => categoryMapping[key]) // convert to display names
+        .filter((label) => label) // remove undefined
+      setSelectedCategories(categoriesFromURL)
     }
   }, [searchParams])
 
+  // Filtered Products
   const filteredProducts = allProducts.filter((product) => {
-    const matchesCategory = selectedCategory === "All" || product.category === selectedCategory
+    const matchesCategory =
+      selectedCategories.length === 0 ||
+      selectedCategories.includes("All") ||
+      selectedCategories.includes(product.category)
+
     const matchesSearch =
       product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       product.description.toLowerCase().includes(searchTerm.toLowerCase())
+
     return matchesCategory && matchesSearch
   })
 
+  // Optional: You can remove this if not using dropdown selection anymore
   const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedCategory(e.target.value)
+    const value = e.target.value
+    setSelectedCategories([value])
   }
 
+  // Modal open handler
   const openModal = (product: (typeof allProducts)[0], e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
@@ -4051,10 +4083,12 @@ const [selectedCategory, setSelectedCategory] = useState(categories[2]) // 3rd c
     setIsModalOpen(true)
   }
 
+  // Modal close handler
   const closeModal = () => {
     setIsModalOpen(false)
     setSelectedProduct(null)
   }
+
 
   return (
     <>
@@ -4100,30 +4134,50 @@ const [selectedCategory, setSelectedCategory] = useState(categories[2]) // 3rd c
                 </select>
               </div> */}
               {/* Category Tabs */}
-              
+
 
             </div>
-<div className="flex flex-wrap gap-2 mt-4 justify-center">
-                {categories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                      selectedCategory === category
-                        ? "bg-primary-600 text-white"
-                        : "bg-gray-200 text-gray-700 hover:bg-primary-100"
+            {/* <div className="flex flex-wrap gap-2 mt-4 justify-center">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setSelectedCategory(category)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
+                    ? "bg-primary-600 text-white"
+                    : "bg-gray-200 text-gray-700 hover:bg-primary-100"
                     }`}
-                  >
-                    {category}
-                  </button>
-                ))}
-              </div>
+                >
+                  {category}
+                </button>
+              ))}
+            </div> */}
+            <div className="flex flex-wrap gap-2 mt-4 justify-center">
+              {categories.map((label) => (
+                <button
+                  key={label}
+                  onClick={() =>
+                    setSelectedCategories((prev) =>
+                      prev.includes(label)
+                        ? prev.filter((c) => c !== label) // toggle off
+                        : [...prev, label] // toggle on
+                    )
+                  }
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition ${selectedCategories.includes(label)
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-200 text-gray-800 hover:bg-blue-100"
+                    }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
             {/* Results Info */}
-            <div className="mt-4 text-center text-gray-600 text-sm">
+            {/* <div className="mt-4 text-center text-gray-600 text-sm">
               {selectedCategory === "All"
                 ? `Showing all ${filteredProducts.length} products`
                 : `Showing ${filteredProducts.length} products in "${selectedCategory}"`}
-            </div>
+            </div> */}
           </div>
         </section>
 

@@ -1,6 +1,7 @@
 "use client"
 import { useState, useRef } from "react"
 import type React from "react"
+import { useEffect } from "react"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -14,8 +15,8 @@ export const featuredProducts = [
     title: "B01-Series Explosion-proof Air Conditioners",
     description:
       "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-     image: "/product/p1 1.jpeg?height=200&width=250",
-    gallery: ["/product/p1 2.jpeg?height=300&width=300", "/product/p1 3.jpeg?height=300&width=300" , "/product/p1 4.jpeg?height=300&width=300"],
+    image: "/product/p1 1.jpeg?height=200&width=250",
+    gallery: ["/product/p1 2.jpeg?height=300&width=300", "/product/p1 3.jpeg?height=300&width=300", "/product/p1 4.jpeg?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -39,7 +40,7 @@ export const featuredProducts = [
     sku: "B01-AC-EX",
     href: "/products/b01-explosion-proof-air-conditioner",
   },
-   {
+  {
     id: 35,
     category: "Coupler",
     title: "TS01-Series Explosion-proof Coupler",
@@ -71,7 +72,7 @@ export const featuredProducts = [
     sku: "TS01-CP-EX",
     href: "/products/p35",
   },
-   {
+  {
     id: 45,
     category: "Distribution Box",
     title: "PAX23-Series Explosion-proof Electrical Apparatus",
@@ -102,14 +103,14 @@ export const featuredProducts = [
     sku: "PAX23-EA-EX",
     href: "/products/p45",
   },
- {
+  {
     id: 55,
     category: "Exhaust Fan",
     title: "BL01-Series Explosion-proof Axial Flow Fan",
     description:
       "The BL01-Series is designed to provide efficient ventilation and air circulation in hazardous areas where flammable gases or vapors may be present.",
     image: "/product/p55-1.png?height=200&width=250",
-  gallery: ["/product/p55-2.png?height=300&width=300","/product/p55-3.png?height=300&width=300"],
+    gallery: ["/product/p55-2.png?height=300&width=300", "/product/p55-3.png?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -164,7 +165,7 @@ export const featuredProducts = [
     sku: "BLB07-SGL-EX",
     href: "/products/p65",
   },
-   {
+  {
     id: 90,
     category: "Isolators",
     title: "CKT01- Series Explosion-proof Safety Switch",
@@ -197,7 +198,7 @@ export const featuredProducts = [
     sku: "CKT01-SWITCH",
     href: "/products/p90"
   },
-{
+  {
     id: 134,
     category: "Plug and Sockets",
     title: "BS01-Series Explosion-proof Plug and Sockets",
@@ -224,7 +225,7 @@ export const featuredProducts = [
     href: "/products/p134"
   },
 
-{
+  {
     id: 112,
     category: "Terminal Box",
     title: "ST06-Series Explosion-proof Terminal Box",
@@ -249,7 +250,7 @@ export const featuredProducts = [
     sku: "ST06",
     href: "/products/p112"
   },
-{
+  {
     id: 94,
     category: "Pipe Fittings",
     title: "ZK01-Series Explosion-proof Conduits (Flexible) (Stainless Steel, PVC Coated)",
@@ -276,7 +277,7 @@ export const featuredProducts = [
     sku: "ZK01",
     href: "/products/p94"
   },
-{
+  {
     id: 29,
     category: "Control Button Switch",
     title: "AK20-Series Explosion-proof Potentiometers",
@@ -306,7 +307,7 @@ export const featuredProducts = [
     sku: "AK20-POT-EX",
     href: "/products/p29",
   },
-{
+  {
     id: 38,
     category: "EV Charger",
     title: "XPD Forklift Battery Charger",
@@ -337,7 +338,7 @@ export const featuredProducts = [
     sku: "XPD-FC-01",
     href: "/products/p38",
   },
- {
+  {
     id: 93,
     category: "MV AVR",
     title: "Three Phase Step Voltage Regulators",
@@ -367,7 +368,7 @@ export const featuredProducts = [
     href: "/products/p93"
   },
 
-{
+  {
     id: 125,
     category: "AVIATION OBSTRUCTION LIGHT",
     title: "OJ88",
@@ -416,12 +417,40 @@ interface ProductModalProps {
   onClose: () => void
 }
 
+
 function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
+  const modalRef = useRef<HTMLDivElement>(null)
+  const [mainImage, setMainImage] = useState(product?.image || "/product/p15-1.png")
+
+  // Close on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+        onClose()
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [isOpen, onClose])
+
+  // Update image when modal opens with new product
+  useEffect(() => {
+    if (product?.image) {
+      setMainImage(product.image)
+    }
+  }, [product])
+
   if (!isOpen || !product) return null
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div ref={modalRef} className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="relative">
           {/* Close Button */}
           <button
@@ -431,49 +460,34 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             <X className="h-5 w-5" />
           </button>
 
-          {/* Top Banner */}
-          {/* <div className="bg-primary-500 text-white py-2 px-6 flex justify-between items-center text-sm">
-            <span>• {product.specifications.warranty || "10 YEARS"} OFFICIAL WARRANTY</span>
-            <span>• FREE SHIPPING</span>
-          </div> */}
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6">
             {/* Left Side - Product Images */}
             <div>
               <div className="relative mb-4">
                 <Image
-                  src={product.image || "/placeholder.svg"}
+                  src={mainImage}
                   alt={product.title}
                   width={400}
                   height={400}
-                  className="w-full h-80 object-cover rounded-lg"
+                  className="w-full h-80 object-contain rounded-lg"
                 />
-                {/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                  -15%
-                </div> */}
               </div>
 
-              {/* Dynamic Thumbnail Images */}
+              {/* Thumbnails */}
               {product.gallery && product.gallery.length > 0 && (
-                <div
-                  className={`grid gap-2 ${
-                    product.gallery.length === 1
-                      ? "grid-cols-1"
-                      : product.gallery.length === 2
-                        ? "grid-cols-2"
-                        : product.gallery.length === 3
-                          ? "grid-cols-3"
-                          : "grid-cols-4"
-                  }`}
-                >
+                <div className="grid grid-cols-4 gap-2">
                   {product.gallery.map((img, index) => (
-                    <div key={index} className="border rounded-lg overflow-hidden">
+                    <div
+                      key={index}
+                      onClick={() => setMainImage(img || "/product/p15-1.png")}
+                      className="border rounded-lg overflow-hidden cursor-pointer hover:shadow"
+                    >
                       <Image
-                        src={img || "/placeholder.svg"}
+                        src={img || "/product/p15-1.png"}
                         alt={`${product.title} ${index + 1}`}
                         width={80}
                         height={80}
-                        className="w-full h-16 object-cover"
+                        className="w-full h-16 object-contain"
                       />
                     </div>
                   ))}
@@ -484,14 +498,6 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             {/* Right Side - Product Details */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-neutral-800">{product.title}</h2>
-
-              {/* Warranty & Shipping Info */}
-              {/* <div className="mb-4">
-                <div className="text-primary-600 font-semibold mb-1 text-sm">
-                  • {product.specifications.warranty || "10 YEARS"} OFFICIAL WARRANTY
-                </div>
-                <div className="text-primary-600 font-semibold text-sm">• FREE SHIPPING</div>
-              </div> */}
 
               {/* Features List */}
               <div className="mb-6">
@@ -506,7 +512,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               </div>
 
               {/* Availability & SKU */}
-              <div className="mb-6 space-y-2">
+              {/* <div className="mb-6 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600 text-sm">AVAILABILITY:</span>
                   <span className="text-primary-600 font-semibold text-sm">{product.availability}</span>
@@ -515,15 +521,11 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
                   <span className="text-gray-600 text-sm">SKU:</span>
                   <span className="text-sm font-medium">{product.sku}</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* Price */}
               {/* <div className="mb-6">
-                <div className="flex items-center space-x-3">
-                  <span className="text-gray-400 line-through text-lg">{product.originalPrice}</span>
-                  <span className="text-3xl font-bold text-primary-600">{product.price}</span>
-                </div>
-                <p className="text-accent-600 font-semibold text-sm mt-1">Only 13 left in stock - order soon.</p>
+                <p className="text-accent-600 font-semibold text-sm mt-1">Limited stock available - order soon.</p>
               </div> */}
 
               {/* View Full Details Button */}
@@ -541,6 +543,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
     </div>
   )
 }
+
 
 export default function ProductsSection() {
   const [selectedProduct, setSelectedProduct] = useState<(typeof featuredProducts)[0] | null>(null)

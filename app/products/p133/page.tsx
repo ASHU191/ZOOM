@@ -68,7 +68,7 @@ export default function ProductDetailPage() {
                     src={product.gallery[selectedImage] || product.image}
                     alt={product.title}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
 {/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
                     -15%

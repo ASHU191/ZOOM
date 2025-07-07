@@ -2,31 +2,45 @@
 import Image from "next/image"
 import Link from "next/link"
 
+const explosionproofcategory = {
+  "air-conditioner": "Air Conditioner",
+  coupler: "Coupler",
+  "distribution-box": "Distribution Box (hexlon DBs)",
+  "exhaust-fan": "Exhaust Fan",
+  lights: "Lights",
+  isolators: "Isolators",
+  "Plug-and-Sockets": "Plug and Sockets",
+  "Terminal-Box": "Terminal Box",
+  "Pipe-Fittings": "Pipe Fittings",
+  "control-button-switch": "Control Button Switch"
+}
+
+const explosionHref = `/products?category=${Object.keys(explosionproofcategory).join(",")}`
 const solutions = [
   {
     title: "EXPLOSION PROOF",
     description: "Explosion- Proof products that give you total control in the most hazardous environments. Built to eliminate ignition risks while delivering uninterrupted performance.",
     image: "/category/2.jpg?height=150&width=250",
-    href: "",
+    href: explosionHref,
   },
   {
     title: "EV Charger", 
     description: "Revolutionizing EV charging with explosion proof safety. Certified for use in flammable and individual zones. Clean power even in the harshest environments.",
     image: "/category/3.jpg?height=150&width=250",
-    href: "",
+    href: "/products?category=ev-charger",
   },
   {
     title: "MV AVR",
     description: "Stabilizes medium-voltage systems in volatile enviornments. Minimizes surges and products sensitive equipment. Essential for continuous and safe operations.  ",
     image: "/category/4.jpg?height=150&width=250",
-    href: "",
+    href: "/products?category=mv-avr",
     class: "object-contain", // 👈 ye dynamic class hai
   },
   {
     title: "Aviation Lights", 
     description: "High visibility lights for aircraft and helipads. Engineered to resist weather and explosive gases. Critical illumination for aviation zones and refineries.",
     image: "/category/1.jpeg?height=150&width=250",
-    href: "",
+    href: "/products?category=AVIATION-OBSTRUCTION-LIGHT",
   },
 ]
 
