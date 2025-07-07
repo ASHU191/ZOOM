@@ -3881,12 +3881,12 @@ const categoryMapping: { [key: string]: string } = {
   "distribution-box": "Distribution Box (hexlon DBs)", // Updated
   "exhaust-fan": "Exhaust Fan",
   lights: "Lights",
-  "Plug and Sockets": "Plug and Sockets",
-  "Pipe Fittings": "Pipe Fittings",
+  "Plug-and-Sockets": "Plug and Sockets",
+  "Pipe-Fittings": "Pipe Fittings",
   isolators: "Isolators",
-  "MV AVR": "MV AVR",
-  "Terminal Box": "Terminal Box",
-  "AVIATION OBSTRUCTION LIGHT": "AVIATION OBSTRUCTION LIGHT",
+  "mv-avr": "MV AVR",
+  "Terminal-Box": "Terminal Box",
+  "AVIATION-OBSTRUCTION-LIGHT": "AVIATION OBSTRUCTION LIGHT",
   "explosion-proof": "All",
 }
 

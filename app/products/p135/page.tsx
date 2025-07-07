@@ -3,6 +3,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
+import { useRef } from "react"
 
 const product = {
    id: 135,
@@ -34,6 +35,34 @@ const product = {
 }
 
 export default function ProductDetailPage() {
+
+  
+    const imageContainerRef = useRef(null)
+    const [bgPosition, setBgPosition] = useState("center")
+    const [isZoomed, setIsZoomed] = useState(false)
+  
+    // Debounced position update for smoothness
+    let animationFrameId = null
+    const handleMouseMove = (e) => {
+      if (animationFrameId) cancelAnimationFrame(animationFrameId)
+      animationFrameId = requestAnimationFrame(() => {
+        const rect = imageContainerRef.current.getBoundingClientRect()
+        const x = ((e.clientX - rect.left) / rect.width) * 100
+        const y = ((e.clientY - rect.top) / rect.height) * 100
+        setBgPosition(`${x}% ${y}%`)
+      })
+    }
+  
+    const handleMouseEnter = () => {
+      setIsZoomed(true)
+    }
+  
+    const handleMouseLeave = () => {
+      setIsZoomed(false)
+      setBgPosition("center")
+    }
+  
+
   const [activeTab, setActiveTab] = useState("description")
   const [selectedImage, setSelectedImage] = useState(0)
 
@@ -51,7 +80,7 @@ export default function ProductDetailPage() {
               Products
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href="/products" className="hover:text-primary-600">              Plug and Sockets
+          <Link href="/products?category=Plug-and-Sockets" className="hover:text-primary-600">  Plug and Sockets
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>
@@ -65,18 +94,21 @@ export default function ProductDetailPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Product Images */}
             <div>
-              <div className="mb-4 border rounded-lg overflow-hidden">
-                <div className="relative w-full h-80 lg:h-96">
-                  <Image
-                    src={product.gallery[selectedImage] || product.image}
-                    alt={product.title}
-                    fill
-                    className="object-cover"
-                  />
-                  {/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                    -15%
-                  </div> */}
-                </div>
+           <div className="mb-4 border rounded-lg overflow-hidden">
+                <div
+                  ref={imageContainerRef}
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  className={`w-full h-80 lg:h-96 bg-no-repeat bg-white transition-all duration-500 ease-out rounded-lg`}
+                  style={{
+                    backgroundImage: `url(${product.gallery[selectedImage] || product.image})`,
+                    backgroundSize: isZoomed ? "130%" : "contain", // Adjust zoom level
+                    backgroundPosition: isZoomed ? bgPosition : "center",
+                    cursor: isZoomed ? "zoom-out" : "zoom-in",
+                    transitionProperty: "background-position, background-size", // 👈 smoother transitions
+                  }}
+                />
               </div>
 
               {/* Thumbnail Images */}
@@ -172,7 +204,7 @@ export default function ProductDetailPage() {
               </div>
 
               {/* Product Info */}
-              <div className="mb-6 space-y-2">
+              {/* <div className="mb-6 space-y-2">
                 <div className="flex items-center justify-between py-2 border-b">
                   <span className="text-gray-600 text-sm lg:text-base">SKU:</span>
                   <span className="font-medium text-sm lg:text-base">{product.sku}</span>
@@ -181,7 +213,7 @@ export default function ProductDetailPage() {
                   <span className="text-gray-600 text-sm lg:text-base">Availability:</span>
                   <span className="text-green-600 font-semibold text-sm lg:text-base">{product.availability}</span>
                 </div>
-              </div>
+              </div> */} 
 
               {/* Action Buttons */}
               {/* <div className="space-y-4">

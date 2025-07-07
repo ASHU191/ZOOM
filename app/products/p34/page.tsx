@@ -3,7 +3,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
-
+import { useRef } from "react"
 const product = {
   id: 34,
     category: "Control Button Switch",
@@ -58,7 +58,7 @@ export default function ProductDetailPage() {
               Products
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href="/products" className="hover:text-primary-600">              Control Button Switch
+ <Link href="/products?category=control-button-switch" className="hover:text-primary-600"> Control Button Switch
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>
@@ -178,7 +178,7 @@ export default function ProductDetailPage() {
               </div>
 
               {/* Product Info */}
-              <div className="mb-6 space-y-2">
+               {/* <div className="mb-6 space-y-2">
                 <div className="flex items-center justify-between py-2 border-b">
                   <span className="text-gray-600 text-sm lg:text-base">SKU:</span>
                   <span className="font-medium text-sm lg:text-base">{product.sku}</span>
@@ -187,7 +187,7 @@ export default function ProductDetailPage() {
                   <span className="text-gray-600 text-sm lg:text-base">Availability:</span>
                   <span className="text-green-600 font-semibold text-sm lg:text-base">{product.availability}</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* Action Buttons */}
               {/* <div className="space-y-4">
