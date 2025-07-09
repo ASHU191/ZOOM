@@ -205,7 +205,7 @@ export default function ProductDetailPage() {
                   <span className="text-green-600 font-semibold text-sm lg:text-base">{product.availability}</span>
                 </div>
               </div> */}
-
+ 
               {/* Action Buttons */}
               {/* <div className="space-y-4">
                 <Link
