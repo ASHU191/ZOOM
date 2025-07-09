@@ -5,7 +5,7 @@ import Link from "next/link"
 import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-react"
 import { useRef } from "react"
 const product = {
- id: 99,
+ id: 99, 
   category: "Pipe Fittings",
   title: "ZK06-Series Explosion-proof Sealing Washers and Gaskets",
   description: "The ZK06-Series explosion-proof sealing washers and gaskets are designed for sealing threaded joints in hazardous areas. Made from high-quality materials with excellent sealing properties, they prevent the ingress of explosive gases and dust. Suitable for use in conjunction with cable glands and conduit fittings.",
