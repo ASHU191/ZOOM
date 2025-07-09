@@ -15,8 +15,8 @@ export const featuredProducts = [
     title: "B01-Series Explosion-proof Air Conditioners",
     description:
       "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-    image: "/product/p1 1.jpeg?height=200&width=250",
-    gallery: ["/product/p1 2.jpeg?height=300&width=300", "/product/p1 3.jpeg?height=300&width=300", "/product/p1 4.jpeg?height=300&width=300"],
+    image: "/product/p1-1.jpeg?height=200&width=250",
+    gallery: ["/product/p1-2.jpeg?height=300&width=300", "/product/p1-3.jpeg?height=300&width=300", "/product/p1-4.jpeg?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -498,6 +498,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             {/* Right Side - Product Details */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-neutral-800">{product.title}</h2>
+                    <p className="text-gray-600 mb-3 text-sm line-clamp-3">{product.description}</p>
 
               {/* Features List */}
               <div className="mb-6">

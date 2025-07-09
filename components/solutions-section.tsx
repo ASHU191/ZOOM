@@ -30,9 +30,9 @@ const solutions = [
     href: "/products?category=ev-charger",
   },
   {
-    title: "MV AVR",
-    description: "Stabilizes medium-voltage systems in volatile enviornments. Minimizes surges and products sensitive equipment. Essential for continuous and safe operations.  ",
-    image: "/category/4.jpg?height=150&width=250",
+    title: "Medium Voltage Automatic voltage Regulator",
+    description: "Designed for industrial, utility, and infrastructure applications, the Medium Voltage AVR provides real-time voltage stabilization to ensure continuous, efficient, and safe operation of connected loads.  ",
+    image: "/product/p92-1.jpeg?height=150&width=250",
     href: "/products?category=mv-avr",
     class: "object-contain", // 👈 ye dynamic class hai
   },
@@ -77,7 +77,7 @@ export default function SolutionsSection() {
                 <h3 className="text-base font-bold mb-2 group-hover:text-primary-600 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-neutral-600 text-sm">{item.description}</p>
+                <p className="text-neutral-600 text-sm ">{item.description}</p>
               </div>
             </Link>
           ))}

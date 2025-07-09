@@ -12,8 +12,8 @@ const product = {
       "The TS03-Series explosion-proof AC contactors are designed for safe and reliable control of electrical circuits in hazardous areas with flammable gases or dust.",
     image: "/placeholder.svg?height=200&width=250",
     gallery: [
-      "/product/p4 1.jpeg?height=300&width=300",
-      "/product/p4 2.jpeg?height=300&width=300",
+      "/product/p4-1.jpeg?height=300&width=300",
+      "/product/p4-2.jpeg?height=300&width=300",
     ],
     features: [
       "Explosion protection - China Ex(GB)",
@@ -97,7 +97,7 @@ export default function ProductDetailPage() {
                       alt={`${product.title} ${index + 1}`}
                       width={100}
                       height={100}
-                      className="w-full h-20 object-cover"
+                      className="w-full h-20 object-contain"
                     />
                   </button>
                 ))}

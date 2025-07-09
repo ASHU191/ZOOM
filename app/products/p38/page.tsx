@@ -7,25 +7,16 @@ import { useRef } from "react"
 const product = {
     id: 38,
     category: "EV Charger",
-    title: "XPD Forklift Battery Charger",
+   title: "RACE 7kW AC EV Charger (AC EV CHARGER)",
     description:
-      "The XPD Series forklift battery charger is a high-efficiency, fully automatic charging solution designed for lead-acid and other industrial battery types.",
-    image: "/placeholder.svg?height=200&width=250",
-        gallery: ["/product/p38-1.jpg?height=300&width=300", "/product/p38-2.png?height=300&width=300"],
+      "This product is engineered to meet professional and industrial standards. It features a streamlined design with a minimalist, high-tech aesthetic. Equipped with ambient lighting and a content-customizable projector, it enhances the user interaction experience.",
+    image: "/product/38.jpeg?height=200&width=250",
+    // image: "/placeholder.svg?height=200&width=250",
+        gallery: ["/product/38.jpeg?height=300&width=300"],
 
-    features: [
-      "Nominal DC voltage: 24/36/48/72/80V",
-      "Input AC voltage: 120±20% or 220±25%",
-      "OEM/ODM Service available",
-      "Silicon-controlled rectifier (SCR) technology",
-      "Optimizes battery life and performance",
-    ],
+    features: ["CE Certified", "Charging Power: 7 kW"],
     specifications: {
-      nominalDCVoltage: "24/36/48/72/80V",
-      inputACVoltage: "120±20% or 220±25%",
-      oemOdmService: "Yes",
-      applications: "Forklift battery",
-      technology: "Silicon-controlled rectifier (SCR)",
+    
     },
     price: "45,000",
     originalPrice: "52,000",
@@ -34,8 +25,34 @@ const product = {
   rating: 4.9,
   reviews: 32,
 }
-
 export default function ProductDetailPage() {
+
+  const imageContainerRef = useRef(null)
+  const [bgPosition, setBgPosition] = useState("center")
+  const [isZoomed, setIsZoomed] = useState(false)
+
+  // Debounced position update for smoothness
+  let animationFrameId = null
+  const handleMouseMove = (e) => {
+    if (animationFrameId) cancelAnimationFrame(animationFrameId)
+    animationFrameId = requestAnimationFrame(() => {
+      const rect = imageContainerRef.current.getBoundingClientRect()
+      const x = ((e.clientX - rect.left) / rect.width) * 100
+      const y = ((e.clientY - rect.top) / rect.height) * 100
+      setBgPosition(`${x}% ${y}%`)
+    })
+  }
+
+  const handleMouseEnter = () => {
+    setIsZoomed(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsZoomed(false)
+    setBgPosition("center")
+  }
+
+
   const [activeTab, setActiveTab] = useState("description")
   const [selectedImage, setSelectedImage] = useState(0)
 
@@ -67,17 +84,21 @@ export default function ProductDetailPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Product Images */}
             <div>
-              <div className="mb-4 border rounded-lg overflow-hidden">
-                <div className="relative w-full h-80 lg:h-96">
-                   <Image
-                    src={product.gallery[selectedImage] || product.image}
-                    alt={product.title}
-                    fill
-                    className="object-contain"
-                  />
-{/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                    -15%
-                  </div> */}                </div>
+               <div className="mb-4 border rounded-lg overflow-hidden">
+                <div
+                  ref={imageContainerRef}
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  className={`w-full h-80 lg:h-96 bg-no-repeat bg-white transition-all duration-500 ease-out rounded-lg`}
+                  style={{
+                    backgroundImage: `url(${product.gallery[selectedImage] || product.image})`,
+                    backgroundSize: isZoomed ? "130%" : "contain", // Adjust zoom level
+                    backgroundPosition: isZoomed ? bgPosition : "center",
+                    cursor: isZoomed ? "zoom-out" : "zoom-in",
+                    transitionProperty: "background-position, background-size", // 👈 smoother transitions
+                  }}
+                />
               </div>
 
               {/* Thumbnail Images */}
@@ -95,7 +116,7 @@ export default function ProductDetailPage() {
                       alt={`${product.title} ${index + 1}`}
                       width={100}
                       height={100}
-                      className="w-full h-20 object-cover"
+                      className="w-full h-20 object-contain"
                     />
                   </button>
                 ))}
@@ -139,9 +160,8 @@ export default function ProductDetailPage() {
 
               {/* Trust Badges */}
               <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="flex items-center text-sm">
+                 <div className="flex items-center text-sm">
                   <Shield className="h-5 w-5 text-primary-600 mr-2" />
-                  <span>Explosion-Proof Certified</span>
                 </div>
                 {/* <div className="flex items-center text-sm">
                   <Truck className="h-5 w-5 text-primary-600 mr-2" />
@@ -219,7 +239,7 @@ export default function ProductDetailPage() {
               >
                 DESCRIPTION
               </button>
-              <button
+              {/* <button
                 className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${
                   activeTab === "specifications"
                     ? "border-b-2 border-primary-600 text-primary-600"
@@ -228,7 +248,7 @@ export default function ProductDetailPage() {
                 onClick={() => setActiveTab("specifications")}
               >
                 SPECIFICATIONS
-              </button>
+              </button> */}
                            {/* <button
                 className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${
                   activeTab === "applications"
@@ -248,8 +268,8 @@ export default function ProductDetailPage() {
               <div>
                 <h2 className="text-xl lg:text-2xl font-bold mb-4">{product.title}</h2>
                 <div className="prose max-w-none">
-                  <p className="mb-4 text-sm lg:text-base">{product.description}
-                  </p>
+                   {/* <p className="mb-4 text-sm lg:text-base">{product.description}
+                  </p> */}
                   <h3 className="text-lg font-bold mb-3">Features</h3>
                   
                   <ul className="list-disc pl-5 mb-6 space-y-2 text-sm lg:text-base">

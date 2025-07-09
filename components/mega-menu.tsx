@@ -25,21 +25,21 @@ const productCategories = [
         href: "/products?category=ev-charger",
         products: [
           {
-            name: "BPD Lithium Battery Charger",
-            image: "/product/p39-1.jpg?height=80&width=80",
-            href: "/products/p39",
+            name: "RACE 7kW AC EV Charger (AC EV CHARGER)",
+            image: "/product/38.jpeg?height=80&width=80",
+            href: "/products/p38",
             // price: "2,50,000",
           },
           {
-            name: "XPD Forklift Battery Charger",
-            image: "/product/p38-1.jpg?height=80&width=80",
-            href: "/products/p38",
+            name: "30/40kW Fast DC EV Charger (Mini Series DC Charger)",
+            image: "/product/40.jpeg?height=80&width=80",
+            href: "/products/p40",
             // price: "45,000",
           },
           {
-            name: "ACP Lithium Battery Charger",
-            image: "/product/p40-1.jpg?height=80&width=80",
-            href: "/products/p40",
+            name: "Integrated 60/80kW DC EV Charger (Standard Series DC Charger)",
+            image: "/product/42.jpeg?height=80&width=80",
+            href: "/products/p42",
             // price: "25,000",
           },
         ],
@@ -50,13 +50,13 @@ const productCategories = [
         products: [
           {
             name: "Single Phase Step Voltage Regulators",
-            image: "/product/p92-1.png?height=80&width=80",
+            image: "/product/p92-1.jpeg?height=80&width=80",
             href: "/products/p92",
             // price: "1,50,000",
           },
           {
             name: "Three Phase Step Voltage Regulators",
-            image: "/product/p93.jpg?height=80&width=80",
+            image: "/product/p93.jpeg?height=80&width=80",
             href: "/products/p93",
             // price: "2,80,000",
           },
@@ -66,12 +66,12 @@ const productCategories = [
   },
   {
     name: "Aviation Obstruction Lights",
-    href: "/products?category=aviation-lights",
+    href: "/products?category=AVIATION-OBSTRUCTION-LIGHT",
     icon: "✈️",
     subcategories: [
       {
         name: "LED Aviation Lights",
-        href: "/products?category=led-aviation-lights",
+        href: "/products?category=AVIATION-OBSTRUCTION-LIGHT",
         products: [
           {
             name: "OJ100",
@@ -120,11 +120,11 @@ const productCategories = [
       },
       {
         name: "Air Condition",
-        href: "/products?category=air-condition",
+        href: "/products?category=air-conditioner",
         products: [
           {
             name: "B01-Series Explosion-proof Air Conditioners",
-            image: "/product/p1 1.jpeg?height=80&width=80",
+            image: "/product/p1-1.jpeg?height=80&width=80",
              href: "/products/b01-explosion-proof-air-conditioner",
             // price: "1,25,000",
           },
@@ -206,7 +206,7 @@ const productCategories = [
       },
       {
         name: "Plug and Sockets",
-        href: "/products?category=plug-sockets",
+        href: "/products?category=Plug-and-Sockets",
         products: [
           {
             name: "BS01-Series Explosion-proof Plug and Sockets",
@@ -224,7 +224,7 @@ const productCategories = [
       },
       {
         name: "Terminal Box",
-        href: "/products?category=terminal-box",
+        href: "/products?category=Terminal-Box",
         products: [
           {
             name: "ST02-Series Explosion-proof Terminal Boxes",
@@ -262,7 +262,7 @@ const productCategories = [
       },
       {
         name: "Control Button Switch",
-        href: "/products?category=control-switch",
+        href: "/products?category=control-button-switch",
         products: [
           {
             name: "AK01-Series Explosion-proof Switch Module",

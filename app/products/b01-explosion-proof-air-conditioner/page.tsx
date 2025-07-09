@@ -10,8 +10,8 @@ const product = {
   title: "B01-Series Explosion-proof Air Conditioners",
   description:
     "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-   image: "/product/p1 1.jpeg?height=200&width=250",
-    gallery: ["/product/p1 1.jpeg?height=200&width=250", "/product/p1 2.jpeg?height=300&width=300", "/product/p1 3.jpeg?height=300&width=300" , "/product/p1 4.jpeg?height=300&width=300"],
+   image: "/product/p1-1.jpeg?height=200&width=250",
+    gallery: ["/product/p1-1.jpeg?height=200&width=250", "/product/p1-2.jpeg?height=300&width=300", "/product/p1-3.jpeg?height=300&width=300" , "/product/p1-4.jpeg?height=300&width=300"],
   features: [
     "Explosion protection - China Ex(GB)",
     "Zone 1 and Zone 2 application",
@@ -36,8 +36,34 @@ const product = {
   rating: 4.9,
   reviews: 32,
 }
-
 export default function ProductDetailPage() {
+
+  const imageContainerRef = useRef(null)
+  const [bgPosition, setBgPosition] = useState("center")
+  const [isZoomed, setIsZoomed] = useState(false)
+
+  // Debounced position update for smoothness
+  let animationFrameId = null
+  const handleMouseMove = (e) => {
+    if (animationFrameId) cancelAnimationFrame(animationFrameId)
+    animationFrameId = requestAnimationFrame(() => {
+      const rect = imageContainerRef.current.getBoundingClientRect()
+      const x = ((e.clientX - rect.left) / rect.width) * 100
+      const y = ((e.clientY - rect.top) / rect.height) * 100
+      setBgPosition(`${x}% ${y}%`)
+    })
+  }
+
+  const handleMouseEnter = () => {
+    setIsZoomed(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsZoomed(false)
+    setBgPosition("center")
+  }
+
+
   const [activeTab, setActiveTab] = useState("description")
   const [selectedImage, setSelectedImage] = useState(0)
 
@@ -55,7 +81,7 @@ export default function ProductDetailPage() {
               Products
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href="/products" className="hover:text-primary-600">              Air Conditioner
+            <Link href="/products?category=air-conditioner" className="hover:text-primary-600">              Air Conditioner
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>
@@ -70,16 +96,20 @@ export default function ProductDetailPage() {
             {/* Product Images */}
             <div>
               <div className="mb-4 border rounded-lg overflow-hidden">
-                <div className="relative w-full h-80 lg:h-96">
-                  <Image
-                    src={product.gallery[selectedImage] || product.image}
-                    alt={product.title}
-                    fill
-                    className="object-contain"
-                  />
-{/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                    -15%
-                  </div> */}                </div>
+                <div
+                  ref={imageContainerRef}
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  className={`w-full h-80 lg:h-96 bg-no-repeat bg-white transition-all duration-500 ease-out rounded-lg`}
+                  style={{
+                    backgroundImage: `url(${product.gallery[selectedImage] || product.image})`,
+                    backgroundSize: isZoomed ? "130%" : "contain", // Adjust zoom level
+                    backgroundPosition: isZoomed ? bgPosition : "center",
+                    cursor: isZoomed ? "zoom-out" : "zoom-in",
+                    transitionProperty: "background-position, background-size", // 👈 smoother transitions
+                  }}
+                />
               </div>
 
               {/* Thumbnail Images */}
@@ -97,7 +127,7 @@ export default function ProductDetailPage() {
                       alt={`${product.title} ${index + 1}`}
                       width={100}
                       height={100}
-                      className="w-full h-20 object-cover"
+                      className="w-full h-20 object-contain"
                     />
                   </button>
                 ))}
@@ -141,9 +171,8 @@ export default function ProductDetailPage() {
 
               {/* Trust Badges */}
               <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="flex items-center text-sm">
+                 <div className="flex items-center text-sm">
                   <Shield className="h-5 w-5 text-primary-600 mr-2" />
-                  <span>Explosion-Proof Certified</span>
                 </div>
                 {/* <div className="flex items-center text-sm">
                   <Truck className="h-5 w-5 text-primary-600 mr-2" />
@@ -250,8 +279,8 @@ export default function ProductDetailPage() {
               <div>
                 <h2 className="text-xl lg:text-2xl font-bold mb-4">{product.title}</h2>
                 <div className="prose max-w-none">
-                  <p className="mb-4 text-sm lg:text-base">{product.description}
-                  </p>
+                   {/* <p className="mb-4 text-sm lg:text-base">{product.description}
+                  </p> */}
                   <h3 className="text-lg font-bold mb-3">Features</h3>
                   
                   <ul className="list-disc pl-5 mb-6 space-y-2 text-sm lg:text-base">

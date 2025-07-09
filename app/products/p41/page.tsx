@@ -6,37 +6,53 @@ import { ChevronRight, Star, Shield, Truck, Award, Thermometer } from "lucide-re
 import { useRef } from "react"
 const product = {
   id: 41,
-    category: "EV Charger",
-    title: "ACR Lithium Battery Charger",
-    description:
-      "The ACR Series lithium battery charger offers efficient and reliable charging for a wide range of lithium battery systems.",
-    image: "/placeholder.svg?height=200&width=250",
-    gallery: ["/product/p41-1.jpg?height=300&width=300", "/product/p41-1.png?height=300&width=300"],
-    features: [
-      "Compatible with various lithium battery chemistries",
-      "Advanced charging control for voltage and current precision",
-      "Multi-stage charging: pre-charge, constant current, constant voltage",
-      "Built-in protection: overvoltage, overcurrent, over temperature",
-      "High efficiency with minimal heat output",
-      "Rugged, compact design for industrial and mobile use",
-    ],
-    specifications: {
-      compatibility: "Various lithium battery chemistries",
-      chargingControl: "Advanced charging control for voltage and current precision",
-      chargingStages: "Pre-charge, constant current, constant voltage",
-      protection: "Overvoltage, overcurrent, over temperature, short circuit, reverse polarity",
-      efficiency: "High efficiency with minimal heat output",
-      design: "Rugged, compact design for industrial and mobile use",
-    },
-    price: "35,000",
-    originalPrice: "40,000",
-    availability: "IN STOCK",
-    sku: "ACR-LC-01",
+  category: "EV Charger",
+  title: "120–240kW Standard Series DC EV Charger (Standard Series DC Charger)",
+  description:
+    "This high-power DC EV charger features a space-saving tri-chamber structure design. It delivers ultra-fast charging with peak efficiency reaching up to 96%, helping to reduce energy consumption and charging costs. The charger also supports modular operation management, effectively lowering station operating expenses.",
+  image: "/placeholder.svg?height=200&width=250",
+  gallery: ["/product/41.jpeg?height=300&width=300"],
+
+  features: ["CE Certified", "Charging Power: 120/160/200/240 kW"],
+
+  specifications: {
+
+  },
+  price: "35,000",
+  originalPrice: "40,000",
+  availability: "IN STOCK",
+  sku: "ACR-LC-01",
   rating: 4.9,
   reviews: 32,
 }
-
 export default function ProductDetailPage() {
+
+  const imageContainerRef = useRef(null)
+  const [bgPosition, setBgPosition] = useState("center")
+  const [isZoomed, setIsZoomed] = useState(false)
+
+  // Debounced position update for smoothness
+  let animationFrameId = null
+  const handleMouseMove = (e) => {
+    if (animationFrameId) cancelAnimationFrame(animationFrameId)
+    animationFrameId = requestAnimationFrame(() => {
+      const rect = imageContainerRef.current.getBoundingClientRect()
+      const x = ((e.clientX - rect.left) / rect.width) * 100
+      const y = ((e.clientY - rect.top) / rect.height) * 100
+      setBgPosition(`${x}% ${y}%`)
+    })
+  }
+
+  const handleMouseEnter = () => {
+    setIsZoomed(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsZoomed(false)
+    setBgPosition("center")
+  }
+
+
   const [activeTab, setActiveTab] = useState("description")
   const [selectedImage, setSelectedImage] = useState(0)
 
@@ -54,7 +70,7 @@ export default function ProductDetailPage() {
               Products
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
- <Link href="/products?category=ev-charger" className="hover:text-primary-600">  EV Charger
+            <Link href="/products?category=ev-charger" className="hover:text-primary-600">  EV Charger
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-900 font-medium">{product.title}</span>
@@ -69,16 +85,20 @@ export default function ProductDetailPage() {
             {/* Product Images */}
             <div>
               <div className="mb-4 border rounded-lg overflow-hidden">
-                <div className="relative w-full h-80 lg:h-96">
-                   <Image
-                    src={product.gallery[selectedImage] || product.image}
-                    alt={product.title}
-                    fill
-                    className="object-contain"
-                  />
-{/* <div className="absolute top-3 left-3 bg-secondary-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                    -15%
-                  </div> */}                </div>
+                <div
+                  ref={imageContainerRef}
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  className={`w-full h-80 lg:h-96 bg-no-repeat bg-white transition-all duration-500 ease-out rounded-lg`}
+                  style={{
+                    backgroundImage: `url(${product.gallery[selectedImage] || product.image})`,
+                    backgroundSize: isZoomed ? "130%" : "contain", // Adjust zoom level
+                    backgroundPosition: isZoomed ? bgPosition : "center",
+                    cursor: isZoomed ? "zoom-out" : "zoom-in",
+                    transitionProperty: "background-position, background-size", // 👈 smoother transitions
+                  }}
+                />
               </div>
 
               {/* Thumbnail Images */}
@@ -87,16 +107,15 @@ export default function ProductDetailPage() {
                   <button
                     key={index}
                     onClick={() => setSelectedImage(index)}
-                    className={`border rounded-lg overflow-hidden ${
-                      selectedImage === index ? "border-primary-500" : "border-gray-300"
-                    }`}
+                    className={`border rounded-lg overflow-hidden ${selectedImage === index ? "border-primary-500" : "border-gray-300"
+                      }`}
                   >
                     <Image
                       src={img || "/placeholder.svg"}
                       alt={`${product.title} ${index + 1}`}
                       width={100}
                       height={100}
-                      className="w-full h-20 object-cover"
+                      className="w-full h-20 object-contain"
                     />
                   </button>
                 ))}
@@ -114,7 +133,7 @@ export default function ProductDetailPage() {
               <h1 className="text-2xl lg:text-3xl font-bold mb-4">{product.title}</h1>
 
               {/* Rating */}
-                            {/* <div className="flex items-center mb-4">
+              {/* <div className="flex items-center mb-4">
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -142,7 +161,6 @@ export default function ProductDetailPage() {
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center text-sm">
                   <Shield className="h-5 w-5 text-primary-600 mr-2" />
-                  <span>Explosion-Proof Certified</span>
                 </div>
                 {/* <div className="flex items-center text-sm">
                   <Truck className="h-5 w-5 text-primary-600 mr-2" />
@@ -174,7 +192,7 @@ export default function ProductDetailPage() {
               </div>
 
               {/* Product Info */}
-               {/* <div className="mb-6 space-y-2">
+              {/* <div className="mb-6 space-y-2">
                 <div className="flex items-center justify-between py-2 border-b">
                   <span className="text-gray-600 text-sm lg:text-base">SKU:</span>
                   <span className="font-medium text-sm lg:text-base">{product.sku}</span>
@@ -211,26 +229,24 @@ export default function ProductDetailPage() {
           <div className="border-b border-gray-300 mb-6 lg:mb-8">
             <div className="flex overflow-x-auto">
               <button
-                className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${
-                  activeTab === "description"
+                className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${activeTab === "description"
                     ? "border-b-2 border-primary-600 text-primary-600"
                     : "text-gray-600 hover:text-primary-600"
-                }`}
+                  }`}
                 onClick={() => setActiveTab("description")}
               >
                 DESCRIPTION
               </button>
-              <button
-                className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${
-                  activeTab === "specifications"
+              {/* <button
+                className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${activeTab === "specifications"
                     ? "border-b-2 border-primary-600 text-primary-600"
                     : "text-gray-600 hover:text-primary-600"
-                }`}
+                  }`}
                 onClick={() => setActiveTab("specifications")}
               >
                 SPECIFICATIONS
-              </button>
-                           {/* <button
+              </button> */}
+              {/* <button
                 className={`px-4 py-2 lg:px-6 lg:py-3 font-semibold text-sm lg:text-base whitespace-nowrap ${
                   activeTab === "applications"
                     ? "border-b-2 border-primary-600 text-primary-600"
@@ -249,17 +265,17 @@ export default function ProductDetailPage() {
               <div>
                 <h2 className="text-xl lg:text-2xl font-bold mb-4">{product.title}</h2>
                 <div className="prose max-w-none">
-                  <p className="mb-4 text-sm lg:text-base">{product.description}
-                  </p>
+                  {/* <p className="mb-4 text-sm lg:text-base">{product.description}
+                  </p> */}
                   <h3 className="text-lg font-bold mb-3">Features</h3>
-                  
+
                   <ul className="list-disc pl-5 mb-6 space-y-2 text-sm lg:text-base">
-                   {product.features.slice(0, 7).map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-xs">
-                          <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2"></span>
-                          {feature}
-                        </li>
-                      ))}
+                    {product.features.slice(0, 7).map((feature, idx) => (
+                      <li key={idx} className="flex items-center text-xs">
+                        <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2"></span>
+                        {feature}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -281,7 +297,7 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-                        {/* {activeTab === "applications" && (
+            {/* {activeTab === "applications" && (
               <div>
                 <h2 className="text-xl lg:text-2xl font-bold mb-6">Applications & Industries</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

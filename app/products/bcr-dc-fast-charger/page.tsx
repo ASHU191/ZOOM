@@ -43,8 +43,34 @@ const product = {
   rating: 4.8,
   reviews: 15,
 }
-
 export default function ProductDetailPage() {
+
+  const imageContainerRef = useRef(null)
+  const [bgPosition, setBgPosition] = useState("center")
+  const [isZoomed, setIsZoomed] = useState(false)
+
+  // Debounced position update for smoothness
+  let animationFrameId = null
+  const handleMouseMove = (e) => {
+    if (animationFrameId) cancelAnimationFrame(animationFrameId)
+    animationFrameId = requestAnimationFrame(() => {
+      const rect = imageContainerRef.current.getBoundingClientRect()
+      const x = ((e.clientX - rect.left) / rect.width) * 100
+      const y = ((e.clientY - rect.top) / rect.height) * 100
+      setBgPosition(`${x}% ${y}%`)
+    })
+  }
+
+  const handleMouseEnter = () => {
+    setIsZoomed(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsZoomed(false)
+    setBgPosition("center")
+  }
+
+
   const [activeTab, setActiveTab] = useState("description")
   const [selectedImage, setSelectedImage] = useState(0)
 
@@ -106,7 +132,7 @@ export default function ProductDetailPage() {
                       alt={`${product.title} ${index + 1}`}
                       width={100}
                       height={100}
-                      className="w-full h-20 object-cover"
+                      className="w-full h-20 object-contain"
                     />
                   </button>
                 ))}

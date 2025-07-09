@@ -33,7 +33,7 @@ const product = {
   reviews: 32,
 }
 
-export default function ProductDetailPage() {
+export default function ProductDetailPage() { 
 
   const imageContainerRef = useRef(null)
   const [bgPosition, setBgPosition] = useState("center")
@@ -126,7 +126,7 @@ export default function ProductDetailPage() {
                       alt={`${product.title} ${index + 1}`}
                       width={100}
                       height={100}
-                      className="w-full h-20 object-cover"
+                      className="w-full h-20 object-contain"
                     />
                   </button>
                 ))}
@@ -145,9 +145,8 @@ export default function ProductDetailPage() {
 
               {/* Trust Badges */}
               <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="flex items-center text-sm">
+                 <div className="flex items-center text-sm">
                   <Shield className="h-5 w-5 text-primary-600 mr-2" />
-                  <span>Explosion-Proof Certified</span>
                 </div>
 
               </div>
@@ -218,8 +217,8 @@ export default function ProductDetailPage() {
               <div>
                 <h2 className="text-xl lg:text-2xl font-bold mb-4">{product.title}</h2>
                 <div className="prose max-w-none">
-                  <p className="mb-4 text-sm lg:text-base">{product.description}
-                  </p>
+                   {/* <p className="mb-4 text-sm lg:text-base">{product.description}
+                  </p> */}
                   <h3 className="text-lg font-bold mb-3">Features</h3>
 
                   <ul className="list-disc pl-5 mb-6 space-y-2 text-sm lg:text-base">

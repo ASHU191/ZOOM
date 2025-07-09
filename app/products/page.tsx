@@ -18,8 +18,8 @@ const allProducts = [
     title: "B01-Series Explosion-proof Air Conditioners",
     description:
       "The B01-Series Explosion-proof Air Conditioners are engineered to provide safe and effective cooling in hazardous areas where explosive gases or vapors may be present.",
-    image: "/product/p1 1.jpeg?height=200&width=250",
-    gallery: ["/product/p1 2.jpeg?height=300&width=300", "/product/p1 3.jpeg?height=300&width=300", "/product/p1 4.jpeg?height=300&width=300"],
+    image: "/product/p1-1.jpeg?height=200&width=250",
+    gallery: ["/product/p1-2.jpeg?height=300&width=300", "/product/p1-3.jpeg?height=300&width=300", "/product/p1-4.jpeg?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -51,8 +51,8 @@ const allProducts = [
     title: "TS01-Series Explosion-proof Circuit Breakers",
     description:
       "The TS01-Series explosion-proof circuit breakers are designed to provide reliable circuit protection in hazardous environments with flammable gases or dust.",
-    image: "/product/p2 1.jpeg?height=200&width=250",
-    gallery: ["/product/p2 2.jpeg?height=300&width=300"],
+    image: "/product/p2-1.jpeg?height=200&width=250",
+    gallery: ["/product/p2-2.jpeg?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -80,8 +80,8 @@ const allProducts = [
     title: "TS02-Series Explosion-proof Residual Current Circuit Breakers",
     description:
       "The TS02-Series explosion-proof residual current circuit breakers are designed to protect against earth faults and leakage currents in hazardous areas.",
-    image: "/product/p3 1.jpeg?height=200&width=250",
-    gallery: ["/product/p3 2.jpeg?height=300&width=300"],
+    image: "/product/p3-1.jpeg?height=200&width=250",
+    gallery: ["/product/p3-2.jpeg?height=300&width=300"],
     features: [
       "Explosion protection - China Ex(GB)",
       "Zone 1 and Zone 2 application",
@@ -109,9 +109,9 @@ const allProducts = [
     title: "TS03-Series Explosion-proof AC Contactors",
     description:
       "The TS03-Series explosion-proof AC contactors are designed for safe and reliable control of electrical circuits in hazardous areas with flammable gases or dust.",
-    image: "/product/p4 1.jpeg?height=200&width=250",
+    image: "/product/p4-1.jpeg?height=200&width=250",
     gallery: [
-      "/product/p4 2.jpeg?height=300&width=300"
+      "/product/p4-2.jpeg?height=300&width=300"
     ],
     features: [
       "Explosion protection - China Ex(GB)",
@@ -1126,164 +1126,273 @@ const allProducts = [
     href: "/products/p37",
   },
   // EV Charger Category (5 products)
+
   {
     id: 38,
     category: "EV Charger",
-    title: "XPD Forklift Battery Charger",
+    title: "RACE 7kW AC EV Charger (AC EV CHARGER)",
     description:
-      "The XPD Series forklift battery charger is a high-efficiency, fully automatic charging solution designed for lead-acid and other industrial battery types.",
-    image: "/product/p38-1.jpg?height=200&width=250",
-    gallery: ["/product/p38-2.png?height=300&width=300",
-      "/product/p38-3.png?height=300&width=300",
-      "/product/p38-4.png?height=300&width=300"],
-
-    features: [
-      "Nominal DC voltage: 24/36/48/72/80V",
-      "Input AC voltage: 120±20% or 220±25%",
-      "OEM/ODM Service available",
-      "Silicon-controlled rectifier (SCR) technology",
-      "Optimizes battery life and performance",
-    ],
-    specifications: {
-      nominalDCVoltage: "24/36/48/72/80V",
-      inputACVoltage: "120±20% or 220±25%",
-      oemOdmService: "Yes",
-      applications: "Forklift battery",
-      technology: "Silicon-controlled rectifier (SCR)",
-    },
-    price: "45,000",
-    originalPrice: "52,000",
-    availability: "IN STOCK",
-    sku: "XPD-FC-01",
+      "This product is engineered to meet professional and industrial standards. It features a streamlined design with a minimalist, high-tech aesthetic. Equipped with ambient lighting and a content-customizable projector, it enhances the user interaction experience.",
+    image: "/product/38.jpeg?height=200&width=250",
+    // gallery: ["/product/38-2.png?height=300&width=300"],
+    features: ["CE Certified", "Charging Power: 7 kW"],
     href: "/products/p38",
+
   },
   {
     id: 39,
     category: "EV Charger",
-    title: "BPD Lithium Battery Charger",
+    title: "SHELL 7kW AC EV Charger (AC EV CHARGER)",
     description:
-      "The BPD Series lithium battery charger is a smart charging solution designed for high-efficiency energy transfer and long battery life.",
-    image: "/product/p39-1.jpg?height=200&width=250",
-    gallery: ["/product/p39-2.png?height=300&width=300"],
-
-    features: [
-      "Supports various lithium battery voltages",
-      "Smart multi-stage charging (CC/CV)",
-      "Built-in protections (OV, OC, temp, reverse)",
-      "LED or digital status indicators",
-      "High efficiency and compact design",
-      "Optional CAN/RS485 communication",
-    ],
-    specifications: {
-      batterySupport: "Various lithium battery voltages",
-      chargingType: "Smart multi-stage charging (CC/CV)",
-      protections: "OV, OC, temp, reverse",
-      indicators: "LED or digital status indicators",
-      design: "High efficiency and compact design",
-      communication: "Optional CAN/RS485 communication",
-    },
-    price: "28,000",
-    originalPrice: "32,000",
-    availability: "IN STOCK",
-    sku: "BPD-LC-01",
+      "This AC EV charger supports both wall-mounted and pedestal (column) installations. It is compatible with 99% of new energy vehicle models and features smart control via a mobile app along with a built-in data management platform. Customization options are available, making it ideal for residential parking spaces and small-scale charging stations.",
+    image: "/product/39.jpeg?height=200&width=250",
+    // gallery: ["/product/39-2.png?height=300&width=300"],
+    features: ["CE Certified", "Charging Power: 7 kW"],
     href: "/products/p39",
+
   },
   {
     id: 40,
     category: "EV Charger",
-    title: "ACP Lithium Battery Charger",
+    title: "30/40kW Fast DC EV Charger (Mini Series DC Charger)",
     description:
-      "The ACP Series lithium battery charger is designed for reliable, high-efficiency charging in demanding environments.",
-    image: "/product/p40-1.jpg?height=200&width=250",
-    gallery: ["/product/p40-1.png?height=300&width=300"],
-
-    features: [
-      "Compatible with multiple lithium battery types and voltages",
-      "Intelligent charging with automatic voltage/current regulation",
-      "Multi-stage charging process (pre-charge, constant current, constant voltage)",
-      "Comprehensive protection features",
-      "Compact, durable design suitable for harsh environments",
-      "High energy efficiency with low heat generation",
-    ],
-    specifications: {
-      compatibility: "Multiple lithium battery types and voltages",
-      chargingControl: "Intelligent charging with automatic voltage/current regulation",
-      chargingProcess: "Multi-stage: pre-charge, constant current, constant voltage",
-      protection: "Overvoltage, overcurrent, short circuit, over temperature, reverse polarity",
-      design: "Compact, durable design suitable for harsh environments",
-      efficiency: "High energy efficiency with low heat generation",
-    },
-    price: "32,000",
-    originalPrice: "37,000",
-    availability: "IN STOCK",
-    sku: "ACP-LC-01",
+      "This fast DC EV charger supports both wall-mounted and pedestal installation options. Compact in size and modern in appearance, it is available in two versions—one for residential use and one for commercial operation. It offers intelligent charging control and full-process monitoring, with support for app-based control and backend data management.",
+    image: "/product/40.jpeg?height=200&width=250",
+    // gallery: ["/product/40-2.png?height=300&width=300"],
+    features: ["CE Certified", "Charging Power: 30/40 kW"],
     href: "/products/p40",
+
   },
   {
     id: 41,
     category: "EV Charger",
-    title: "ACR Lithium Battery Charger",
+    title: "120–240kW Standard Series DC EV Charger (Standard Series DC Charger)",
     description:
-      "The ACR Series lithium battery charger offers efficient and reliable charging for a wide range of lithium battery systems.",
-    image: "/product/p41-1.jpg?height=200&width=250",
-    gallery: ["/product/p41-2.png?height=300&width=300"],
-
-    features: [
-      "Compatible with various lithium battery chemistries",
-      "Advanced charging control for voltage and current precision",
-      "Multi-stage charging: pre-charge, constant current, constant voltage",
-      "Built-in protection: overvoltage, overcurrent, over temperature",
-      "High efficiency with minimal heat output",
-      "Rugged, compact design for industrial and mobile use",
-    ],
-    specifications: {
-      compatibility: "Various lithium battery chemistries",
-      chargingControl: "Advanced charging control for voltage and current precision",
-      chargingStages: "Pre-charge, constant current, constant voltage",
-      protection: "Overvoltage, overcurrent, over temperature, short circuit, reverse polarity",
-      efficiency: "High efficiency with minimal heat output",
-      design: "Rugged, compact design for industrial and mobile use",
-    },
-    price: "35,000",
-    originalPrice: "40,000",
-    availability: "IN STOCK",
-    sku: "ACR-LC-01",
+      "This high-power DC EV charger features a space-saving tri-chamber structure design. It delivers ultra-fast charging with peak efficiency reaching up to 96%, helping to reduce energy consumption and charging costs. The charger also supports modular operation management, effectively lowering station operating expenses.",
+    image: "/product/41.jpeg?height=200&width=250",
+    // gallery: ["/product/41-2.png?height=300&width=300"],
+    features: ["CE Certified", "Charging Power: 120/160/200/240 kW"],
     href: "/products/p41",
+
   },
   {
     id: 42,
     category: "EV Charger",
-    title: "BCR DC Fast Charger",
+    title: "Integrated 60/80kW DC EV Charger (Standard Series DC Charger)",
     description:
-      "The BCR DC fast charger is designed to deliver rapid, high-power charging for electric vehicles in public and commercial settings.",
-    image: "/product/p42-1.jpg?height=200&width=250",
-    gallery: ["/product/p42-2.png?height=300&width=300", "/product/p42-3.png?height=300&width=300"],
-
-    features: [
-      "High-power output for rapid EV charging",
-      "Compatible with major charging standards",
-      "Smart charging control with dynamic power allocation",
-      "Built-in safety features: overvoltage, overcurrent, short circuit",
-      "User-friendly interface with touchscreen or LED indicators",
-      "Remote monitoring and management via OCPP",
-    ],
-    specifications: {
-      output: "High-power output for rapid EV charging",
-      compatibility: "Compatible with major charging standards",
-      chargingControl: "Smart charging control with dynamic power allocation",
-      safetyFeatures: "Overvoltage, overcurrent, short circuit, overheating protection",
-      interface: "User-friendly interface with touchscreen or LED indicators",
-      inputACVoltage: "305~520VAC",
-      oemOdmService: "Yes, customized service available",
-      certificates: "CE, EN61000, IEC60146",
-      applications: "Highway, parking, station, workplace, fleet",
-    },
-    price: "185,000",
-    originalPrice: "210,000",
-    availability: "IN STOCK",
-    sku: "BCR-DC-01",
+      "This integrated DC EV charger utilizes advanced digital current balancing technology. It offers flexible configuration with options for single-connector or dual-connector setups. In single-connector mode, it delivers maximum power output, while in dual-connector mode, it intelligently distributes power between two vehicles. Multiple safety protection features ensure stable and reliable operation. ",
+    image: "/product/42.jpeg?height=200&width=250",
+    // gallery: ["/product/42-2.png?height=300&width=300"],
+    features: ["CE Certified", "Charging Power: 60 kW / 80 kW"],
     href: "/products/p42",
+
   },
+ {
+    id: 136,
+    category: "EV Charger",
+    title: "320kW–640kW Split-Type DC EV Charger (Prime Series DC Charger)",
+    description:
+      "This split-type DC EV charger offers configurable output power, with a maximum output voltage of up to 1000V. Designed with a separate host-terminal structure, it utilizes an intelligent power distribution strategy to efficiently manage charging across 2 to 8 terminals. The remote installation of the host unit minimizes on-site noise, enhancing the overall user experience. ",
+    image: "/product/136.jpeg?height=200&width=250",
+    // gallery: ["/product/42-2.png?height=300&width=300"],
+    features: ["CE Certified", "Charging Power Options: 320 kW / 480 kW / 640 kW "],
+    href: "/products/p136",
+
+  },
+   {
+    id: 137,
+    category: "EV Charger",
+    title: "600kW Terminal for Split-Type DC Super EV Charger  (Prime Series DC Charger)",
+    description:
+      "At peak power, a 10-minute charge can provide enough energy for approximately 800 km of driving. This high-performance terminal is ideal for rapid charging needs in diverse scenarios, including transportation hubs, commercial charging stations, and other applications requiring fast vehicle turnaround.  ",
+    image: "/product/137.jpeg?height=200&width=250",
+    // gallery: ["/product/42-2.png?height=300&width=300"],
+    features: ["CE Certified", "Charging Power: 600 Kw "],
+    href: "/products/p137",
+
+  },
+   {
+    id: 138,
+    category: "EV Charger",
+    title: "30/40kW GB/T Charging Module  (Power Module)",
+    description:
+      "Utilizing advanced power electronics control technology, this module offers a wide constant power voltage range, high efficiency, and a high power factor. It features a compact, high power density design with efficient heat dissipation and ultra-low electromagnetic radiation and interference, making it well-suited for a wide range of charging applications. ",
+    image: "/product/138.jpeg?height=200&width=250",
+    // gallery: ["/product/42-2.png?height=300&width=300"],
+    features: ["Charging Power: 30/40kW"],
+    href: "/products/p138",
+
+  },
+   {
+    id: 139,
+    category: "EV Charger",
+    title: "30/40kW EU Charging Module  (Standard Series DC Charger)",
+    description:
+      "Equipped with SiC MOSFET and SiC SBD technology, this module achieves peak efficiency exceeding 96.5%. It features a wide constant power voltage range, high power factor, and high power density. With efficient thermal management and ultra-low electromagnetic radiation and interference, it is optimized for a variety of fast-charging applications. ",
+    image: "/product/139.jpeg?height=200&width=250",
+    // gallery: ["/product/42-2.png?height=300&width=300"],
+    features: ["Charging Power: 30/40kW"],
+    href: "/products/p139",
+
+  },
+  // {
+  //   id: 38,
+  //   category: "EV Charger",
+  //   title: "XPD Forklift Battery Charger",
+  //   description:
+  //     "The XPD Series forklift battery charger is a high-efficiency, fully automatic charging solution designed for lead-acid and other industrial battery types.",
+  //   image: "/product/p38-1.jpg?height=200&width=250",
+  //   gallery: ["/product/p38-2.png?height=300&width=300",
+  //     "/product/p38-3.png?height=300&width=300",
+  //     "/product/p38-4.png?height=300&width=300"],
+
+  //   features: [
+  //     "Nominal DC voltage: 24/36/48/72/80V",
+  //     "Input AC voltage: 120±20% or 220±25%",
+  //     "OEM/ODM Service available",
+  //     "Silicon-controlled rectifier (SCR) technology",
+  //     "Optimizes battery life and performance",
+  //   ],
+  //   specifications: {
+  //     nominalDCVoltage: "24/36/48/72/80V",
+  //     inputACVoltage: "120±20% or 220±25%",
+  //     oemOdmService: "Yes",
+  //     applications: "Forklift battery",
+  //     technology: "Silicon-controlled rectifier (SCR)",
+  //   },
+  //   price: "45,000",
+  //   originalPrice: "52,000",
+  //   availability: "IN STOCK",
+  //   sku: "XPD-FC-01",
+  //   href: "/products/p38",
+  // },
+  // {
+  //   id: 39,
+  //   category: "EV Charger",
+  //   title: "BPD Lithium Battery Charger",
+  //   description:
+  //     "The BPD Series lithium battery charger is a smart charging solution designed for high-efficiency energy transfer and long battery life.",
+  //   image: "/product/p39-1.jpg?height=200&width=250",
+  //   gallery: ["/product/p39-2.png?height=300&width=300"],
+
+  //   features: [
+  //     "Supports various lithium battery voltages",
+  //     "Smart multi-stage charging (CC/CV)",
+  //     "Built-in protections (OV, OC, temp, reverse)",
+  //     "LED or digital status indicators",
+  //     "High efficiency and compact design",
+  //     "Optional CAN/RS485 communication",
+  //   ],
+  //   specifications: {
+  //     batterySupport: "Various lithium battery voltages",
+  //     chargingType: "Smart multi-stage charging (CC/CV)",
+  //     protections: "OV, OC, temp, reverse",
+  //     indicators: "LED or digital status indicators",
+  //     design: "High efficiency and compact design",
+  //     communication: "Optional CAN/RS485 communication",
+  //   },
+  //   price: "28,000",
+  //   originalPrice: "32,000",
+  //   availability: "IN STOCK",
+  //   sku: "BPD-LC-01",
+  //   href: "/products/p39",
+  // },
+  // {
+  //   id: 40,
+  //   category: "EV Charger",
+  //   title: "ACP Lithium Battery Charger",
+  //   description:
+  //     "The ACP Series lithium battery charger is designed for reliable, high-efficiency charging in demanding environments.",
+  //   image: "/product/p40-1.jpg?height=200&width=250",
+  //   gallery: ["/product/p40-1.png?height=300&width=300"],
+
+  //   features: [
+  //     "Compatible with multiple lithium battery types and voltages",
+  //     "Intelligent charging with automatic voltage/current regulation",
+  //     "Multi-stage charging process (pre-charge, constant current, constant voltage)",
+  //     "Comprehensive protection features",
+  //     "Compact, durable design suitable for harsh environments",
+  //     "High energy efficiency with low heat generation",
+  //   ],
+  //   specifications: {
+  //     compatibility: "Multiple lithium battery types and voltages",
+  //     chargingControl: "Intelligent charging with automatic voltage/current regulation",
+  //     chargingProcess: "Multi-stage: pre-charge, constant current, constant voltage",
+  //     protection: "Overvoltage, overcurrent, short circuit, over temperature, reverse polarity",
+  //     design: "Compact, durable design suitable for harsh environments",
+  //     efficiency: "High energy efficiency with low heat generation",
+  //   },
+  //   price: "32,000",
+  //   originalPrice: "37,000",
+  //   availability: "IN STOCK",
+  //   sku: "ACP-LC-01",
+  //   href: "/products/p40",
+  // },
+  // {
+  //   id: 41,
+  //   category: "EV Charger",
+  //   title: "ACR Lithium Battery Charger",
+  //   description:
+  //     "The ACR Series lithium battery charger offers efficient and reliable charging for a wide range of lithium battery systems.",
+  //   image: "/product/p41-1.jpg?height=200&width=250",
+  //   gallery: ["/product/p41-2.png?height=300&width=300"],
+
+  //   features: [
+  //     "Compatible with various lithium battery chemistries",
+  //     "Advanced charging control for voltage and current precision",
+  //     "Multi-stage charging: pre-charge, constant current, constant voltage",
+  //     "Built-in protection: overvoltage, overcurrent, over temperature",
+  //     "High efficiency with minimal heat output",
+  //     "Rugged, compact design for industrial and mobile use",
+  //   ],
+  //   specifications: {
+  //     compatibility: "Various lithium battery chemistries",
+  //     chargingControl: "Advanced charging control for voltage and current precision",
+  //     chargingStages: "Pre-charge, constant current, constant voltage",
+  //     protection: "Overvoltage, overcurrent, over temperature, short circuit, reverse polarity",
+  //     efficiency: "High efficiency with minimal heat output",
+  //     design: "Rugged, compact design for industrial and mobile use",
+  //   },
+  //   price: "35,000",
+  //   originalPrice: "40,000",
+  //   availability: "IN STOCK",
+  //   sku: "ACR-LC-01",
+  //   href: "/products/p41",
+  // },
+  // {
+  //   id: 42,
+  //   category: "EV Charger",
+  //   title: "BCR DC Fast Charger",
+  //   description:
+  //     "The BCR DC fast charger is designed to deliver rapid, high-power charging for electric vehicles in public and commercial settings.",
+  //   image: "/product/p42-1.jpg?height=200&width=250",
+  //   gallery: ["/product/p42-2.png?height=300&width=300", "/product/p42-3.png?height=300&width=300"],
+
+  //   features: [
+  //     "High-power output for rapid EV charging",
+  //     "Compatible with major charging standards",
+  //     "Smart charging control with dynamic power allocation",
+  //     "Built-in safety features: overvoltage, overcurrent, short circuit",
+  //     "User-friendly interface with touchscreen or LED indicators",
+  //     "Remote monitoring and management via OCPP",
+  //   ],
+  //   specifications: {
+  //     output: "High-power output for rapid EV charging",
+  //     compatibility: "Compatible with major charging standards",
+  //     chargingControl: "Smart charging control with dynamic power allocation",
+  //     safetyFeatures: "Overvoltage, overcurrent, short circuit, overheating protection",
+  //     interface: "User-friendly interface with touchscreen or LED indicators",
+  //     inputACVoltage: "305~520VAC",
+  //     oemOdmService: "Yes, customized service available",
+  //     certificates: "CE, EN61000, IEC60146",
+  //     applications: "Highway, parking, station, workplace, fleet",
+  //   },
+  //   price: "185,000",
+  //   originalPrice: "210,000",
+  //   availability: "IN STOCK",
+  //   sku: "BCR-DC-01",
+  //   href: "/products/p42",
+  // },
 
   // Distribution Box Category (12 products)
   {
@@ -1325,7 +1434,7 @@ const allProducts = [
     title: "PAX03-Series Explosion-proof Electrical Apparatus",
     description:
       "The PAX03-Series is engineered for safe and reliable power distribution in hazardous environments with robust flameproof and increased safety design.",
-    image: "/product/p44.png?height=200&width=250",
+    image: "/product/p44.jpeg?height=200&width=250",
     // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
@@ -2844,7 +2953,7 @@ const allProducts = [
     title: "Single Phase Step Voltage Regulators",
     description:
       "FHS Zoom, FR-8 Single Phase Step voltage Regulators are tap-changing autotransformers. They regulate distribution line voltages from 10% raise (boost) to 10% lower (buck) in 32 Steps of approximately 5/8% each. Voltage ratings are available from 2400 volts (60KV BIL) for 60 and 50 Hz systems.",
-    image: "/product/p92-1.png?height=200&width=250",
+    image: "/product/p92-1.jpeg?height=200&width=250",
     // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
@@ -2879,7 +2988,7 @@ const allProducts = [
     title: "Three Phase Step Voltage Regulators",
     description:
       "SVR-3 type feeder automatic substation & distribution step voltage regulator is actually a three phase oil immersed auto-transformer with SVR controller and gathering sampling of voltage signal, on load tap changer controlling device to achieve gird more efficient from adjust the load character by increase and decrease the voltage.",
-    image: "/product/p93.jpg?height=200&width=250",
+    image: "/product/p93.jpeg?height=200&width=250",
     // gallery: ["/product/p15-2.png?height=300&width=300"],
 
     features: [
@@ -3957,7 +4066,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
                   alt={product.title}
                   width={400}
                   height={400}
-                  className="w-full h-80 object-cover rounded-lg"
+                  className="w-full h-80 object-contain rounded-lg border"
                 />
               </div>
 
@@ -3986,6 +4095,7 @@ function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             {/* Right Side - Product Details */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-neutral-800">{product.title}</h2>
+                    <p className="text-gray-600 mb-3 text-sm line-clamp-3">{product.description}</p>
 
               {/* Features List */}
               <div className="mb-6">
@@ -4208,13 +4318,17 @@ export default function ProductsPage() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-base font-bold mb-2 group-hover:text-primary-600 transition-colors line-clamp-2">
+                    <h3 className="text-base font-bold mb-2 group-hover:text-primary-600 transition-colors line-clamp-1">
                       {product.title}
                     </h3>
+
                     <p className="text-gray-600 mb-3 text-sm line-clamp-2">{product.description}</p>
                     <ul className="space-y-1 mb-4">
                       {product.features.slice(0, 2).map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-xs">
+                        <li
+                          key={idx}
+                          className="flex items-center text-xs whitespace-nowrap overflow-hidden text-ellipsis"
+                        >
                           <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2"></span>
                           {feature}
                         </li>

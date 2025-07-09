@@ -14,7 +14,7 @@ const navItems = [
     hasMegaMenu: false,
   },
   {
-    title: "About FHS Zoom",
+    title: "About",
     href: "/about",
     hasMegaMenu: false,
   },
